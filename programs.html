@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Programs & Masterclasses - IPF Academy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>tailwind.config={theme:{extend:{fontFamily:{serif:['"Cormorant Garamond"','Georgia','serif'],sans:['"Montserrat"','system-ui','sans-serif']}}}}</script>
+  <style>
+    :root{--green-primary:#0b4131;--green-secondary:#1a5c44;--ivory:#f7f3ec;--warm-beige:#e8dfc8;--soft-sage:#8fac8a;--light-sage:#c8d9c6;--text-dark:#2a2a2a}
+    html{scroll-behavior:smooth}body{font-family:'Montserrat',system-ui,sans-serif;font-weight:500;font-size:18px;-webkit-font-smoothing:antialiased;color:var(--text-dark)}
+    h1,h2,h3,h4,h5{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;letter-spacing:-0.01em}
+    .payment-badge { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--green-primary); border: 2px solid var(--green-primary); padding: 10px 20px; font-size: 16px; font-weight: 600; letter-spacing: 0.04em; }
+    .payment-badge svg { flex-shrink: 0; }
+  </style>
+</head>
+<body class="bg-white">
+
+  <header id="nav-header" class="sticky top-0 z-50 w-full transition-all duration-500" style="background-color: var(--ivory);">
+    <div class="mx-auto flex max-w-[1680px] items-center justify-between gap-4 px-6 py-4 lg:px-10">
+      <a href="index.html" class="shrink-0 flex items-center gap-3">
+        <img src="assets/teachers-academy-logo_57.png" alt="IPF Natural Perfumery Teacher's Academy" class="h-14 w-auto sm:h-16" style="background-color: var(--ivory); border-radius: 50%;">
+      </a>
+      <nav class="hidden xl:flex items-center gap-2 2xl:gap-5">
+        <a href="programs.html" class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">Programs</a>
+        <div class="relative" onmouseenter="document.getElementById('masterDD').classList.remove('hidden')" onmouseleave="document.getElementById('masterDD').classList.add('hidden')">
+          <button class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">Masterclasses ▾</button>
+          <div id="masterDD" class="hidden absolute left-0 top-full pt-2 min-w-[260px]">
+            <div class="border shadow-lg" style="background-color: var(--ivory); border-color: rgba(11,65,49,0.15);">
+              <a href="master-natural-perfumery.html" class="block px-5 py-3 text-[15px] font-medium uppercase tracking-[0.16em] transition-colors whitespace-nowrap" style="color: var(--green-primary);" onmouseenter="this.style.backgroundColor='var(--green-primary)';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color='var(--green-primary)'">Master Natural Perfumery</a>
+              <a href="teaching-methodology.html" class="block px-5 py-3 text-[15px] font-medium uppercase tracking-[0.16em] transition-colors whitespace-nowrap" style="color: var(--green-primary);" onmouseenter="this.style.backgroundColor='var(--green-primary)';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color='var(--green-primary)'">Teaching Methodology</a>
+            </div>
+          </div>
+        </div>
+        <a href="index.html#teachers" class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">Teachers</a>
+        <a href="certified-graduates.html" class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">IPF Certification</a>
+        <a href="why-choose-us.html" class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">Why Choose Us</a>
+        <a href="index.html#faq" class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">Q&amp;A</a>
+        <a href="index.html#footer" class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">Contact</a>
+      </nav>
+      <div class="hidden xl:flex items-center gap-2 shrink-0">
+        <a href="master-natural-perfumery.html" class="text-white text-[13px] 2xl:text-[14px] font-medium uppercase tracking-[0.1em] px-3 2xl:px-4 py-2.5 hover:opacity-90 transition-colors whitespace-nowrap" style="background-color: var(--green-primary);">Begin Your Training</a>
+        <div class="relative" onmouseenter="document.getElementById('proDD').classList.remove('hidden')" onmouseleave="document.getElementById('proDD').classList.add('hidden')">
+          <button class="border text-[13px] 2xl:text-[14px] font-medium uppercase tracking-[0.1em] px-2.5 2xl:px-3 py-2.5 transition-colors whitespace-nowrap" style="border-color: var(--green-primary); color: var(--green-primary);" onmouseenter="this.style.backgroundColor='var(--green-primary)';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color='var(--green-primary)'">For Institutions ▾</button>
+          <div id="proDD" class="hidden absolute right-0 top-full pt-2 min-w-[240px]">
+            <div class="border shadow-lg" style="background-color: var(--ivory); border-color: rgba(11,65,49,0.15);">
+              <a href="for-professionals.html" class="block px-5 py-3 text-[15px] font-medium uppercase tracking-[0.16em] transition-colors" style="color: var(--green-primary);" onmouseenter="this.style.backgroundColor='var(--green-primary)';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color='var(--green-primary)'">School Certification</a>
+              <a href="for-professionals.html" class="block px-5 py-3 text-[15px] font-medium uppercase tracking-[0.16em] transition-colors" style="color: var(--green-primary);" onmouseenter="this.style.backgroundColor='var(--green-primary)';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color='var(--green-primary)'">For Professionals</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="xl:hidden p-1" style="color: var(--green-primary);" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" aria-label="Toggle menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden xl:hidden border-t" style="border-color: rgba(11,65,49,0.1); background-color: var(--ivory);">
+      <div class="px-6 py-8 flex flex-col gap-5">
+        <a href="master-natural-perfumery.html" class="text-white text-[16px] font-medium uppercase tracking-[0.18em] px-5 py-3.5 text-center" style="background-color: var(--green-primary);">Begin Your Training</a>
+        <a href="programs.html" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">Programs</a>
+        <div class="flex flex-col gap-2">
+          <p class="text-[14px] uppercase tracking-[0.2em] px-1" style="color: var(--soft-sage);">Masterclasses</p>
+          <a href="master-natural-perfumery.html" class="text-[16px] font-medium uppercase tracking-[0.18em] pl-3" style="color: var(--green-primary);">Master Natural Perfumery</a>
+          <a href="teaching-methodology.html" class="text-[16px] font-medium uppercase tracking-[0.18em] pl-3" style="color: var(--green-primary);">Teaching Methodology</a>
+        </div>
+        <a href="index.html#teachers" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">Teachers</a>
+        <a href="certified-graduates.html" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">IPF Certification</a>
+        <a href="why-choose-us.html" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">Why Choose Us</a>
+        <a href="index.html#faq" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">Q&amp;A</a>
+        <a href="index.html#footer" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">Contact</a>
+        <div class="mt-2 flex flex-col gap-2">
+          <a href="for-professionals.html" class="border text-[16px] font-medium uppercase tracking-[0.18em] px-5 py-3.5 text-center" style="border-color: var(--green-primary); color: var(--green-primary);">For Institutions</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section style="background:var(--ivory);">
+      <div class="mx-auto max-w-[1560px] px-6 lg:px-12 py-20 lg:py-24">
+        <h1 class="font-serif text-[3.1rem] sm:text-6xl lg:text-[4.6rem] leading-[1.05] max-w-[1080px]" style="color:var(--green-primary);">All <em class="italic font-normal">Programs</em></h1>
+        <p class="mt-8 text-[18px] leading-[1.75] max-w-[770px]" style="color:var(--text-dark);">Internationally certified by the IPF. Study from home in 6 languages.</p>
+        <div id="filters" class="mt-12 flex flex-wrap gap-x-8 gap-y-3 border-b" style="border-color:rgba(11,65,49,.15);"></div>
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section id="sec-courses" class="bg-white py-24 lg:py-28">
+      <div class="mx-auto max-w-[1680px] px-6 lg:px-12">
+        <div class="text-center max-w-[1080px] mx-auto">
+          <p class="text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Professional Training Courses</p>
+          <h2 class="mt-5 font-serif text-5xl lg:text-[3.3rem] leading-[1.1]" style="color:var(--green-primary);">Develop Your <em class="italic">Expertise</em></h2>
+        </div>
+        <div id="course-grid" class="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        <p class="mt-3 text-[16px] font-medium" style="color:var(--green-primary);">&#10022; Payment in 3 or 4 instalments available</p>
+      </div>
+    </section>
+
+    <!-- MASTERCLASSES -->
+    <section id="sec-masterclasses" class="py-24 lg:py-28" style="background:var(--ivory);">
+      <div class="mx-auto max-w-[1680px] px-6 lg:px-12">
+        <div class="text-center max-w-[1080px] mx-auto">
+          <p class="text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">French Natural Perfumery Specifications</p>
+          <h2 class="mt-5 font-serif text-5xl lg:text-[3.3rem] leading-[1.1]" style="color:var(--green-primary);">Master Classes</h2>
+        </div>
+        <p class="mt-6 text-[17px] max-w-[770px]" style="color:var(--text-dark);">All Masterclasses are certified by the International Perfume Foundation.</p>
+        <div class="mt-14">
+          <p class="text-[16px] uppercase tracking-[0.28em] font-medium" style="color:var(--green-primary);">French Natural Perfumery Specifications</p>
+          <div id="mc-grid" class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
+          <p class="mt-3 text-[16px] font-medium" style="color:var(--green-primary);">&#10022; Payment in 3 or 4 instalments available</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCORDS -->
+    <section id="sec-accords" class="bg-white py-20 lg:py-24">
+      <div class="mx-auto max-w-[1680px] px-6 lg:px-12">
+        <div class="text-center max-w-[1080px] mx-auto">
+          <p class="text-[16px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">Mastery of Natural Perfumery Accords</p>
+          <h2 class="mt-5 font-serif text-4xl lg:text-[2.9rem] leading-[1.1]" style="color:var(--green-primary);">Accords Specialisations</h2>
+        </div>
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div class="bg-white border p-6 hover:border-[rgba(11,65,49,.4)] transition-colors" style="border-color:rgba(11,65,49,.15);"><h4 class="font-serif text-xl leading-snug" style="color:var(--green-primary);">Accords - Chypre</h4><div class="mt-4"><a href="#" class="group inline-flex items-center gap-2 text-[14px] font-medium uppercase tracking-[0.22em] border-b pb-1" style="color:var(--green-primary);border-color:rgba(11,65,49,.3);">Discover <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div>
+          <div class="bg-white border p-6 hover:border-[rgba(11,65,49,.4)] transition-colors" style="border-color:rgba(11,65,49,.15);"><h4 class="font-serif text-xl leading-snug" style="color:var(--green-primary);">Accords - White Florals 1</h4><div class="mt-4"><a href="#" class="group inline-flex items-center gap-2 text-[14px] font-medium uppercase tracking-[0.22em] border-b pb-1" style="color:var(--green-primary);border-color:rgba(11,65,49,.3);">Discover <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div>
+          <div class="bg-white border p-6 hover:border-[rgba(11,65,49,.4)] transition-colors" style="border-color:rgba(11,65,49,.15);"><h4 class="font-serif text-xl leading-snug" style="color:var(--green-primary);">Accords - Fougères and Aromatics</h4><div class="mt-4"><a href="#" class="group inline-flex items-center gap-2 text-[14px] font-medium uppercase tracking-[0.22em] border-b pb-1" style="color:var(--green-primary);border-color:rgba(11,65,49,.3);">Discover <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div>
+          <div class="bg-white border p-6 hover:border-[rgba(11,65,49,.4)] transition-colors" style="border-color:rgba(11,65,49,.15);"><h4 class="font-serif text-xl leading-snug" style="color:var(--green-primary);">Accords - Musks</h4><div class="mt-4"><a href="#" class="group inline-flex items-center gap-2 text-[14px] font-medium uppercase tracking-[0.22em] border-b pb-1" style="color:var(--green-primary);border-color:rgba(11,65,49,.3);">Discover <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORLD PERFUME HISTORY -->
+    <section id="sec-history" class="py-20 lg:py-24" style="background:var(--ivory);">
+      <div class="mx-auto max-w-[1680px] px-6 lg:px-12">
+        <div class="text-center max-w-[1080px] mx-auto">
+          <p class="text-[16px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">World Perfume History</p>
+        </div>
+        <div class="mt-6 bg-white border p-10 lg:p-14" style="border-color:rgba(11,65,49,.15);">
+          <h3 class="font-serif text-4xl lg:text-5xl" style="color:var(--green-primary);">World Perfume History <em class="italic">Master Class</em></h3>
+          <p class="mt-5 text-[17px] max-w-[860px]" style="color:var(--text-dark);">A comprehensive cultural and historical study of perfumery across civilisations and centuries.</p>
+          <div class="mt-8 flex flex-wrap gap-2" id="history-tags"></div>
+          <div class="mt-8"><a href="#" class="group inline-flex items-center gap-2 text-[14px] font-medium uppercase tracking-[0.22em] border-b pb-1" style="color:var(--green-primary);border-color:rgba(11,65,49,.3);">Discover the Master Class <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKSHOPS -->
+    <section id="sec-workshops" class="py-24 lg:py-28" style="background:var(--green-primary);">
+      <div class="mx-auto max-w-[1680px] px-6 lg:px-12">
+        <article class="grid grid-cols-1 lg:grid-cols-12 bg-white overflow-hidden">
+          <div class="lg:col-span-6 overflow-hidden"><img src="assets/14.png" alt="Bali Retreat" class="w-full h-[420px] lg:h-full object-cover" loading="lazy"></div>
+          <div class="lg:col-span-6 p-10 lg:p-14 flex flex-col justify-center">
+            <p class="text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Upcoming Workshop · 2027</p>
+            <h3 class="mt-5 font-serif text-5xl lg:text-6xl leading-[1.05]" style="color:var(--green-primary);">Perfume Retreat <em class="italic">Bali 2027</em></h3>
+            <p class="mt-6 text-[17px] leading-[1.8] max-w-[620px]" style="color:var(--text-dark);">An immersive in-person retreat blending botanical exploration, traditional craft, and natural perfumery practice in the heart of Bali. Limited seats.</p>
+            <div class="mt-8"><a href="#" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-[14px] font-medium uppercase tracking-[0.22em] text-white" style="background:var(--green-primary);">Discover the program →</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="text-white" style="background-color: var(--green-primary);">
+    <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-20 grid grid-cols-1 lg:grid-cols-12 gap-14">
+      <div class="lg:col-span-5">
+        <img src="assets/teachers-academy-logo_57.png" alt="IPF Teacher's Academy" class="h-20 w-auto mb-6" style="filter: brightness(0) invert(1);">
+        <p class="mt-3 font-serif text-4xl text-white leading-tight">Natural Perfumery <em class="italic">Teacher's Academy</em></p>
+        <p class="mt-6 text-[17px] leading-[1.8] max-w-xl" style="color: var(--ivory);">A Paris-based academy preserving and transmitting the heritage of natural perfumery to perfumers, teachers and schools across the world. IPF Certification since 1995.</p>
+        <div class="mt-8 flex gap-5 text-white">
+          <a href="#" class="hover:opacity-70 transition-colors" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" class="hover:opacity-70 transition-colors" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" class="hover:opacity-70 transition-colors" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="hover:opacity-70 transition-colors" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+      </div>
+      <div class="lg:col-span-3">
+        <p class="text-[16px] uppercase tracking-[0.22em]" style="color: var(--light-sage);">Explore</p>
+        <ul class="mt-6 space-y-3 text-[17px] text-white">
+          <li><a href="programs.html" class="hover:opacity-70 transition-colors">Programs</a></li>
+          <li><a href="index.html#teachers" class="hover:opacity-70 transition-colors">Teachers</a></li>
+          <li><a href="certified-graduates.html" class="hover:opacity-70 transition-colors">IPF Certification</a></li>
+          <li><a href="why-choose-us.html" class="hover:opacity-70 transition-colors">Why Choose Us</a></li>
+          <li><a href="index.html#footer" class="hover:opacity-70 transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-4">
+        <p class="text-[16px] uppercase tracking-[0.22em]" style="color: var(--light-sage);">Newsletter</p>
+        <p class="mt-5 text-[17px] leading-relaxed text-white">Monthly insights on natural perfumery, certifications and new programs.</p>
+        <form class="mt-6 flex flex-col gap-3 max-w-sm" onsubmit="event.preventDefault()">
+          <input type="email" placeholder="Your email" class="bg-transparent border px-4 py-3 text-[17px] text-white placeholder:text-white/50 focus:outline-none transition-colors" style="border-color: rgba(247,243,236,0.3);">
+          <button type="submit" class="border px-6 py-3 text-[16px] font-medium uppercase tracking-[0.18em] text-white hover:bg-white hover:text-[var(--green-primary)] transition-all self-start" style="border-color: white;">Subscribe</button>
+        </form>
+        <address class="not-italic mt-10 text-[16px] leading-[1.8] text-white">49 Quai des Grands Augustins<br>75006 Paris, France<br><a href="tel:+33659764466" class="hover:opacity-70 transition-colors">+33 6 5976 4466</a></address>
+      </div>
+    </div>
+    <div class="border-t" style="border-color: rgba(247,243,236,0.15);">
+      <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-[15px] uppercase tracking-[0.18em] text-white">
+        <p>&copy; 1995–2026 IPF Natural Perfumery Teacher's Academy</p>
+        <p>Certified by the International Perfume Foundation</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const COURSES=[
+      {n:"Master Natural Perfumery",l:"Advanced",d:"16 weeks",img:"assets/5.png"},
+      {n:"Natural Perfumery",l:"Foundation",d:"12 weeks",img:"assets/4.png"},
+      {n:"Natural Perfumery Private Mentoring",l:"Advanced",d:"On request",img:"assets/2.png"},
+      {n:"Fragrance Brand Design",l:"Professional",d:"8 weeks",img:"assets/9.png"},
+      {n:"Natural Olfaction Training",l:"Professional",d:"8 weeks",img:"assets/6.png"},
+      {n:"Natural Aromatherapy",l:"Professional",d:"10 weeks",img:"assets/3.png"},
+      {n:"Perfumotherapy",l:"Advanced",d:"10 weeks",img:"assets/16.png"},
+      {n:"Natural Skin Care",l:"Professional",d:"8 weeks",img:"assets/7.png"},
+      {n:"World Perfume History Course",l:"Cultural Studies",d:"6 weeks",img:"assets/12.png"},
+      {n:"World Perfume Distribution",l:"Business",d:"6 weeks",img:"assets/18.png"},
+      {n:"Business & Marketing",l:"Business",d:"6 weeks",img:"assets/9.png"},
+    ];
+    const MCS=[
+      {n:"Teaching Methodology",tag:"For Teachers"},{n:"Natural Raw Material Extraction Methods"},{n:"Sustainable Oud MasterClass"},
+      {n:"Healing Gardening"},{n:"Perfume Design, Concept and Storytelling"},{n:"Natural Candle Making"},
+      {n:"Olfaction Training for Children"},{n:"Training Horses with Scents"},{n:"Ancient Chinese Perfume Beads"},
+    ];
+    const HTAGS=["Egypt","Greece","Rome","Arabia","China","Japan","India","France","Germany","Russia","Americas","20th Century","Therapeutic Use"];
+    const FILTERS=["All","Courses","Masterclasses","Accords","Workshops"];
+    let filter="All";
+
+    function show(k){return filter==="All"||(filter==="Courses"&&k==="courses")||(filter==="Masterclasses"&&k==="masterclasses")||(filter==="Accords"&&k==="accords")||(filter==="Workshops"&&k==="workshops");}
+
+    function render(){
+      document.getElementById('filters').innerHTML=FILTERS.map(f=>`<button onclick="filter='${f}';render();" class="text-[16px] uppercase tracking-[0.25em] font-medium pb-4 -mb-px border-b-2 transition-colors" style="color:${filter===f?'var(--green-primary)':'var(--green-secondary)'};border-color:${filter===f?'var(--green-primary)':'transparent'};">${f}</button>`).join('');
+      document.getElementById('sec-courses').style.display=show('courses')?'':'none';
+      document.getElementById('sec-masterclasses').style.display=show('masterclasses')?'':'none';
+      document.getElementById('sec-accords').style.display=show('accords')?'':'none';
+      document.getElementById('sec-history').style.display=show('masterclasses')?'':'none';
+      document.getElementById('sec-workshops').style.display=show('workshops')?'':'none';
+      document.getElementById('course-grid').innerHTML=COURSES.map(c=>`<article class="bg-white border group" style="border-color:rgba(11,65,49,.15);"><div class="overflow-hidden"><img src="${c.img}" alt="${c.n}" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy"></div><div class="p-7"><p class="text-[16px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">${c.l} · ${c.d}</p><h3 class="mt-3 font-serif text-2xl" style="color:var(--green-primary);">${c.n}</h3><p class="mt-3 text-[16px] leading-relaxed" style="color:var(--text-dark);">A structured certification taught by international IPF experts.</p><div class="mt-6"><a href="#" class="inline-flex items-center gap-2 text-[14px] font-medium uppercase tracking-[0.22em] border-b pb-1" style="color:var(--green-primary);border-color:rgba(11,65,49,.3);">Discover <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div></article>`).join('');
+      document.getElementById('mc-grid').innerHTML=MCS.map(m=>`<div class="bg-white border p-6 hover:border-[rgba(11,65,49,.4)] transition-colors" style="border-color:rgba(11,65,49,.15);">${m.tag?`<p class="text-[16px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">${m.tag}</p>`:''}<h4 class="${m.tag?'mt-2':''} font-serif text-xl leading-snug" style="color:var(--green-primary);">${m.n}</h4><div class="mt-4"><a href="#" class="inline-flex items-center gap-2 text-[14px] font-medium uppercase tracking-[0.22em] border-b pb-1" style="color:var(--green-primary);border-color:rgba(11,65,49,.3);">Discover <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div>`).join('');
+      document.getElementById('history-tags').innerHTML=HTAGS.map(t=>`<span class="text-[16px] uppercase tracking-[0.2em] border px-3 py-1.5" style="color:var(--green-primary);border-color:rgba(11,65,49,.25);">${t}</span>`).join('');
+    }
+    render();
+    window.addEventListener('scroll',()=>{const h=document.getElementById('nav-header');if(window.scrollY>12){h.style.boxShadow='0 1px 20px rgba(11,65,49,.06)';h.style.backdropFilter='blur(12px)';h.style.backgroundColor='rgba(247,243,236,0.95)'}else{h.style.boxShadow='none';h.style.backdropFilter='none';h.style.backgroundColor='var(--ivory)'}});
+  </script>
+</body>
+</html>
