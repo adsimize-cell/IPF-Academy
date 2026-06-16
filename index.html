@@ -31,7 +31,7 @@
       --text-dark: #2a2a2a;
     }
     html { scroll-behavior: smooth; }
-    body { font-family: 'Montserrat', system-ui, sans-serif; -webkit-font-smoothing: antialiased; color: var(--text-dark); font-weight: 500; font-size: 18px; }
+    body { font-family: 'Montserrat', system-ui, sans-serif; -webkit-font-smoothing: antialiased; color: var(--text-dark); font-weight: 500; font-size: 18px; text-align: justify; }
     h1, h2, h3, h4, h5 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; letter-spacing: -0.01em; }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
     .animate-fade-in { animation: fadeIn 0.6s ease-out forwards; }
@@ -54,18 +54,20 @@
       </a>
 
       <nav class="hidden xl:flex items-center gap-2 2xl:gap-5">
-        <a href="programs.html" class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">Programs</a>
-        <div class="relative" onmouseenter="document.getElementById('masterDD').classList.remove('hidden')" onmouseleave="document.getElementById('masterDD').classList.add('hidden')">
-          <button class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">Masterclasses ▾</button>
-          <div id="masterDD" class="hidden absolute left-0 top-full pt-2 min-w-[260px]">
+        <div class="relative" onmouseenter="document.getElementById('progDD').classList.remove('hidden')" onmouseleave="document.getElementById('progDD').classList.add('hidden')">
+          <button class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">Programs ▾</button>
+          <div id="progDD" class="hidden absolute left-0 top-full pt-2 min-w-[280px]">
             <div class="border shadow-lg" style="background-color: var(--ivory); border-color: rgba(11,65,49,0.15);">
-              <a href="master-natural-perfumery.html" class="block px-5 py-3 text-[15px] font-medium uppercase tracking-[0.16em] transition-colors whitespace-nowrap" style="color: var(--green-primary);" onmouseenter="this.style.backgroundColor='var(--green-primary)';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color='var(--green-primary)'">Master Natural Perfumery</a>
-              <a href="teaching-methodology.html" class="block px-5 py-3 text-[15px] font-medium uppercase tracking-[0.16em] transition-colors whitespace-nowrap" style="color: var(--green-primary);" onmouseenter="this.style.backgroundColor='var(--green-primary)';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color='var(--green-primary)'">Teaching Methodology</a>
+              <a href="programs.html" class="block px-5 py-3 text-[15px] font-medium uppercase tracking-[0.16em] transition-colors whitespace-nowrap" style="color: var(--green-primary);" onmouseenter="this.style.backgroundColor='var(--green-primary)';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color='var(--green-primary)'">All Programs</a>
+              <div class="border-t" style="border-color: rgba(11,65,49,0.1);"></div>
+              <div class="px-5 pt-3 pb-1 text-[11px] uppercase tracking-[0.2em] font-semibold" style="color: var(--green-primary);">Masterclasses</div>
+              <a href="master-natural-perfumery.html" class="block px-5 pl-8 py-2 text-[14px] font-medium uppercase tracking-[0.14em] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.backgroundColor='var(--green-primary)';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color='var(--text-dark)'">Master Natural Perfumery</a>
+              <a href="teaching-methodology.html" class="block px-5 pl-8 py-2 pb-3 text-[14px] font-medium uppercase tracking-[0.14em] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.backgroundColor='var(--green-primary)';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color='var(--text-dark)'">Teaching Methodology</a>
             </div>
           </div>
         </div>
         <a href="#teachers" class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">Teachers</a>
-        <a href="certified-graduates.html" class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">IPF Certification</a>
+        <a href="https://www.perfumefoundation.org" target="_blank" class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">IPF Certification</a>
         <a href="why-choose-us.html" class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">Why Choose Us</a>
         <a href="#faq" class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">Q&amp;A</a>
         <a href="#footer" class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">Contact</a>
@@ -92,14 +94,14 @@
     <div id="mobileMenu" class="hidden xl:hidden border-t" style="border-color: rgba(11,65,49,0.1); background-color: var(--ivory);">
       <div class="px-6 py-8 flex flex-col gap-5">
         <a href="master-natural-perfumery.html" class="text-white text-[16px] font-medium uppercase tracking-[0.18em] px-5 py-3.5 text-center" style="background-color: var(--green-primary);">Begin Your Training</a>
-        <a href="programs.html" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">Programs</a>
         <div class="flex flex-col gap-2">
-          <p class="text-[14px] uppercase tracking-[0.2em] px-1" style="color: var(--soft-sage);">Masterclasses</p>
+          <a href="programs.html" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">All Programs</a>
+          <p class="text-[14px] uppercase tracking-[0.2em] px-1 mt-2" style="color: var(--soft-sage);">Masterclasses</p>
           <a href="master-natural-perfumery.html" class="text-[16px] font-medium uppercase tracking-[0.18em] pl-3" style="color: var(--green-primary);">Master Natural Perfumery</a>
           <a href="teaching-methodology.html" class="text-[16px] font-medium uppercase tracking-[0.18em] pl-3" style="color: var(--green-primary);">Teaching Methodology</a>
         </div>
         <a href="#teachers" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">Teachers</a>
-        <a href="certified-graduates.html" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">IPF Certification</a>
+        <a href="https://www.perfumefoundation.org" target="_blank" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">IPF Certification</a>
         <a href="why-choose-us.html" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">Why Choose Us</a>
         <a href="#faq" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">Q&amp;A</a>
         <a href="#footer" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">Contact</a>
@@ -187,6 +189,34 @@
       </div>
     </section>
 
+    <!-- PERSONAL ACCOMPANIMENT -->
+    <section class="py-16 lg:py-20" style="background-color: var(--green-primary);">
+      <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
+        <div class="text-center max-w-[960px] mx-auto mb-14">
+          <p class="text-[16px] font-medium uppercase tracking-[0.25em]" style="color: var(--light-sage);">What Makes Us Different</p>
+          <h2 class="mt-6 font-serif text-5xl lg:text-[3.5rem] leading-[1.1] text-white">Personal Accompaniment <em class="italic font-normal">at Every Step</em></h2>
+          <p class="mt-6 text-[18px] leading-[1.8]" style="color: var(--ivory);">Unlike large online platforms, every IPF student receives dedicated, one-on-one guidance from a personal teacher throughout their entire program.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center px-6 py-8 border rounded" style="border-color: rgba(247,243,236,0.2);">
+            <p class="font-serif text-5xl text-white">1:1</p>
+            <h3 class="mt-4 font-serif text-2xl text-white">Dedicated Teacher</h3>
+            <p class="mt-3 text-[17px] leading-[1.75]" style="color: var(--ivory);">Each student is assigned a personal teacher who provides individual feedback, guidance and support from enrolment to certification.</p>
+          </div>
+          <div class="text-center px-6 py-8 border rounded" style="border-color: rgba(247,243,236,0.2);">
+            <p class="font-serif text-5xl text-white">&#9998;</p>
+            <h3 class="mt-4 font-serif text-2xl text-white">Weekly Assessments</h3>
+            <p class="mt-3 text-[17px] leading-[1.75]" style="color: var(--ivory);">Your work is reviewed and graded personally each week. No automated corrections &mdash; real, detailed feedback from an expert teacher.</p>
+          </div>
+          <div class="text-center px-6 py-8 border rounded" style="border-color: rgba(247,243,236,0.2);">
+            <p class="font-serif text-5xl text-white">&#127891;</p>
+            <h3 class="mt-4 font-serif text-2xl text-white">Post-Course Support</h3>
+            <p class="mt-3 text-[17px] leading-[1.75]" style="color: var(--ivory);">Consultancies and mentorship remain available after your courses. Our objective is to help you build a successful career or business.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ============================================================== -->
     <!-- TRUSTED WORLDWIDE                                              -->
     <!-- [MOD 2] Title + text centered, full-width                      -->
@@ -198,18 +228,23 @@
           <h2 class="mt-6 font-serif text-4xl lg:text-[3.1rem] leading-[1.15]" style="color: var(--green-primary);">Trusted by Institutions, Cities and Industry Leaders</h2>
           <p class="mt-6 text-[18px] leading-[1.8]" style="color: var(--text-dark);">For more than three decades, IPF and its educational initiatives have collaborated with public institutions, international organisations and leading hospitality and beauty industry stakeholders.</p>
         </div>
-        <ul class="mt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-px border" style="background-color: rgba(11,65,49,0.15); border-color: rgba(11,65,49,0.15);">
-          <li class="h-24 flex items-center justify-center px-4 text-center font-serif text-[18px] tracking-wide" style="background-color: var(--ivory); color: var(--green-primary);">UNESCO</li>
-          <li class="h-24 flex items-center justify-center px-4 text-center font-serif text-[18px] tracking-wide" style="background-color: var(--ivory); color: var(--green-primary);">City of Paris</li>
-          <li class="h-24 flex items-center justify-center px-4 text-center font-serif text-[18px] tracking-wide" style="background-color: var(--ivory); color: var(--green-primary);">City of Brussels</li>
-          <li class="h-24 flex items-center justify-center px-4 text-center font-serif text-[18px] tracking-wide" style="background-color: var(--ivory); color: var(--green-primary);">City of Athens</li>
-          <li class="h-24 flex items-center justify-center px-4 text-center font-serif text-[18px] tracking-wide" style="background-color: var(--ivory); color: var(--green-primary);">European Commission</li>
-          <li class="h-24 flex items-center justify-center px-4 text-center font-serif text-[18px] tracking-wide" style="background-color: var(--ivory); color: var(--green-primary);">Hilton</li>
-          <li class="h-24 flex items-center justify-center px-4 text-center font-serif text-[18px] tracking-wide" style="background-color: var(--ivory); color: var(--green-primary);">Conrad Hotels</li>
-          <li class="h-24 flex items-center justify-center px-4 text-center font-serif text-[18px] tracking-wide" style="background-color: var(--ivory); color: var(--green-primary);">Le Méridien</li>
-          <li class="h-24 flex items-center justify-center px-4 text-center font-serif text-[18px] tracking-wide" style="background-color: var(--ivory); color: var(--green-primary);">Cosmoprof</li>
-          <li class="h-24 flex items-center justify-center px-4 text-center font-serif text-[18px] tracking-wide" style="background-color: var(--ivory); color: var(--green-primary);">PCD Paris</li>
-          <li class="h-24 flex items-center justify-center px-4 text-center font-serif text-[18px] tracking-wide" style="background-color: var(--ivory); color: var(--green-primary);">Beauty Cluster Barcelona</li>
+        <ul class="mt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-px border" style="background-color: rgba(11,65,49,0.12); border-color: rgba(11,65,49,0.12);">
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/UNESCO-logo-364BB2205E-seeklogo.com.png" alt="UNESCO" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Logo EU Commission.jpeg" alt="European Commission" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/logo_paris-logo_ae463.jpg" alt="Mairie de Paris" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Logo Ville de Bruxelles.jpg" alt="Ville de Bruxelles" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/LOGO_MUNICIPALITY_OF_ATHENS.png" alt="City of Athens" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/logo technopolis.jpg" alt="Technopolis City of Athens" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Hilton_Hotels_logo.svg.png" alt="Hilton Hotels" class="max-h-24 max-w-[160px] object-contain"></li>
+        </ul>
+        <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-px border-x border-b" style="background-color: rgba(11,65,49,0.12); border-color: rgba(11,65,49,0.12);">
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Brussels.jpg" alt="Conrad Brussels" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Le_Meridien-logo-200x200.gif" alt="Le Méridien" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/logo_cosmoprof.png" alt="Cosmoprof Worldwide Bologna" class="max-h-20 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/logo_cosmo-talks.png" alt="Cosmo Talks" class="max-h-20 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/NBS1483_EASYFAIRS_PCD_LOGO_RGB.png" alt="PCD Paris" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Logo beauty Cluster.png" alt="Beauty Cluster Barcelona" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/PHOTO-2026-02-21-11-04-31.jpg" alt="FragCon 2026" class="max-h-24 max-w-[160px] object-contain"></li>
         </ul>
       </div>
     </section>
@@ -260,22 +295,22 @@
           <div class="p-10 flex flex-col border-b md:border-b-0 md:border-r lg:border-r" style="border-color: rgba(11,65,49,0.15);">
             <p class="font-serif text-6xl leading-none" style="color: var(--soft-sage);">01</p>
             <h3 class="mt-6 font-serif text-2xl leading-snug" style="color: var(--green-primary);">Enrol &amp; Meet Your Teacher</h3>
-            <p class="mt-4 text-[17px] leading-[1.8] flex-1" style="color: var(--text-dark);">Once enrolled, a personal Zoom meeting is arranged with your instructor before the course begins. You are never just a number.</p>
+            <p class="mt-4 text-[18px] leading-[1.8] flex-1" style="color: var(--text-dark);">Once enrolled, a personal Zoom meeting is arranged with your instructor before the course begins. You are never just a number.</p>
           </div>
           <div class="p-10 flex flex-col border-b md:border-b-0 md:border-r lg:border-r" style="border-color: rgba(11,65,49,0.15);">
             <p class="font-serif text-6xl leading-none" style="color: var(--soft-sage);">02</p>
             <h3 class="mt-6 font-serif text-2xl leading-snug" style="color: var(--green-primary);">Study at Your Own Pace</h3>
-            <p class="mt-4 text-[17px] leading-[1.8] flex-1" style="color: var(--text-dark);">Each week, a new module is released. Written lessons, practical exercises and video guidance are available on your own schedule, from anywhere in the world.</p>
+            <p class="mt-4 text-[18px] leading-[1.8] flex-1" style="color: var(--text-dark);">Each week, a new module is released. Written lessons, practical exercises and video guidance are available on your own schedule, from anywhere in the world.</p>
           </div>
           <div class="p-10 flex flex-col border-b md:border-b-0 md:border-r lg:border-r" style="border-color: rgba(11,65,49,0.15);">
             <p class="font-serif text-6xl leading-none" style="color: var(--soft-sage);">03</p>
             <h3 class="mt-6 font-serif text-2xl leading-snug" style="color: var(--green-primary);">Personal Mentorship Throughout</h3>
-            <p class="mt-4 text-[17px] leading-[1.8] flex-1" style="color: var(--text-dark);">Your instructor reviews your work and provides individual feedback. Consultancies remain available after course completion to support your professional journey.</p>
+            <p class="mt-4 text-[18px] leading-[1.8] flex-1" style="color: var(--text-dark);">Your instructor reviews your work and provides individual feedback. Consultancies remain available after course completion to support your professional journey.</p>
           </div>
           <div class="p-10 flex flex-col">
             <p class="font-serif text-6xl leading-none" style="color: var(--soft-sage);">04</p>
             <h3 class="mt-6 font-serif text-2xl leading-snug" style="color: var(--green-primary);">Receive Your IPF Certificate</h3>
-            <p class="mt-4 text-[17px] leading-[1.8] flex-1" style="color: var(--text-dark);">Upon successful completion, you receive your internationally recognised IPF certificate with QR verification, and are listed in the global directory of certified perfumers.</p>
+            <p class="mt-4 text-[18px] leading-[1.8] flex-1" style="color: var(--text-dark);">Upon successful completion, you receive your internationally recognised IPF certificate with QR verification, and are listed in the global directory of certified perfumers.</p>
           </div>
         </div>
         <!-- [MOD 6] Prominent payment strip -->
@@ -373,7 +408,7 @@
             </div>
           </article>
           <article class="group bg-white flex flex-col transition-shadow duration-500 hover:shadow-[0_20px_60px_-30px_rgba(11,65,49,0.3)]">
-            <div class="overflow-hidden"><img src="assets/15.png" alt="World Perfume History" class="w-full h-64 object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
+            <div class="overflow-hidden"><img src="assets/photospart1voiscequetuveux/WORLD PERFUME HERITAGE.jpeg" alt="World Perfume History" class="w-full h-64 object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
             <div class="p-8 flex flex-col flex-1">
               <div class="flex items-center gap-3 text-[16px] uppercase tracking-[0.18em]" style="color: var(--soft-sage);"><span>Cultural Studies</span><span class="w-1 h-1 rounded-full" style="background-color: var(--soft-sage);"></span><span>6 weeks</span></div>
               <h3 class="mt-4 font-serif text-3xl leading-snug" style="color: var(--green-primary);">World Perfume History</h3>
@@ -398,36 +433,36 @@
         </div>
         <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="bg-white p-10 flex flex-col hover:shadow-[0_20px_60px_-30px_rgba(11,65,49,0.2)] transition-shadow duration-500">
-            <p class="text-[16px] font-medium uppercase tracking-[0.22em]" style="color: var(--soft-sage);">I'm new to natural perfumery</p>
-            <h3 class="mt-5 font-serif text-3xl leading-snug" style="color: var(--green-primary);">Start with the Foundation</h3>
-            <p class="mt-4 text-[17px] leading-[1.8] flex-1" style="color: var(--text-dark);">Begin with our Natural Perfumery course, no prior experience required. Build your olfactory vocabulary, understand botanical materials, and compose your first natural fragrances.</p>
+            <p class="text-[17px] font-medium uppercase tracking-[0.22em]" style="color: var(--soft-sage);">I'm new to natural perfumery</p>
+            <h3 class="mt-5 font-serif text-4xl leading-snug" style="color: var(--green-primary);">Start with the Foundation</h3>
+            <p class="mt-4 text-[18px] leading-[1.8] flex-1" style="color: var(--text-dark);">Begin with our Natural Perfumery course, no prior experience required. Build your olfactory vocabulary, understand botanical materials, and compose your first natural fragrances.</p>
             <div class="mt-8 flex items-center justify-between gap-4">
               <span class="text-[15px] uppercase tracking-[0.18em] border px-3 py-1.5" style="color: var(--green-primary); border-color: rgba(11,65,49,0.2);">Foundation Level</span>
               <a href="#programs" class="inline-flex items-center gap-2 text-[16px] font-medium uppercase tracking-[0.18em] border-b pb-1" style="color: var(--green-primary); border-color: rgba(11,65,49,0.3);">Natural Perfumery →</a>
             </div>
           </div>
           <div class="bg-white p-10 flex flex-col hover:shadow-[0_20px_60px_-30px_rgba(11,65,49,0.2)] transition-shadow duration-500">
-            <p class="text-[16px] font-medium uppercase tracking-[0.22em]" style="color: var(--soft-sage);">I already have some experience</p>
-            <h3 class="mt-5 font-serif text-3xl leading-snug" style="color: var(--green-primary);">Deepen Your Expertise</h3>
-            <p class="mt-4 text-[17px] leading-[1.8] flex-1" style="color: var(--text-dark);">Our specialised courses in Olfaction Training, Aromatherapy, Perfumotherapy and Fragrance Brand Design build on a foundation of botanical knowledge.</p>
+            <p class="text-[17px] font-medium uppercase tracking-[0.22em]" style="color: var(--soft-sage);">I already have some experience</p>
+            <h3 class="mt-5 font-serif text-4xl leading-snug" style="color: var(--green-primary);">Deepen Your Expertise</h3>
+            <p class="mt-4 text-[18px] leading-[1.8] flex-1" style="color: var(--text-dark);">Our specialised courses in Olfaction Training, Aromatherapy, Perfumotherapy and Fragrance Brand Design build on a foundation of botanical knowledge.</p>
             <div class="mt-8 flex items-center justify-between gap-4">
               <span class="text-[15px] uppercase tracking-[0.18em] border px-3 py-1.5" style="color: var(--green-primary); border-color: rgba(11,65,49,0.2);">Professional Level</span>
               <a href="#programs" class="inline-flex items-center gap-2 text-[16px] font-medium uppercase tracking-[0.18em] border-b pb-1" style="color: var(--green-primary); border-color: rgba(11,65,49,0.3);">View all courses →</a>
             </div>
           </div>
           <div class="bg-white p-10 flex flex-col hover:shadow-[0_20px_60px_-30px_rgba(11,65,49,0.2)] transition-shadow duration-500">
-            <p class="text-[16px] font-medium uppercase tracking-[0.22em]" style="color: var(--soft-sage);">I want the highest certification</p>
-            <h3 class="mt-5 font-serif text-3xl leading-snug" style="color: var(--green-primary);">Become a Master Perfumer</h3>
-            <p class="mt-4 text-[17px] leading-[1.8] flex-1" style="color: var(--text-dark);">The Master Natural Perfumery program is our flagship credential. It requires completion of Natural Perfumery, World Perfume History and Business &amp; Marketing, and culminates in the IPF Gold Certificate.</p>
+            <p class="text-[17px] font-medium uppercase tracking-[0.22em]" style="color: var(--soft-sage);">I want the highest certification</p>
+            <h3 class="mt-5 font-serif text-4xl leading-snug" style="color: var(--green-primary);">Become a Master Perfumer</h3>
+            <p class="mt-4 text-[18px] leading-[1.8] flex-1" style="color: var(--text-dark);">The Master Natural Perfumery program is our flagship credential. It requires completion of Natural Perfumery, World Perfume History and Business &amp; Marketing, and culminates in the IPF Gold Certificate.</p>
             <div class="mt-8 flex items-center justify-between gap-4">
               <span class="text-[15px] uppercase tracking-[0.18em] border px-3 py-1.5" style="color: var(--green-primary); border-color: rgba(11,65,49,0.2);">Advanced · Gold Certificate</span>
               <a href="master-natural-perfumery.html" class="inline-flex items-center gap-2 text-[16px] font-medium uppercase tracking-[0.18em] border-b pb-1" style="color: var(--green-primary); border-color: rgba(11,65,49,0.3);">Master Natural Perfumery →</a>
             </div>
           </div>
           <div class="bg-white p-10 flex flex-col hover:shadow-[0_20px_60px_-30px_rgba(11,65,49,0.2)] transition-shadow duration-500">
-            <p class="text-[16px] font-medium uppercase tracking-[0.22em]" style="color: var(--soft-sage);">I already teach or run a school</p>
-            <h3 class="mt-5 font-serif text-3xl leading-snug" style="color: var(--green-primary);">Get IPF Certified as a Teacher</h3>
-            <p class="mt-4 text-[17px] leading-[1.8] flex-1" style="color: var(--text-dark);">The Teaching Methodology masterclass is designed for existing professionals who want to certify their teaching expertise and be listed in the IPF global teacher directory.</p>
+            <p class="text-[17px] font-medium uppercase tracking-[0.22em]" style="color: var(--soft-sage);">I already teach or run a school</p>
+            <h3 class="mt-5 font-serif text-4xl leading-snug" style="color: var(--green-primary);">Get IPF Certified as a Teacher</h3>
+            <p class="mt-4 text-[18px] leading-[1.8] flex-1" style="color: var(--text-dark);">The Teaching Methodology masterclass is designed for existing professionals who want to certify their teaching expertise and be listed in the IPF global teacher directory.</p>
             <div class="mt-8 flex items-center justify-between gap-4">
               <span class="text-[15px] uppercase tracking-[0.18em] border px-3 py-1.5" style="color: var(--green-primary); border-color: rgba(11,65,49,0.2);">Teacher Certification</span>
               <a href="for-professionals.html" class="inline-flex items-center gap-2 text-[16px] font-medium uppercase tracking-[0.18em] border-b pb-1" style="color: var(--green-primary); border-color: rgba(11,65,49,0.3);">For Professionals →</a>
@@ -480,11 +515,11 @@
           <div class="text-center"><p class="font-serif text-6xl lg:text-7xl xl:text-8xl leading-none" style="color: var(--green-primary);">205</p><p class="mt-2 text-[16px] uppercase tracking-[0.18em]" style="color: var(--green-primary);">Certified Graduates</p></div>
           <div class="text-center"><p class="font-serif text-6xl lg:text-7xl xl:text-8xl leading-none" style="color: var(--green-primary);">42</p><p class="mt-2 text-[16px] uppercase tracking-[0.18em]" style="color: var(--green-primary);">Countries</p></div>
           <div class="text-center"><p class="font-serif text-6xl lg:text-7xl xl:text-8xl leading-none" style="color: var(--green-primary);">36</p><p class="mt-2 text-[16px] uppercase tracking-[0.18em]" style="color: var(--green-primary);">Years of IPF Certification</p></div>
-          <div class="text-center"><p class="font-serif text-6xl lg:text-7xl xl:text-8xl leading-none" style="color: var(--green-primary);">22+</p><p class="mt-2 text-[16px] uppercase tracking-[0.18em]" style="color: var(--green-primary);">Programs</p></div>
+          <div class="text-center"><p class="font-serif text-6xl lg:text-7xl xl:text-8xl leading-none" style="color: var(--green-primary);">35+</p><p class="mt-2 text-[16px] uppercase tracking-[0.18em]" style="color: var(--green-primary);">Courses &amp; Masterclasses</p></div>
         </div>
 
         <div class="mt-14 text-center">
-          <a href="certified-graduates.html" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-[16px] font-medium uppercase tracking-[0.18em] border bg-transparent" style="border-color: var(--green-primary); color: var(--green-primary);">Meet our certified perfumers</a>
+          <a href="https://www.perfumefoundation.org" target="_blank" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-[16px] font-medium uppercase tracking-[0.18em] border bg-transparent" style="border-color: var(--green-primary); color: var(--green-primary);">Meet our certified perfumers</a>
         </div>
       </div>
     </section>
@@ -538,24 +573,24 @@
           <div class="border p-10 flex flex-col hover:border-[var(--light-sage)] transition-colors duration-500" style="border-color: rgba(247,243,236,0.2);">
             <p class="text-[16px] uppercase tracking-[0.22em]" style="color: var(--light-sage);">Teacher Certification</p>
             <h3 class="mt-8 font-serif text-3xl lg:text-[1.9rem] text-white leading-snug">You teach. Get IPF certified.</h3>
-            <p class="mt-5 text-[17px] leading-[1.8] flex-1" style="color: var(--ivory);">Earn an internationally recognised IPF Teacher Certification. Your credentials become verifiable worldwide through the IPF registry.</p>
+            <p class="mt-5 text-[18px] leading-[1.8] flex-1" style="color: var(--ivory);">Earn an internationally recognised IPF Teacher Certification. Your credentials become verifiable worldwide through the IPF registry.</p>
             <div class="mt-10"><a href="#footer" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-[16px] font-medium uppercase tracking-[0.18em] border bg-transparent" style="border-color: var(--ivory); color: var(--ivory);">Certify your expertise</a></div>
           </div>
           <div class="border p-10 flex flex-col hover:border-[var(--light-sage)] transition-colors duration-500" style="border-color: rgba(247,243,236,0.2);">
             <p class="text-[16px] uppercase tracking-[0.22em]" style="color: var(--light-sage);">School Certification</p>
             <h3 class="mt-8 font-serif text-3xl lg:text-[1.9rem] text-white leading-snug">Certify your school's programs.</h3>
-            <p class="mt-5 text-[17px] leading-[1.8] flex-1" style="color: var(--ivory);">Have your curriculum certified by the IPF. Your students graduate with internationally recognised certificates linked to the IPF registry.</p>
+            <p class="mt-5 text-[18px] leading-[1.8] flex-1" style="color: var(--ivory);">Have your curriculum certified by the IPF. Your students graduate with internationally recognised certificates linked to the IPF registry.</p>
             <div class="mt-10"><a href="#footer" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-[16px] font-medium uppercase tracking-[0.18em] border bg-transparent" style="border-color: var(--ivory); color: var(--ivory);">Certify your school</a></div>
           </div>
           <div class="border p-10 flex flex-col hover:border-[var(--light-sage)] transition-colors duration-500" style="border-color: rgba(247,243,236,0.2);">
             <p class="text-[16px] uppercase tracking-[0.22em]" style="color: var(--light-sage);">IPF Partner School</p>
             <h3 class="mt-8 font-serif text-3xl lg:text-[1.9rem] text-white leading-snug">Open an IPF school in your country.</h3>
-            <p class="mt-5 text-[17px] leading-[1.8] flex-1" style="color: var(--ivory);">Become an official IPF partner and open a certified school under your own name in your territory.</p>
+            <p class="mt-5 text-[18px] leading-[1.8] flex-1" style="color: var(--ivory);">Become an official IPF partner and open a certified school under your own name in your territory.</p>
             <div class="mt-10"><a href="#footer" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-[16px] font-medium uppercase tracking-[0.18em] border bg-transparent" style="border-color: var(--ivory); color: var(--ivory);">Become a partner</a></div>
           </div>
         </div>
         <!-- [MOD 4] Creezy: IPF Chairman -->
-        <div class="mt-20 pt-12 border-t flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8" style="border-color: rgba(247,243,236,0.15);">
+        <div class="mt-14 pt-8 border-t flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5" style="border-color: rgba(247,243,236,0.15);">
           <p class="font-serif italic text-2xl max-w-[600px] leading-snug" style="color: var(--ivory);">"Our long-term vision is to have IPF certified schools on every continent, teaching natural perfumery in every language."</p>
           <p class="text-[16px] font-medium uppercase tracking-[0.18em] whitespace-nowrap" style="color: var(--light-sage);">Creezy Courtoy, IPF Chairman</p>
         </div>
@@ -613,6 +648,64 @@
               <div class="border-t pt-4" style="border-color: rgba(11,65,49,0.2);"><p class="font-serif text-4xl" style="color: var(--green-primary);">6</p><p class="mt-1 text-[16px] uppercase tracking-[0.15em]" style="color: var(--text-dark);">Languages Taught In</p></div>
               <div class="border-t pt-4" style="border-color: rgba(11,65,49,0.2);"><p class="font-serif text-4xl" style="color: var(--green-primary);">42</p><p class="mt-1 text-[16px] uppercase tracking-[0.15em]" style="color: var(--text-dark);">Countries</p></div>
               <div class="border-t pt-4" style="border-color: rgba(11,65,49,0.2);"><p class="font-serif text-4xl" style="color: var(--green-primary);">205</p><p class="mt-1 text-[16px] uppercase tracking-[0.15em]" style="color: var(--text-dark);">Certified Graduates</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-20">
+          <h3 class="text-center font-serif text-3xl lg:text-4xl mb-12" style="color: var(--green-primary);">Our Teachers &amp; Lecturers</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-6">
+            <div class="text-center">
+              <img src="assets/photos14teachersandlecturers/Ana.jpeg" alt="Ana" class="w-full h-40 object-cover rounded" loading="lazy">
+              <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Ana Elena Sastrias</p>
+            </div>
+            <div class="text-center">
+              <img src="assets/photos14teachersandlecturers/Andrej portrait.jpg" alt="Andrej" class="w-full h-40 object-cover rounded" loading="lazy">
+              <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Andrej</p>
+            </div>
+            <div class="text-center">
+              <img src="assets/photos14teachersandlecturers/Danica-Lea_Eco Verdant_by Joanna Zydel Bunbury Branding Photographer (11 of 78).jpg" alt="Danica-Lea" class="w-full h-40 object-cover rounded" loading="lazy">
+              <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Danica-Lea</p>
+            </div>
+            <div class="text-center">
+              <img src="assets/photos14teachersandlecturers/Kristin Chen portrait.jpg" alt="Kristin Chen" class="w-full h-40 object-cover rounded" loading="lazy">
+              <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Kristin Chen</p>
+            </div>
+            <div class="text-center">
+              <img src="assets/photos14teachersandlecturers/lili.jpg" alt="Lili" class="w-full h-40 object-cover rounded" loading="lazy">
+              <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Lili</p>
+            </div>
+            <div class="text-center">
+              <img src="assets/photos14teachersandlecturers/Naziha.JPG" alt="Naziha" class="w-full h-40 object-cover rounded" loading="lazy">
+              <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Naziha</p>
+            </div>
+            <div class="text-center">
+              <img src="assets/photos14teachersandlecturers/Pinar Lacroix_Headshot2024.png" alt="Pinar Lacroix" class="w-full h-40 object-cover rounded" loading="lazy">
+              <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Pinar Lacroix</p>
+            </div>
+            <div class="text-center">
+              <img src="assets/photos14teachersandlecturers/RODNEY.jpg" alt="Rodney" class="w-full h-40 object-cover rounded" loading="lazy">
+              <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Rodney</p>
+            </div>
+            <div class="text-center">
+              <img src="assets/photos14teachersandlecturers/Roxana.jpg" alt="Roxana" class="w-full h-40 object-cover rounded" loading="lazy">
+              <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Roxana</p>
+            </div>
+            <div class="text-center">
+              <img src="assets/photos14teachersandlecturers/Sabrina Zidane.jpg" alt="Sabrina Zidane" class="w-full h-40 object-cover rounded" loading="lazy">
+              <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Sabrina Zidane</p>
+            </div>
+            <div class="text-center">
+              <img src="assets/photos14teachersandlecturers/Terry.png" alt="Terry" class="w-full h-40 object-cover rounded" loading="lazy">
+              <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Terry</p>
+            </div>
+            <div class="text-center">
+              <img src="assets/photos14teachersandlecturers/IMG_5735.JPG" alt="Teacher" class="w-full h-40 object-cover rounded" loading="lazy">
+              <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Teacher</p>
+            </div>
+            <div class="text-center">
+              <img src="assets/photos14teachersandlecturers/11e38fa6-cb37-4316-97ed-1226904cc36e-2 2.JPG" alt="Teacher" class="w-full h-40 object-cover rounded" loading="lazy">
+              <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Teacher</p>
             </div>
           </div>
         </div>
@@ -681,7 +774,7 @@
   <footer id="footer" class="text-white" style="background-color: var(--green-primary);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-24 grid grid-cols-1 lg:grid-cols-12 gap-14">
       <div class="lg:col-span-5">
-        <img src="assets/teachers-academy-logo_57.png" alt="IPF Teacher's Academy" class="h-20 w-auto mb-6" style="filter: brightness(0) invert(1);">
+        <img src="assets/teachers-academy-logo_57.png" alt="IPF Teacher's Academy" class="h-28 w-auto mb-6" style="border-radius: 50%;">
         <p class="mt-3 font-serif text-4xl text-white leading-tight">Natural Perfumery <em class="italic">Teacher's Academy</em></p>
         <p class="mt-6 text-[17px] leading-[1.8] max-w-xl" style="color: var(--ivory);">A Paris-based academy preserving and transmitting the heritage of natural perfumery to perfumers, teachers and schools across the world. IPF Certification since 1995.</p>
         <div class="mt-8 flex gap-5 text-white">
@@ -696,7 +789,7 @@
         <ul class="mt-6 space-y-3 text-[17px] text-white">
           <li><a href="programs.html" class="hover:opacity-70 transition-colors">Programs</a></li>
           <li><a href="#teachers" class="hover:opacity-70 transition-colors">Teachers</a></li>
-          <li><a href="certified-graduates.html" class="hover:opacity-70 transition-colors">IPF Certification</a></li>
+          <li><a href="https://www.perfumefoundation.org" target="_blank" class="hover:opacity-70 transition-colors">IPF Certification</a></li>
           <li><a href="why-choose-us.html" class="hover:opacity-70 transition-colors">Why Choose Us</a></li>
           <li><a href="#footer" class="hover:opacity-70 transition-colors">Contact</a></li>
         </ul>
@@ -708,7 +801,11 @@
           <input type="email" placeholder="Your email" class="bg-transparent border px-4 py-3 text-[17px] text-white placeholder:text-white/50 focus:outline-none transition-colors" style="border-color: rgba(247,243,236,0.3);">
           <button type="submit" class="border px-6 py-3 text-[16px] font-medium uppercase tracking-[0.18em] text-white hover:bg-white hover:text-[var(--green-primary)] transition-all self-start" style="border-color: white;">Subscribe to Newsletter</button>
         </form>
-        <address class="not-italic mt-10 text-[16px] leading-[1.8] text-white">49 Quai des Grands Augustins<br>75006 Paris, France<br><a href="tel:+33659764466" class="hover:opacity-70 transition-colors">+33 6 5976 4466</a></address>
+        <address class="not-italic mt-10 text-[16px] leading-[1.8] text-white">49 Quai des Grands Augustins<br>75006 Paris, France</address>
+        <a href="https://wa.me/33659764466" target="_blank" class="mt-5 inline-flex items-center gap-3 border px-5 py-3 text-[15px] font-medium uppercase tracking-[0.14em] text-white hover:bg-white hover:text-[var(--green-primary)] transition-all" style="border-color: white;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
       </div>
     </div>
     <div class="border-t" style="border-color: rgba(247,243,236,0.15);">
@@ -726,28 +823,28 @@
       else { h.style.boxShadow = 'none'; h.style.backdropFilter = 'none'; h.style.backgroundColor = 'var(--ivory)'; }
     });
     const faqs = [
-      { q: "How does online learning work?", a: "Each week a new module is released in your student space. You read the lessons, complete practical exercises with your sample kit, submit your assignments and receive personal feedback from your teacher. Regular Zoom meetings are scheduled to discuss progress." },
+      { q: "How does online learning work?", a: "Each week a new module is released in your student space. You read the lessons, complete practical exercises submit your assignments and receive personal feedback from your teacher. Regular Zoom meetings are scheduled to discuss progress." },
       { q: "Do I need previous experience?", a: "No. Our Natural Perfumery foundation course is designed for absolute beginners. Advanced programs require completion of prerequisite courses, which is detailed on each course page." },
-      { q: "How can I learn olfaction online?", a: "Olfaction is trained through structured exercises with your sample kit, guided olfactive memory work, weekly assignments reviewed by your teacher and personal Zoom sessions. The methodology has been refined over more than 30 years." },
+      { q: "How can I learn olfaction online?", a: "Olfaction is trained through structured exercises guided olfactive memory work, weekly assignments reviewed by your teacher and personal Zoom sessions. The methodology has been refined over more than 30 years." },
       { q: "Can I study while working full-time?", a: "Yes. The program is designed for working professionals. Modules are released weekly but you study at your own pace, on your own schedule." },
       { q: "How long are the courses?", a: "Courses range from 6 to 16 weeks depending on the program. The Master Natural Perfumery program is our longest and most comprehensive certification." },
       { q: "When do courses start?", a: "Enrolment is open year-round. Once you enrol, a personal Zoom meeting is arranged with your teacher to set your start date." },
       { q: "Can I pay in instalments?", a: "Yes. All courses and masterclasses can be paid in 3 or 4 instalments at no extra cost. This option is available on every program." },
     ];
     const faqContainer = document.getElementById('faq-container');
-    let openFaq = 0;
+    const openFaqs = new Set([0]);
     function renderFaqs() {
       faqContainer.innerHTML = faqs.map((f, i) => `
         <div class="border-b" style="border-color: rgba(11,65,49,0.15);">
           <button onclick="toggleFaq(${i})" class="w-full flex justify-between items-center gap-6 py-6 text-left">
             <span class="font-serif text-xl lg:text-2xl" style="color: var(--green-primary);">${f.q}</span>
-            <span class="text-3xl leading-none transition-transform" style="color: var(--green-primary); transform: rotate(${openFaq === i ? '45deg' : '0deg'});">+</span>
+            <span class="text-3xl leading-none transition-transform" style="color: var(--green-primary); transform: rotate(${openFaqs.has(i) ? '45deg' : '0deg'});">+</span>
           </button>
-          ${openFaq === i ? `<p class="pb-7 pr-10 text-[18px] leading-[1.8]" style="color: var(--text-dark);">${f.a}</p>` : ''}
+          ${openFaqs.has(i) ? `<p class="pb-7 pr-10 text-[18px] leading-[1.8]" style="color: var(--text-dark);">${f.a}</p>` : ''}
         </div>
       `).join('');
     }
-    function toggleFaq(i) { openFaq = openFaq === i ? null : i; renderFaqs(); }
+    function toggleFaq(i) { if (openFaqs.has(i)) { openFaqs.delete(i); } else { openFaqs.add(i); } renderFaqs(); }
     renderFaqs();
   </script>
 
