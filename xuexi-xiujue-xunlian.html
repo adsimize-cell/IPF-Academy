@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学习嗅觉训练 - IPF Academy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>tailwind.config={theme:{extend:{fontFamily:{serif:['"Cormorant Garamond"','"Noto Serif SC"','Georgia','serif'],sans:['"Montserrat"','"Noto Sans SC"','system-ui','sans-serif']}}}}</script>
+  <style>
+    :root{--green-primary:#0b4131;--green-secondary:#1a5c44;--ivory:#f7f3ec;--soft-sage:#8fac8a;--light-sage:#c8d9c6;--text-dark:#2a2a2a}
+    html{scroll-behavior:smooth}body{font-family:'Montserrat','Noto Sans SC',system-ui,sans-serif;-webkit-font-smoothing:antialiased;color:var(--text-dark);font-weight:500;font-size:18px;text-align:left;line-height:1.9}
+    h1,h2,h3,h4,h5{font-family:'Cormorant Garamond','Noto Serif SC',Georgia,serif;font-weight:600;letter-spacing:0}
+    .payment-badge { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--green-primary); border: 2px solid var(--green-primary); padding: 10px 20px; font-size: 16px; font-weight: 600; }
+    .payment-badge svg { flex-shrink: 0; }
+    .powr-paypal-button{min-height:44px}
+  </style>
+</head>
+<body class="bg-white">
+
+  <header id="nav-header" class="sticky top-0 z-50 w-full transition-all duration-500" style="background-color: var(--ivory);">
+    <div class="mx-auto flex max-w-[1680px] items-center justify-between gap-4 px-6 py-4 lg:px-10">
+      <a href="index.html" class="shrink-0 flex items-center gap-3">
+        <img src="assets/teachers-academy-logo_57.png" alt="IPF Natural Perfumery Teacher's Academy" class="h-14 w-auto sm:h-16" style="background-color: var(--ivory); border-radius: 50%;">
+      </a>
+      <nav class="hidden xl:flex items-center gap-2 2xl:gap-5">
+        <a href="programs.html" class="text-[13px] 2xl:text-[15px] font-medium hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">课程</a>
+        <a href="index.html#teachers" class="text-[13px] 2xl:text-[15px] font-medium hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">讲师</a>
+        <a href="https://www.perfumefoundation.org" target="_blank" class="text-[13px] 2xl:text-[15px] font-medium hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">IPF 认证</a>
+        <a href="why-choose-us.html" class="text-[13px] 2xl:text-[15px] font-medium hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">为何选择我们</a>
+        <a href="contact.html" class="text-[13px] 2xl:text-[15px] font-medium hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">联系我们</a>
+      </nav>
+      <div class="hidden xl:flex items-center gap-2 shrink-0">
+        <a href="#enrol" class="text-white text-[14px] font-medium px-4 py-2.5 hover:opacity-90 transition-colors whitespace-nowrap" style="background-color: var(--green-primary);">立即开始</a>
+      </div>
+      <button class="xl:hidden p-1" style="color: var(--green-primary);" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" aria-label="菜单">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden xl:hidden border-t" style="border-color: rgba(11,65,49,0.1); background-color: var(--ivory);">
+      <div class="px-6 py-8 flex flex-col gap-5">
+        <a href="#enrol" class="text-white text-[16px] font-medium px-5 py-3.5 text-center" style="background-color: var(--green-primary);">立即开始</a>
+        <a href="programs.html" class="text-[16px] font-medium" style="color: var(--green-primary);">课程</a>
+        <a href="index.html#teachers" class="text-[16px] font-medium" style="color: var(--green-primary);">讲师</a>
+        <a href="https://www.perfumefoundation.org" target="_blank" class="text-[16px] font-medium" style="color: var(--green-primary);">IPF 认证</a>
+        <a href="why-choose-us.html" class="text-[16px] font-medium" style="color: var(--green-primary);">为何选择我们</a>
+        <a href="contact.html" class="text-[16px] font-medium" style="color: var(--green-primary);">联系我们</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+    <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px]" style="color:var(--green-primary);"><a href="programs.html" class="hover:opacity-80">课程</a><span class="mx-3">&rarr;</span><span>学习嗅觉训练</span></div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section style="background:var(--ivory);">
+      <div class="mx-auto max-w-[1680px] grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 px-6 lg:px-12 py-16 lg:py-20 items-center">
+        <div class="lg:col-span-7">
+          <p class="text-[15px] sm:text-[16px] tracking-[0.2em] font-medium" style="color:var(--soft-sage);">课程 &middot; 4 周</p>
+          <h1 class="mt-6 font-serif text-[2.5rem] sm:text-5xl lg:text-[3.9rem] leading-[1.15]" style="color:var(--green-primary);">学习<em class="italic font-normal">嗅觉训练</em></h1>
+          <p class="mt-7 text-[17px] sm:text-[18px] leading-[1.9] max-w-[680px]" style="color:var(--text-dark);">这是一门由 Creezy Courtoy 创立的在线嗅觉训练课程。您将学习正确地呼吸与嗅闻,以充分感受气味,并学会保护和发展自己的嗅觉。本课程无需购买任何材料,因为所需的气味就在您周围:厨房、自然与城市之中。</p>
+          <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3">
+            <span class="text-[15px] sm:text-[16px] font-medium" style="color:var(--green-primary);">&#10022; IPF 认证</span>
+            <span class="text-[15px] sm:text-[16px] font-medium" style="color:var(--green-primary);">&#10022; 在家学习</span>
+            <span class="text-[15px] sm:text-[16px] font-medium" style="color:var(--green-primary);">&#10022; 无需购买材料</span>
+            <span class="text-[15px] sm:text-[16px] font-medium" style="color:var(--green-primary);">&#10022; 可分期付款</span>
+          </div>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="#enrol" class="inline-flex items-center px-8 py-3.5 text-[15px] font-medium text-white" style="background:var(--green-primary);">立即报名</a>
+            <a href="#curriculum" class="inline-flex items-center px-8 py-3.5 text-[15px] font-medium border" style="border-color:var(--green-primary);color:var(--green-primary);">查看课程大纲</a>
+          </div>
+        </div>
+        <div class="lg:col-span-5 relative">
+          <img src="assets/16.png" alt="学习嗅觉训练" class="w-full h-[360px] sm:h-[440px] lg:h-[560px] object-cover" loading="eager">
+          <div class="lg:absolute lg:-bottom-10 lg:-left-10 mt-6 lg:mt-0 bg-white border p-7 max-w-[340px]" style="border-color:rgba(11,65,49,.2);">
+            <p class="text-[15px] tracking-[0.15em]" style="color:var(--soft-sage);">授课讲师</p>
+            <p class="mt-3 font-serif text-xl leading-snug" style="color:var(--green-primary);">Creezy Courtoy</p>
+            <p class="mt-2 text-[16px] leading-[1.8]" style="color:var(--text-dark);">人类学家、嗅觉专家,IPF 主席,新奢华准则(New Luxury Code)的创立者。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="bg-white py-16 lg:py-20">
+      <div class="mx-auto max-w-[1560px] grid grid-cols-1 lg:grid-cols-12 gap-14 px-6 lg:px-12">
+        <div class="lg:col-span-7">
+          <p class="text-[15px] sm:text-[16px] tracking-[0.2em] font-medium" style="color:var(--soft-sage);">概述</p>
+          <h2 class="mt-5 font-serif text-4xl lg:text-[3.1rem] leading-[1.2]" style="color:var(--green-primary);">关于本课程</h2>
+          <div class="mt-8 space-y-5 text-[17px] leading-[1.95] max-w-[770px]" style="color:var(--text-dark);">
+            <p>本课程由 Creezy Courtoy 在其嗅觉研究的基础上创立,以在线方式教授,使用日常环境中的天然气味,无需额外材料。</p>
+            <p>每个模块之后都设有测验。课程开始前会安排一次 Zoom 私人会面,课程结束后进行回访。本课程为 IPF 嗅觉训练认证项目中的密集课程,属于国际香水基金会(International Perfume Foundation)课程体系的一部分。</p>
+          </div>
+        </div>
+        <aside class="lg:col-span-5">
+          <div class="border p-8 lg:sticky lg:top-28" style="background:var(--ivory);border-color:rgba(11,65,49,.2);">
+            <p class="text-[15px] tracking-[0.15em] font-medium" style="color:var(--soft-sage);">课程详情</p>
+            <dl class="mt-6 divide-y" style="border-color:rgba(11,65,49,.15);">
+              <div class="flex justify-between gap-4 py-3 text-[16px]"><dt style="color:var(--green-primary);">时长</dt><dd class="font-medium text-right" style="color:var(--green-primary);">4 周 &middot; 每周 2 个模块</dd></div>
+              <div class="flex justify-between gap-4 py-3 text-[16px]"><dt style="color:var(--green-primary);">形式</dt><dd class="font-medium text-right" style="color:var(--green-primary);">在家学习</dd></div>
+              <div class="flex justify-between gap-4 py-3 text-[16px]"><dt style="color:var(--green-primary);">语言</dt><dd class="font-medium text-right" style="color:var(--green-primary);">中文</dd></div>
+              <div class="flex justify-between gap-4 py-3 text-[16px]"><dt style="color:var(--green-primary);">认证</dt><dd class="font-medium text-right" style="color:var(--green-primary);">IPF 证书</dd></div>
+              <div class="flex justify-between gap-4 py-3 text-[16px]"><dt style="color:var(--green-primary);">价格</dt><dd class="font-medium text-right" style="color:var(--green-primary);">895&euro;</dd></div>
+            </dl>
+            <p class="mt-3 text-[14px]" style="color:var(--text-dark);">含 200&euro; 认证费。</p>
+            <div class="mt-6"><a href="#enrol" class="block w-full text-center px-8 py-3.5 text-[15px] font-medium text-white" style="background:var(--green-primary);">立即报名</a></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CURRICULUM -->
+    <section id="curriculum" class="py-16 lg:py-20" style="background:var(--ivory);">
+      <div class="mx-auto max-w-[1320px] px-6 lg:px-12">
+        <div class="text-center max-w-[1080px] mx-auto">
+          <p class="text-[15px] sm:text-[16px] tracking-[0.2em] font-medium" style="color:var(--soft-sage);">课程大纲</p>
+          <h2 class="mt-5 font-serif text-4xl lg:text-[3.3rem] leading-[1.2]" style="color:var(--green-primary);">八个模块</h2>
+        </div>
+        <div class="mt-12" id="accordion"></div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATION -->
+    <section class="text-white py-16 lg:py-20" style="background:var(--green-primary);">
+      <div class="mx-auto max-w-[1560px] grid grid-cols-1 lg:grid-cols-12 gap-14 px-6 lg:px-12 items-center">
+        <div class="lg:col-span-7">
+          <p class="text-[15px] sm:text-[16px] tracking-[0.2em] font-medium" style="color:var(--light-sage);">认证</p>
+          <h2 class="mt-5 font-serif text-4xl lg:text-[3.3rem] leading-[1.2]">获得国际<em class="italic">认可的证书</em></h2>
+          <p class="mt-8 text-[17px] leading-[1.95] max-w-[700px]" style="color:var(--ivory);">课程结束后,您将获得由国际香水基金会颁发的带有二维码的证书,您的名字也会被列入基金会的认证名录中。</p>
+        </div>
+        <div class="lg:col-span-5">
+          <div class="p-10 text-center border" style="background:var(--ivory);color:var(--green-primary);border-color:rgba(200,217,198,.4);">
+            <p class="text-[15px] tracking-[0.2em]" style="color:var(--soft-sage);">结业证书</p>
+            <p class="mt-6 font-serif text-3xl leading-snug"><em class="italic">嗅觉训练</em></p>
+            <p class="mt-6 text-[15px] tracking-[0.15em]">已验证 &middot; 二维码</p>
+            <div class="mt-6 mx-auto w-20 h-20 grid place-items-center" style="background:rgba(11,65,49,.1);"><div class="grid grid-cols-4 gap-px" id="qr-dots"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENROLMENT / PAYMENT -->
+    <section id="enrol" class="bg-white py-16 lg:py-20">
+      <div class="mx-auto max-w-[1080px] px-6 lg:px-12">
+        <div class="text-center max-w-[1080px] mx-auto">
+          <p class="text-[15px] sm:text-[16px] tracking-[0.2em] font-medium" style="color:var(--soft-sage);">报名</p>
+          <h2 class="mt-5 font-serif text-4xl lg:text-[3.3rem] leading-[1.2]" style="color:var(--green-primary);">报名参加本课程</h2>
+          <p class="mt-4 text-[18px] font-medium" style="color:var(--green-primary);">立即预订,确保您的席位</p>
+        </div>
+        <div class="mt-12 border" style="border-color:rgba(11,65,49,.2);">
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="p-10 flex flex-col justify-center" style="background:var(--ivory);">
+              <p class="text-[15px] tracking-[0.15em]" style="color:var(--soft-sage);">课程价格</p>
+              <p class="mt-3 font-serif text-6xl leading-none" style="color:var(--green-primary);">895&euro;</p>
+              <p class="mt-3 text-[16px]" style="color:var(--text-dark);">含 200&euro; 认证费。</p>
+              <div class="mt-5 payment-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                <span>可分期付款(Klarna / PayPal)</span>
+              </div>
+            </div>
+            <div class="p-10 flex flex-col justify-center gap-5 border-t md:border-t-0 md:border-l" style="border-color:rgba(11,65,49,.2);">
+              <a href="https://buy.stripe.com/eVaaIn0VldjCaB2aF9" target="_blank" rel="noopener" class="block w-full text-center px-8 py-4 text-[15px] font-semibold text-white transition-opacity hover:opacity-90" style="background:var(--green-primary);">立即购买</a>
+              <div>
+                <p class="mb-2 text-[13px] tracking-[0.15em] text-center" style="color:var(--soft-sage);">或 先购买 &ndash; 后付款</p>
+                <div class="powr-paypal-button" id="1380818b_1642544140"></div>
+              </div>
+              <div class="flex items-center justify-center gap-3 opacity-80 flex-wrap">
+                <span class="text-[13px]" style="color:var(--text-dark);">Visa</span><span class="text-[13px]" style="color:var(--soft-sage);">&bull;</span>
+                <span class="text-[13px]" style="color:var(--text-dark);">Mastercard</span><span class="text-[13px]" style="color:var(--soft-sage);">&bull;</span>
+                <span class="text-[13px]" style="color:var(--text-dark);">Amex</span><span class="text-[13px]" style="color:var(--soft-sage);">&bull;</span>
+                <span class="text-[13px]" style="color:var(--text-dark);">PayPal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="text-white" style="background-color: var(--green-primary);">
+    <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-20 grid grid-cols-1 lg:grid-cols-12 gap-14">
+      <div class="lg:col-span-5">
+        <img src="assets/teachers-academy-logo_57.png" alt="IPF Teacher's Academy" class="h-28 w-auto mb-6" style="border-radius: 50%;">
+        <p class="mt-3 font-serif text-4xl text-white leading-tight">Natural Perfumery <em class="italic">Teacher's Academy</em></p>
+        <p class="mt-6 text-[17px] leading-[1.9] max-w-xl" style="color: var(--ivory);">一所位于巴黎的学院,致力于向全球的调香师、教师与学校保存并传承天然香水的宝贵遗产。自 2017 年起获得 IPF 认证。</p>
+      </div>
+      <div class="lg:col-span-3">
+        <p class="text-[16px] tracking-[0.15em]" style="color: var(--light-sage);">探索</p>
+        <ul class="mt-6 space-y-3 text-[17px] text-white">
+          <li><a href="programs.html" class="hover:opacity-70 transition-colors">课程</a></li>
+          <li><a href="index.html#teachers" class="hover:opacity-70 transition-colors">讲师</a></li>
+          <li><a href="https://www.perfumefoundation.org" target="_blank" class="hover:opacity-70 transition-colors">IPF 认证</a></li>
+          <li><a href="why-choose-us.html" class="hover:opacity-70 transition-colors">为何选择我们</a></li>
+          <li><a href="contact.html" class="hover:opacity-70 transition-colors">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-4">
+        <p class="text-[16px] tracking-[0.15em]" style="color: var(--light-sage);">订阅通讯</p>
+        <p class="mt-5 text-[17px] leading-relaxed text-white">每月了解天然香水、认证与新课程的资讯。</p>
+        <form class="mt-6 flex flex-col gap-3 max-w-sm" onsubmit="event.preventDefault()">
+          <input type="email" placeholder="您的邮箱" class="bg-transparent border px-4 py-3 text-[17px] text-white placeholder:text-white/50 focus:outline-none transition-colors" style="border-color: rgba(247,243,236,0.3);">
+          <button type="submit" class="border px-6 py-3 text-[16px] font-medium text-white hover:bg-white hover:text-[var(--green-primary)] transition-all self-start" style="border-color: white;">订阅</button>
+        </form>
+        <address class="not-italic mt-10 text-[16px] leading-[1.9] text-white">49 Quai des Grands Augustins<br>75006 Paris, France<br><a href="tel:+33659764466" class="hover:opacity-70 transition-colors">+33 6 5976 4466</a></address>
+        <a href="https://wa.me/33659764466" target="_blank" class="mt-5 inline-flex items-center gap-3 border px-5 py-3 text-[15px] font-medium text-white hover:bg-white hover:text-[var(--green-primary)] transition-all" style="border-color: white;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="border-t" style="border-color: rgba(247,243,236,0.15);">
+      <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-[15px] text-white">
+        <p>&copy; 1995&ndash;2026 IPF Natural Perfumery Teacher's Academy</p>
+        <p>由国际香水基金会认证</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const MODULES=[
+      {title:"模块 1 - 嗅觉入门",items:["嗅觉的历史","嗅觉在现代社会中的衰退","嗅觉的主要用途","动物界的嗅觉实例","嗅觉的重要性"]},
+      {title:"模块 2 - 气味入门",items:["气味的本质与嗅觉系统","气味的定义","气味的功能与力量","人体气味"]},
+      {title:"模块 3 - 嗅觉心理学",items:["香气、香味与香水如何影响我们的心智","传递给大脑的嗅觉信息","感觉与记忆"]},
+      {title:"模块 4 - 嗅觉生理学",items:["探索香气对身体的影响","随香气在体内旅行","传递给激素的信息","传递给神经系统的信息","传递给 DNA 的信息"]},
+      {title:"模块 5 - 嗅觉的训练",items:["呼吸与嗅闻:学习正确呼吸以享受气味","保护与发展嗅觉的方法","嗅觉缺失、嗅觉减退与嗅觉障碍","恢复嗅觉的方法"]},
+      {title:"模块 6 - 花卉与植物的有益力量",items:["芳香疗法入门","多种植物及其有益力量的实例"]},
+      {title:"模块 7 - 嗅觉研究",items:["研究的历史","嗅觉在芳香疗法中的重要性","植物 DNA 修复人类 DNA 入门"]},
+      {title:"模块 8 - 成为认证嗅觉训练师",items:["流程与规则","新奢华准则(New Luxury Code)"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    let qr='';for(let i=0;i<16;i++)qr+=`<div class="w-2 h-2" style="background:${i%3===0?'var(--green-primary)':'transparent'};"></div>`;
+    document.getElementById('qr-dots').innerHTML=qr;
+    window.addEventListener('scroll',()=>{const h=document.getElementById('nav-header');if(window.scrollY>12){h.style.boxShadow='0 1px 20px rgba(11,65,49,.06)';h.style.backdropFilter='blur(12px)';h.style.backgroundColor='rgba(247,243,236,0.95)'}else{h.style.boxShadow='none';h.style.backdropFilter='none';h.style.backgroundColor='var(--ivory)'}});
+  </script>
+  <script src="https://www.powr.io/powr.js?platform=html"></script>
+</body>
+</html>
