@@ -12,8 +12,8 @@
   <style>
     :root{--green-primary:#0b4131;--green-secondary:#1a5c44;--ivory:#f7f3ec;--soft-sage:#8fac8a;--light-sage:#c8d9c6;--text-dark:#2a2a2a}
     html{scroll-behavior:smooth}body{font-family:'Montserrat',system-ui,sans-serif;-webkit-font-smoothing:antialiased;color:var(--text-dark);font-weight:500;font-size:18px;text-align:justify}
-    h1,h2,h3,h4,h5{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;letter-spacing:-0.01em}
-    .payment-badge { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--green-primary); border: 2px solid var(--green-primary); padding: 10px 20px; font-size: 16px; font-weight: 600; letter-spacing: 0.04em; }
+    h1,h2,h3,h4,h5{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;letter-spacing:-0.01em;text-align:left}
+    .payment-badge { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--green-primary); border: 2px solid var(--green-primary); padding: 10px 20px; font-size: 16px; font-weight: 600; text-align: left; letter-spacing: 0.04em; }
     .payment-badge svg { flex-shrink: 0; }
     .powr-paypal-button{min-height:44px}
   </style>
@@ -171,8 +171,6 @@
           <div class="p-10 text-center border" style="background:var(--ivory);color:var(--green-primary);border-color:rgba(200,217,198,.4);">
             <p class="text-[15px] uppercase tracking-[0.3em]" style="color:var(--soft-sage);">Certificate of Achievement</p>
             <p class="mt-6 font-serif text-3xl leading-snug">Perfume Design &amp; <em class="italic">Storytelling</em></p>
-            <p class="mt-6 text-[15px] uppercase tracking-[0.25em]">Verified &middot; QR Linked</p>
-            <div class="mt-6 mx-auto w-20 h-20 grid place-items-center" style="background:rgba(11,65,49,.1);"><div class="grid grid-cols-4 gap-px" id="qr-dots"></div></div>
           </div>
         </div>
       </div>
@@ -290,8 +288,6 @@
         </div>`).join('');
     }
     renderAcc();
-    let qr='';for(let i=0;i<16;i++)qr+=`<div class="w-2 h-2" style="background:${i%3===0?'var(--green-primary)':'transparent'};"></div>`;
-    document.getElementById('qr-dots').innerHTML=qr;
     window.addEventListener('scroll',()=>{const h=document.getElementById('nav-header');if(window.scrollY>12){h.style.boxShadow='0 1px 20px rgba(11,65,49,.06)';h.style.backdropFilter='blur(12px)';h.style.backgroundColor='rgba(247,243,236,0.95)'}else{h.style.boxShadow='none';h.style.backdropFilter='none';h.style.backgroundColor='var(--ivory)'}});
   </script>
   <script src="https://www.powr.io/powr.js?platform=html"></script>
