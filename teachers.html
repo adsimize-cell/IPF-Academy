@@ -148,7 +148,7 @@
     ];
     function initials(n){return n.replace(/^Dr\s+/,'').split(/\s+/).slice(0,2).map(w=>w[0]).join('').toUpperCase();}
     document.getElementById('facultyGrid').innerHTML=FACULTY.map(t=>`
-      <article class="flex flex-col h-full border p-8" style="border-color:rgba(11,65,49,.18);background:#fff;">
+      <article class="flex flex-col h-full border p-8 text-left" style="border-color:rgba(11,65,49,.18);background:#fff;">
         <div class="flex items-center gap-4">
           <div class="avatar shrink-0" style="width:64px;height:64px;border-radius:50%;font-size:22px;">${initials(t.name)}</div>
           <div>
