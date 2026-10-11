@@ -69,7 +69,7 @@
     <!-- FOUNDER VISION -->
     <section class="py-16 lg:py-20" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1560px] grid grid-cols-1 lg:grid-cols-12 gap-14 px-6 lg:px-12 items-center">
-        <div class="lg:col-span-5"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/10.png" alt="Creezy Courtoy" class="w-full h-[520px] object-cover" loading="lazy"></div>
+        <div class="lg:col-span-5"><img src="/assets/10.png" alt="Creezy Courtoy" class="w-full h-[520px] object-cover" loading="lazy"></div>
         <div class="lg:col-span-7">
           <p class="text-[17px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Founder Vision</p>
           <h2 class="mt-5 font-serif text-5xl lg:text-[3.3rem] leading-[1.1]" style="color:var(--green-primary);">A Vision for <em class="italic">Global Heritage</em></h2>

@@ -23,7 +23,7 @@
           </div>
         </div>
         <div class="lg:col-span-5 relative">
-          <img src="https://adsimize-cell.github.io/IPF-Academy/assets/16.png" alt="Entraînement du sens olfactif" class="w-full h-[360px] sm:h-[440px] lg:h-[560px] object-cover" loading="eager">
+          <img src="/assets/16.png" alt="Entraînement du sens olfactif" class="w-full h-[360px] sm:h-[440px] lg:h-[560px] object-cover" loading="eager">
           <div class="lg:absolute lg:-bottom-10 lg:-left-10 mt-6 lg:mt-0 bg-white border p-7 max-w-[340px]" style="border-color:rgba(11,65,49,.2);">
             <p class="text-[15px] uppercase tracking-[0.25em]" style="color:var(--soft-sage);">Enseigné par</p>
             <p class="mt-3 font-serif text-xl leading-snug" style="color:var(--green-primary);">Creezy Courtoy</p>

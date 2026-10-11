@@ -13,7 +13,7 @@
           <p class="mt-7 text-[17px] sm:text-[18px] leading-[1.75] max-w-[680px]" style="color:var(--text-dark);">The heritage of perfume brought to life through exhibitions and installations - a journey along <em class="italic">Les Routes du Parfum</em>, presenting pieces of the Courtoy Collection.</p>
         </div>
         <div class="lg:col-span-5">
-          <img src="https://adsimize-cell.github.io/IPF-Academy/assets/16.png" alt="Exhibitions - Les Routes du Parfum" class="w-full h-[360px] sm:h-[440px] lg:h-[520px] object-cover" loading="eager">
+          <img src="/assets/16.png" alt="Exhibitions - Les Routes du Parfum" class="w-full h-[360px] sm:h-[440px] lg:h-[520px] object-cover" loading="eager">
         </div>
       </div>
     </section>

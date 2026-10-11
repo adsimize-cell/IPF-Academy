@@ -26,7 +26,7 @@
 <header id="nav-header" class="sticky top-0 z-50 w-full transition-all duration-500" style="background-color: var(--ivory);">
     <div class="mx-auto flex max-w-[1680px] items-center justify-between gap-4 px-6 py-4 lg:px-10">
       <a href="/" class="shrink-0 flex items-center gap-3">
-        <img src="https://adsimize-cell.github.io/IPF-Academy/assets/teachers-academy-logo_57.png" alt="IPF Natural Perfumery Teacher's Academy" class="h-14 w-auto sm:h-16" style="background-color: var(--ivory); border-radius: 50%;">
+        <img src="/assets/teachers-academy-logo_57.png" alt="IPF Natural Perfumery Teacher's Academy" class="h-14 w-auto sm:h-16" style="background-color: var(--ivory); border-radius: 50%;">
       </a>
       <nav class="hidden xl:flex items-center gap-2 2xl:gap-5">
         <div class="relative" onmouseenter="document.getElementById('progDD').classList.remove('hidden')" onmouseleave="document.getElementById('progDD').classList.add('hidden')">

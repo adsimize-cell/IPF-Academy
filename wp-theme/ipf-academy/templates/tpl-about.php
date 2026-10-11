@@ -13,7 +13,7 @@
           <p class="mt-7 text-[17px] sm:text-[18px] leading-[1.75] max-w-[680px]" style="color:var(--text-dark);">Ever since it was created in 1995, the International Perfume Foundation has been resolutely committed to the protection of the heritage of natural perfumery.</p>
         </div>
         <div class="lg:col-span-5">
-          <img src="https://adsimize-cell.github.io/IPF-Academy/assets/teachers-academy-logo_57.png" alt="International Perfume Foundation logo" class="w-full h-[360px] sm:h-[440px] lg:h-[520px] object-contain p-8" style="background-color: var(--ivory);" loading="eager">
+          <img src="/assets/teachers-academy-logo_57.png" alt="International Perfume Foundation logo" class="w-full h-[360px] sm:h-[440px] lg:h-[520px] object-contain p-8" style="background-color: var(--ivory);" loading="eager">
         </div>
       </div>
     </section>
@@ -53,7 +53,7 @@
           </div>
         </div>
         <div class="lg:col-span-5">
-          <img src="https://adsimize-cell.github.io/IPF-Academy/assets/new-luxury-code.jpg" alt="The New Luxury Code" class="w-full mb-8 border" style="border-color:rgba(11,65,49,.15);background:white;">
+          <img src="/assets/new-luxury-code.jpg" alt="The New Luxury Code" class="w-full mb-8 border" style="border-color:rgba(11,65,49,.15);background:white;">
           <div class="border p-10" style="background:white;border-color:rgba(11,65,49,.2);">
             <p class="text-[15px] uppercase tracking-[0.28em]" style="color:var(--soft-sage);">Creezy Courtoy</p>
             <p class="mt-3 font-serif text-2xl leading-snug" style="color:var(--green-primary);">IPF Chairman, Creator of The New Luxury Code</p>

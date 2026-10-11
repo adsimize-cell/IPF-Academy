@@ -37,10 +37,10 @@
           <h2 class="mt-5 font-serif text-4xl lg:text-[3.3rem] leading-[1.1]" style="color:var(--green-primary);">On Stage</h2>
         </div>
         <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div class="overflow-hidden"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/speakers-conf-1.jpg" alt="Creezy Courtoy giving a conference" class="w-full h-72 lg:h-80 object-cover" loading="lazy"></div>
-          <div class="overflow-hidden"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/speakers-conf-2.jpg" alt="IPF conference" class="w-full h-72 lg:h-80 object-cover" loading="lazy"></div>
-          <div class="overflow-hidden"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/speakers-conf-3.jpg" alt="IPF conference" class="w-full h-72 lg:h-80 object-cover" loading="lazy"></div>
-          <div class="overflow-hidden"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/speakers-conf-4.jpg" alt="IPF conference" class="w-full h-72 lg:h-80 object-cover" loading="lazy"></div>
+          <div class="overflow-hidden"><img src="/assets/speakers-conf-1.jpg" alt="Creezy Courtoy giving a conference" class="w-full h-72 lg:h-80 object-cover" loading="lazy"></div>
+          <div class="overflow-hidden"><img src="/assets/speakers-conf-2.jpg" alt="IPF conference" class="w-full h-72 lg:h-80 object-cover" loading="lazy"></div>
+          <div class="overflow-hidden"><img src="/assets/speakers-conf-3.jpg" alt="IPF conference" class="w-full h-72 lg:h-80 object-cover" loading="lazy"></div>
+          <div class="overflow-hidden"><img src="/assets/speakers-conf-4.jpg" alt="IPF conference" class="w-full h-72 lg:h-80 object-cover" loading="lazy"></div>
         </div>
       </div>
     </section>

@@ -17,7 +17,7 @@
           <a href="#enrol" class="inline-flex items-center px-8 py-3.5 text-[17px] font-medium uppercase tracking-[0.22em] border" style="border-color:var(--ivory);color:var(--ivory);">Pay in instalments</a>
         </div>
       </div>
-      <div class="relative h-32 overflow-hidden"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/8.png" alt="" class="w-full h-full object-cover opacity-20" loading="lazy"></div>
+      <div class="relative h-32 overflow-hidden"><img src="/assets/8.png" alt="" class="w-full h-full object-cover opacity-20" loading="lazy"></div>
     </section>
 
     <!-- INFO STRIP -->

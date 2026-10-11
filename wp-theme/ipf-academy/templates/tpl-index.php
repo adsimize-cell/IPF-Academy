@@ -71,9 +71,9 @@
         </div>
 
         <div class="lg:col-span-5 relative flex flex-col items-center gap-8">
-          <img src="https://adsimize-cell.github.io/IPF-Academy/assets/teachers-academy-logo_57.png" alt="IPF Natural Perfumery Teacher's Academy" class="w-48 lg:w-56 h-auto" style="background-color: var(--ivory); border-radius: 50%;">
+          <img src="/assets/teachers-academy-logo_57.png" alt="IPF Natural Perfumery Teacher's Academy" class="w-48 lg:w-56 h-auto" style="background-color: var(--ivory); border-radius: 50%;">
           <div class="relative overflow-hidden w-full">
-            <img src="https://adsimize-cell.github.io/IPF-Academy/assets/photos14teachersandlecturers/11e38fa6-cb37-4316-97ed-1226904cc36e-2 2.JPG" alt="Traditional botanical perfumery, museum illustration" class="w-full h-[400px] lg:h-[480px] object-contain" loading="eager">
+            <img src="/assets/photos14teachersandlecturers/11e38fa6-cb37-4316-97ed-1226904cc36e-2 2.JPG" alt="Traditional botanical perfumery, museum illustration" class="w-full h-[400px] lg:h-[480px] object-contain" loading="eager">
           </div>
           <div class="px-8 py-6 border max-w-[340px] text-center" style="background-color: var(--ivory); border-color: rgba(11,65,49,0.15);">
             <p class="text-[19px] font-semibold uppercase tracking-[0.22em]" style="color: var(--green-primary);">IPF Chairman</p>
@@ -127,20 +127,20 @@
           <p class="mt-6 text-[18px] leading-[1.8]" style="color: var(--text-dark);">For more than three decades, IPF and its educational initiatives have collaborated with public institutions, international organisations and leading hospitality and beauty industry stakeholders.</p>
         </div>
         <ul class="mt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-px border" style="background-color: rgba(11,65,49,0.12); border-color: rgba(11,65,49,0.12);">
-          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/UNESCO-logo-364BB2205E-seeklogo.com.png" alt="UNESCO" class="max-h-24 max-w-[160px] object-contain"></li>
-          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Logo EU Commission.jpeg" alt="European Commission" class="max-h-24 max-w-[160px] object-contain"></li>
-          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/logo_paris-logo_ae463.jpg" alt="Mairie de Paris" class="max-h-24 max-w-[160px] object-contain"></li>
-          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Logo Ville de Bruxelles.jpg" alt="Ville de Bruxelles" class="max-h-24 max-w-[160px] object-contain"></li>
-          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/LOGO_MUNICIPALITY_OF_ATHENS.png" alt="City of Athens" class="max-h-24 max-w-[160px] object-contain"></li>
-          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/logo technopolis.jpg" alt="Technopolis City of Athens" class="max-h-24 max-w-[160px] object-contain"></li>
-          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Hilton_Hotels_logo.svg.png" alt="Hilton Hotels" class="max-h-24 max-w-[160px] object-contain"></li>
-          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Brussels.jpg" alt="Conrad Brussels" class="max-h-24 max-w-[160px] object-contain"></li>
-          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Le_Meridien-logo-200x200.gif" alt="Le Méridien" class="max-h-24 max-w-[160px] object-contain"></li>
-          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/logo_cosmoprof.png" alt="Cosmoprof Worldwide Bologna" class="max-h-20 max-w-[160px] object-contain"></li>
-          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/logo_cosmo-talks.png" alt="Cosmo Talks" class="max-h-20 max-w-[160px] object-contain"></li>
-          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/NBS1483_EASYFAIRS_PCD_LOGO_RGB.png" alt="PCD Paris" class="max-h-24 max-w-[160px] object-contain"></li>
-          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Logo beauty Cluster.png" alt="Beauty Cluster Barcelona" class="max-h-24 max-w-[160px] object-contain"></li>
-          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/PHOTO-2026-02-21-11-04-31.jpg" alt="FragCon 2026" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/UNESCO-logo-364BB2205E-seeklogo.com.png" alt="UNESCO" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Logo EU Commission.jpeg" alt="European Commission" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/logo_paris-logo_ae463.jpg" alt="Mairie de Paris" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Logo Ville de Bruxelles.jpg" alt="Ville de Bruxelles" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/LOGO_MUNICIPALITY_OF_ATHENS.png" alt="City of Athens" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/logo technopolis.jpg" alt="Technopolis City of Athens" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Hilton_Hotels_logo.svg.png" alt="Hilton Hotels" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Brussels.jpg" alt="Conrad Brussels" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Le_Meridien-logo-200x200.gif" alt="Le Méridien" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/logo_cosmoprof.png" alt="Cosmoprof Worldwide Bologna" class="max-h-20 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/logo_cosmo-talks.png" alt="Cosmo Talks" class="max-h-20 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/NBS1483_EASYFAIRS_PCD_LOGO_RGB.png" alt="PCD Paris" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Logo beauty Cluster.png" alt="Beauty Cluster Barcelona" class="max-h-24 max-w-[160px] object-contain"></li>
+          <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/PHOTO-2026-02-21-11-04-31.jpg" alt="FragCon 2026" class="max-h-24 max-w-[160px] object-contain"></li>
         </ul>
       </div>
     </section>
@@ -159,7 +159,7 @@
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-20 items-center">
           <div class="lg:col-span-5 order-2 lg:order-1">
-            <img src="https://adsimize-cell.github.io/IPF-Academy/assets/12.png" alt="Antique perfume bottles, heritage of natural perfumery" class="w-full h-[520px] object-cover transition-transform duration-[1200ms] hover:scale-[1.03]" loading="lazy">
+            <img src="/assets/12.png" alt="Antique perfume bottles, heritage of natural perfumery" class="w-full h-[520px] object-cover transition-transform duration-[1200ms] hover:scale-[1.03]" loading="lazy">
           </div>
           <div class="lg:col-span-7 order-1 lg:order-2">
             <div class="space-y-5 text-[19px] leading-[1.85] max-w-[740px]" style="color: var(--text-dark);">
@@ -234,7 +234,7 @@
 
         <article class="mt-16 grid grid-cols-1 lg:grid-cols-12 bg-white overflow-hidden">
           <div class="lg:col-span-7 relative overflow-hidden">
-            <img src="https://adsimize-cell.github.io/IPF-Academy/assets/4.png" alt="Natural perfumery workbench with essential oils and notebook" class="w-full h-[420px] lg:h-full object-cover transition-transform duration-[1500ms] hover:scale-105" loading="lazy">
+            <img src="/assets/4.png" alt="Natural perfumery workbench with essential oils and notebook" class="w-full h-[420px] lg:h-full object-cover transition-transform duration-[1500ms] hover:scale-105" loading="lazy">
           </div>
           <div class="lg:col-span-5 p-10 lg:p-14 flex flex-col justify-center">
             <div class="flex flex-wrap gap-2">
@@ -257,7 +257,7 @@
 
         <div class="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           <article class="group bg-white flex flex-col transition-shadow duration-500 hover:shadow-[0_20px_60px_-30px_rgba(11,65,49,0.3)]">
-            <div class="overflow-hidden"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/2.png" alt="Master Natural Perfumery" class="w-full h-64 object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
+            <div class="overflow-hidden"><img src="/assets/2.png" alt="Master Natural Perfumery" class="w-full h-64 object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
             <div class="p-8 flex flex-col flex-1">
               <div class="flex items-center gap-3 text-[16px] uppercase tracking-[0.18em]" style="color: var(--soft-sage);"><span>Advanced</span><span class="w-1 h-1 rounded-full" style="background-color: var(--soft-sage);"></span><span>16 weeks</span></div>
               <h3 class="mt-4 font-serif text-3xl leading-snug" style="color: var(--green-primary);">Master Natural Perfumery</h3>
@@ -266,7 +266,7 @@
             </div>
           </article>
           <article class="group bg-white flex flex-col transition-shadow duration-500 hover:shadow-[0_20px_60px_-30px_rgba(11,65,49,0.3)]">
-            <div class="overflow-hidden"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/6.png" alt="Natural Olfaction Training" class="w-full h-64 object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
+            <div class="overflow-hidden"><img src="/assets/6.png" alt="Natural Olfaction Training" class="w-full h-64 object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
             <div class="p-8 flex flex-col flex-1">
               <div class="flex items-center gap-3 text-[16px] uppercase tracking-[0.18em]" style="color: var(--soft-sage);"><span>Professional</span><span class="w-1 h-1 rounded-full" style="background-color: var(--soft-sage);"></span><span>8 weeks</span></div>
               <h3 class="mt-4 font-serif text-3xl leading-snug" style="color: var(--green-primary);">Natural Olfaction Training</h3>
@@ -275,7 +275,7 @@
             </div>
           </article>
           <article class="group bg-white flex flex-col transition-shadow duration-500 hover:shadow-[0_20px_60px_-30px_rgba(11,65,49,0.3)]">
-            <div class="overflow-hidden"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/3.png" alt="Natural Aromatherapy" class="w-full h-64 object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
+            <div class="overflow-hidden"><img src="/assets/3.png" alt="Natural Aromatherapy" class="w-full h-64 object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
             <div class="p-8 flex flex-col flex-1">
               <div class="flex items-center gap-3 text-[16px] uppercase tracking-[0.18em]" style="color: var(--soft-sage);"><span>Professional</span><span class="w-1 h-1 rounded-full" style="background-color: var(--soft-sage);"></span><span>10 weeks</span></div>
               <h3 class="mt-4 font-serif text-3xl leading-snug" style="color: var(--green-primary);">Natural Aromatherapy</h3>
@@ -284,7 +284,7 @@
             </div>
           </article>
           <article class="group bg-white flex flex-col transition-shadow duration-500 hover:shadow-[0_20px_60px_-30px_rgba(11,65,49,0.3)]">
-            <div class="overflow-hidden"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/16.png" alt="Perfumotherapy" class="w-full h-64 object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
+            <div class="overflow-hidden"><img src="/assets/16.png" alt="Perfumotherapy" class="w-full h-64 object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
             <div class="p-8 flex flex-col flex-1">
               <div class="flex items-center gap-3 text-[16px] uppercase tracking-[0.18em]" style="color: var(--soft-sage);"><span>Advanced</span><span class="w-1 h-1 rounded-full" style="background-color: var(--soft-sage);"></span><span>10 weeks</span></div>
               <h3 class="mt-4 font-serif text-3xl leading-snug" style="color: var(--green-primary);">Perfumotherapy</h3>
@@ -293,7 +293,7 @@
             </div>
           </article>
           <article class="group bg-white flex flex-col transition-shadow duration-500 hover:shadow-[0_20px_60px_-30px_rgba(11,65,49,0.3)]">
-            <div class="overflow-hidden"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/9.png" alt="Fragrance Brand Design" class="w-full h-64 object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
+            <div class="overflow-hidden"><img src="/assets/9.png" alt="Fragrance Brand Design" class="w-full h-64 object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
             <div class="p-8 flex flex-col flex-1">
               <div class="flex items-center gap-3 text-[16px] uppercase tracking-[0.18em]" style="color: var(--soft-sage);"><span>Professional</span><span class="w-1 h-1 rounded-full" style="background-color: var(--soft-sage);"></span><span>8 weeks</span></div>
               <h3 class="mt-4 font-serif text-3xl leading-snug" style="color: var(--green-primary);">Fragrance Brand Design</h3>
@@ -302,7 +302,7 @@
             </div>
           </article>
           <article class="group bg-white flex flex-col transition-shadow duration-500 hover:shadow-[0_20px_60px_-30px_rgba(11,65,49,0.3)]">
-            <div class="overflow-hidden"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/photospart1voiscequetuveux/WORLD PERFUME HERITAGE.jpeg" alt="World Perfume History" class="w-full h-64 object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
+            <div class="overflow-hidden"><img src="/assets/photospart1voiscequetuveux/WORLD PERFUME HERITAGE.jpeg" alt="World Perfume History" class="w-full h-64 object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
             <div class="p-8 flex flex-col flex-1">
               <div class="flex items-center gap-3 text-[16px] uppercase tracking-[0.18em]" style="color: var(--soft-sage);"><span>Cultural Studies</span><span class="w-1 h-1 rounded-full" style="background-color: var(--soft-sage);"></span><span>6 weeks</span></div>
               <h3 class="mt-4 font-serif text-3xl leading-snug" style="color: var(--green-primary);">World Perfume History</h3>
@@ -376,7 +376,7 @@
         </div>
         <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
           <figure class="group">
-            <div class="overflow-hidden aspect-[5/4]"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/20.png" alt="Portrait of Jennifer Jones" class="w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
+            <div class="overflow-hidden aspect-[5/4]"><img src="/assets/20.png" alt="Portrait of Jennifer Jones" class="w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
             <figcaption class="mt-7">
               <p class="font-serif text-2xl" style="color: var(--green-primary);">Jennifer Jones</p>
               <p class="text-[16px] font-semibold uppercase tracking-[0.18em] mt-2" style="color: var(--green-primary);">Founder, Botanical Atelier</p>
@@ -385,7 +385,7 @@
             </figcaption>
           </figure>
           <figure class="group">
-            <div class="overflow-hidden aspect-[5/4]"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/11.png" alt="Portrait of Tresh Crosby" class="w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
+            <div class="overflow-hidden aspect-[5/4]"><img src="/assets/11.png" alt="Portrait of Tresh Crosby" class="w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
             <figcaption class="mt-7">
               <p class="font-serif text-2xl" style="color: var(--green-primary);">Tresh Crosby</p>
               <p class="text-[16px] font-semibold uppercase tracking-[0.18em] mt-2" style="color: var(--green-primary);">Independent Perfumer</p>
@@ -394,7 +394,7 @@
             </figcaption>
           </figure>
           <figure class="group">
-            <div class="overflow-hidden aspect-[5/4]"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/13.png" alt="Portrait of Jolie Lo" class="w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
+            <div class="overflow-hidden aspect-[5/4]"><img src="/assets/13.png" alt="Portrait of Jolie Lo" class="w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
             <figcaption class="mt-7">
               <p class="font-serif text-2xl" style="color: var(--green-primary);">Jolie Lo</p>
               <p class="text-[16px] font-semibold uppercase tracking-[0.18em] mt-2" style="color: var(--green-primary);">Certified Olfaction Trainer</p>
@@ -456,7 +456,7 @@
 
     <!-- FOR PROFESSIONALS [MOD 2] centered, [MOD 4] Creezy, [MOD 5] bigger -->
     <section id="professionals" class="text-white py-14 lg:py-20 relative overflow-hidden" style="background-color: var(--green-primary);">
-      <div class="absolute inset-0 opacity-[0.08]"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/19.png" alt="" class="w-full h-full object-cover"></div>
+      <div class="absolute inset-0 opacity-[0.08]"><img src="/assets/19.png" alt="" class="w-full h-full object-cover"></div>
       <div class="relative mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="text-center max-w-[960px] mx-auto">
           <p class="text-[16px] font-medium uppercase tracking-[0.25em]" style="color: var(--light-sage);">For Professionals</p>
@@ -510,7 +510,7 @@
           </div>
         </div>
         <div class="lg:col-span-5">
-          <img src="https://adsimize-cell.github.io/IPF-Academy/assets/certificate-natural-perfumer.jpg" alt="IPF Natural Perfumery certificate issued by The International Perfume Foundation, verified with a QR code" class="w-full shadow-[0_30px_60px_-20px_rgba(0,0,0,0.45)]" loading="lazy">
+          <img src="/assets/certificate-natural-perfumer.jpg" alt="IPF Natural Perfumery certificate issued by The International Perfume Foundation, verified with a QR code" class="w-full shadow-[0_30px_60px_-20px_rgba(0,0,0,0.45)]" loading="lazy">
         </div>
       </div>
     </section>
@@ -524,7 +524,7 @@
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-14 items-center">
           <div class="lg:col-span-6">
-            <img src="https://adsimize-cell.github.io/IPF-Academy/assets/creezy-courtoy-portrait.jpg" alt="Creezy Courtoy, IPF Chairman" class="w-full h-[560px] object-cover object-top transition-transform duration-[1200ms] hover:scale-[1.03]" loading="lazy">
+            <img src="/assets/creezy-courtoy-portrait.jpg" alt="Creezy Courtoy, IPF Chairman" class="w-full h-[560px] object-cover object-top transition-transform duration-[1200ms] hover:scale-[1.03]" loading="lazy">
           </div>
           <div class="lg:col-span-6">
             <p class="text-[19px] leading-[1.85] max-w-[670px]" style="color: var(--text-dark);">The Academy is led by <strong class="font-medium" style="color: var(--green-primary);">Creezy Courtoy</strong>, IPF Chairman, Creator of <em>The New Luxury Code</em> and Founder of the IPF Natural Perfumery Teacher's Academy. Every instructor is personally selected for their scientific knowledge, creative practice and passion for transmission.</p>
@@ -541,51 +541,51 @@
           <h3 class="text-center font-serif text-3xl lg:text-4xl mb-12" style="color: var(--green-primary);">Our Teachers &amp; Lecturers</h3>
           <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
             <div class="text-center">
-              <img src="https://adsimize-cell.github.io/IPF-Academy/assets/photos14teachersandlecturers/Ana.jpeg" alt="Ana" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
+              <img src="/assets/photos14teachersandlecturers/Ana.jpeg" alt="Ana" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
               <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Ana-Elena Sastrias</p>
             </div>
             <div class="text-center">
-              <img src="https://adsimize-cell.github.io/IPF-Academy/assets/photos14teachersandlecturers/Andrej portrait.jpg" alt="Andrej" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
+              <img src="/assets/photos14teachersandlecturers/Andrej portrait.jpg" alt="Andrej" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
               <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Andrej Babicky</p>
             </div>
             <div class="text-center">
-              <img src="https://adsimize-cell.github.io/IPF-Academy/assets/photos14teachersandlecturers/lili.jpg" alt="Lili" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
+              <img src="/assets/photos14teachersandlecturers/lili.jpg" alt="Lili" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
               <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Chen Li</p>
             </div>
             <div class="text-center">
-              <img src="https://adsimize-cell.github.io/IPF-Academy/assets/photos14teachersandlecturers/Danica-Lea_Eco Verdant_by Joanna Zydel Bunbury Branding Photographer (11 of 78).jpg" alt="Danica-Lea" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
+              <img src="/assets/photos14teachersandlecturers/Danica-Lea_Eco Verdant_by Joanna Zydel Bunbury Branding Photographer (11 of 78).jpg" alt="Danica-Lea" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
               <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Danica-Lea Larcombe</p>
             </div>
             <div class="text-center">
-              <img src="https://adsimize-cell.github.io/IPF-Academy/assets/photos14teachersandlecturers/Kristin Chen portrait.jpg" alt="Kristin Chen" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
+              <img src="/assets/photos14teachersandlecturers/Kristin Chen portrait.jpg" alt="Kristin Chen" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
               <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Kristin Chen</p>
             </div>
             <div class="text-center">
-              <img src="https://adsimize-cell.github.io/IPF-Academy/assets/photos14teachersandlecturers/Naziha.JPG" alt="Naziha" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
+              <img src="/assets/photos14teachersandlecturers/Naziha.JPG" alt="Naziha" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
               <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Naziha Allalou</p>
             </div>
             <div class="text-center">
-              <img src="https://adsimize-cell.github.io/IPF-Academy/assets/photos14teachersandlecturers/Pinar Lacroix_Headshot2024.png" alt="Pinar Lacroix" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
+              <img src="/assets/photos14teachersandlecturers/Pinar Lacroix_Headshot2024.png" alt="Pinar Lacroix" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
               <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Pinar Lacroix</p>
             </div>
             <div class="text-center">
-              <img src="https://adsimize-cell.github.io/IPF-Academy/assets/photos14teachersandlecturers/RODNEY.jpg" alt="Rodney" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
+              <img src="/assets/photos14teachersandlecturers/RODNEY.jpg" alt="Rodney" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
               <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Rodney Hughes</p>
             </div>
             <div class="text-center">
-              <img src="https://adsimize-cell.github.io/IPF-Academy/assets/photos14teachersandlecturers/Roxana.jpg" alt="Roxana" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
+              <img src="/assets/photos14teachersandlecturers/Roxana.jpg" alt="Roxana" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
               <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Roxana Villa</p>
             </div>
             <div class="text-center">
-              <img src="https://adsimize-cell.github.io/IPF-Academy/assets/photos14teachersandlecturers/Sabrina Zidane.jpg" alt="Sabrina Zidane" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
+              <img src="/assets/photos14teachersandlecturers/Sabrina Zidane.jpg" alt="Sabrina Zidane" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
               <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Sabrina Zidane</p>
             </div>
             <div class="text-center">
-              <img src="https://adsimize-cell.github.io/IPF-Academy/assets/photos14teachersandlecturers/Terry.png" alt="Terry" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
+              <img src="/assets/photos14teachersandlecturers/Terry.png" alt="Terry" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
               <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Terry Johnson</p>
             </div>
             <div class="text-center">
-              <img src="https://adsimize-cell.github.io/IPF-Academy/assets/photos14teachersandlecturers/IMG_5735.JPG" alt="Vennie Chou" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
+              <img src="/assets/photos14teachersandlecturers/IMG_5735.JPG" alt="Vennie Chou" class="w-full aspect-[3/4] object-cover object-top rounded" loading="lazy">
               <p class="mt-3 font-serif text-lg" style="color: var(--green-primary);">Vennie Chou</p>
             </div>
           </div>
@@ -598,7 +598,7 @@
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-20 items-center">
           <div class="lg:col-span-4 flex justify-center">
-            <img src="https://adsimize-cell.github.io/IPF-Academy/assets/photospart1voiscequetuveux/Book Cover Natural Perfumery.png" alt="Natural Perfumery: The Return of Flowers in Perfumes by Creezy Courtoy" class="w-full max-w-[320px] shadow-[0_20px_60px_-20px_rgba(11,65,49,0.3)]" loading="lazy">
+            <img src="/assets/photospart1voiscequetuveux/Book Cover Natural Perfumery.png" alt="Natural Perfumery: The Return of Flowers in Perfumes by Creezy Courtoy" class="w-full max-w-[320px] shadow-[0_20px_60px_-20px_rgba(11,65,49,0.3)]" loading="lazy">
           </div>
           <div class="lg:col-span-8">
             <p class="text-[17px] font-semibold uppercase tracking-[0.25em]" style="color: var(--soft-sage);">The Book</p>

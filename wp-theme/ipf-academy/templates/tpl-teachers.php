@@ -13,7 +13,7 @@
           <p class="mt-7 text-[17px] sm:text-[18px] leading-[1.75] max-w-[680px]" style="color:var(--text-dark);">All of our Academicians are certified by the International Perfume Foundation and selected by a Committee of Experts. Each brings a distinct field of mastery to the Natural Perfumery Teacher's Academy.</p>
         </div>
         <div class="lg:col-span-5">
-          <img src="https://adsimize-cell.github.io/IPF-Academy/assets/16.png" alt="The Academicians of the Teacher's Academy" class="w-full h-[360px] sm:h-[440px] lg:h-[520px] object-cover" loading="eager">
+          <img src="/assets/16.png" alt="The Academicians of the Teacher's Academy" class="w-full h-[360px] sm:h-[440px] lg:h-[520px] object-cover" loading="eager">
         </div>
       </div>
     </section>
