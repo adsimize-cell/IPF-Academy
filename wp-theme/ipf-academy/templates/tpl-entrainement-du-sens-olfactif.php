@@ -1,0 +1,133 @@
+<?php /* Template Name: Entraînement du sens olfactif [entrainement-du-sens-olfactif] */ get_header(); ?>
+<div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+    <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Programs</a><span class="mx-3">&rarr;</span> <span>Natural Olfaction Training</span></div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section style="background:var(--ivory);">
+      <div class="mx-auto max-w-[1680px] grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 px-6 lg:px-12 py-16 lg:py-20 items-center">
+        <div class="lg:col-span-7">
+          <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Cours &middot; 4 semaines</p>
+          <h1 class="mt-6 font-serif text-[1.9rem] sm:text-5xl lg:text-[3.9rem] leading-[1.06]" style="color:var(--green-primary);">Entraînement du <br class="sm:hidden"><em class="font-normal">sens olfactif</em></h1>
+          <p class="mt-7 text-[17px] sm:text-[18px] leading-[1.75] max-w-[680px]" style="color:var(--text-dark);">Suivez un cours de formation olfactive donné par Creezy Courtoy, anthropologue, auteur du livre « L'importance du sens olfactif », expert en olfaction et membre de la Teacher's Academy.</p>
+          <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3">
+            <span class="text-[15px] sm:text-[16px] font-medium" style="color:var(--green-primary);">&#10022; Certifié IPF</span>
+            <span class="text-[15px] sm:text-[16px] font-medium" style="color:var(--green-primary);">&#10022; Étudier depuis chez soi</span>
+            <span class="text-[15px] sm:text-[16px] font-medium" style="color:var(--green-primary);">&#10022; Aucun achat requis</span>
+            <span class="text-[15px] sm:text-[16px] font-medium" style="color:var(--green-primary);">&#10022; Paiement en plusieurs fois</span>
+          </div>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="#enrol" class="inline-flex items-center px-8 py-3.5 text-[14px] font-medium uppercase tracking-[0.22em] text-white" style="background:var(--green-primary);">S'inscrire</a>
+            <a href="#curriculum" class="inline-flex items-center px-8 py-3.5 text-[14px] font-medium uppercase tracking-[0.22em] border" style="border-color:var(--green-primary);color:var(--green-primary);">Voir le programme</a>
+          </div>
+        </div>
+        <div class="lg:col-span-5 relative">
+          <img src="/assets/16.png" alt="Entraînement du sens olfactif" class="w-full h-[360px] sm:h-[440px] lg:h-[560px] object-cover" loading="eager">
+          <div class="lg:absolute lg:-bottom-10 lg:-left-10 mt-6 lg:mt-0 bg-white border p-7 max-w-[340px]" style="border-color:rgba(11,65,49,.2);">
+            <p class="text-[15px] uppercase tracking-[0.25em]" style="color:var(--soft-sage);">Enseigné par</p>
+            <p class="mt-3 font-serif text-xl leading-snug" style="color:var(--green-primary);">Creezy Courtoy</p>
+            <p class="mt-2 text-[16px] leading-snug" style="color:var(--text-dark);">Anthropologue, experte en olfaction, IPF Chairman et créatrice du New Luxury Code.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="bg-white py-16 lg:py-20">
+      <div class="mx-auto max-w-[1560px] grid grid-cols-1 lg:grid-cols-12 gap-14 px-6 lg:px-12">
+        <div class="lg:col-span-7">
+          <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Présentation</p>
+          <h2 class="mt-5 font-serif text-4xl lg:text-[3.1rem] leading-[1.1]" style="color:var(--green-primary);">À propos du cours</h2>
+          <div class="mt-8 space-y-5 text-[17px] leading-[1.85] max-w-[770px]" style="color:var(--text-dark);">
+            <p>Suivez un cours de formation olfactive donné par Creezy Courtoy, anthropologue, auteur du livre « L'importance du sens olfactif », expert en olfaction et membre de la Teacher's Academy.</p>
+            <p>Ce cours en ligne ne nécessite aucun achat : les senteurs dont vous avez besoin sont tout autour de vous, dans la cuisine, la nature, la ville. Vous apprenez à respirer et à sentir correctement pour profiter pleinement des odeurs.</p>
+            <p class="font-medium" style="color:var(--green-primary);">Une réunion Zoom privée précède le cours ; une évaluation suit chaque module.</p>
+          </div>
+        </div>
+        <aside class="lg:col-span-5">
+          <div class="border p-8 lg:sticky lg:top-28" style="background:var(--ivory);border-color:rgba(11,65,49,.2);">
+            <p class="text-[15px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">Détails du cours</p>
+            <dl class="mt-6 divide-y" style="border-color:rgba(11,65,49,.15);">
+              <div class="flex justify-between gap-4 py-3 text-[16px]"><dt class="uppercase tracking-[0.14em]" style="color:var(--green-primary);">Durée</dt><dd class="font-medium text-right" style="color:var(--green-primary);">4 semaines &middot; 2 modules/sem.</dd></div>
+              <div class="flex justify-between gap-4 py-3 text-[16px]"><dt class="uppercase tracking-[0.14em]" style="color:var(--green-primary);">Format</dt><dd class="font-medium text-right" style="color:var(--green-primary);">Depuis chez soi</dd></div>
+              <div class="flex justify-between gap-4 py-3 text-[16px]"><dt class="uppercase tracking-[0.14em]" style="color:var(--green-primary);">Langue</dt><dd class="font-medium text-right" style="color:var(--green-primary);">Français</dd></div>
+              <div class="flex justify-between gap-4 py-3 text-[16px]"><dt class="uppercase tracking-[0.14em]" style="color:var(--green-primary);">Certification</dt><dd class="font-medium text-right" style="color:var(--green-primary);">Certificat IPF</dd></div>
+              <div class="flex justify-between gap-4 py-3 text-[16px]"><dt class="uppercase tracking-[0.14em]" style="color:var(--green-primary);">Prix</dt><dd class="font-medium text-right" style="color:var(--green-primary);">895&euro;</dd></div>
+            </dl>
+            <p class="mt-3 text-[14px]" style="color:var(--text-dark);">Certification 200&euro; incluse.</p>
+            <div class="mt-6"><a href="#enrol" class="block w-full text-center px-8 py-3.5 text-[14px] font-medium uppercase tracking-[0.22em] text-white" style="background:var(--green-primary);">S'inscrire</a></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CURRICULUM -->
+    <section id="curriculum" class="py-16 lg:py-20" style="background:var(--ivory);">
+      <div class="mx-auto max-w-[1320px] px-6 lg:px-12">
+        <div class="text-center max-w-[1080px] mx-auto">
+          <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Programme</p>
+          <h2 class="mt-5 font-serif text-4xl lg:text-[3.3rem] leading-[1.1]" style="color:var(--green-primary);">Les 8 modules</h2>
+          <p class="mt-4 text-[17px]" style="color:var(--text-dark);">De l'initiation à l'olfaction à la certification de formateur olfactif</p>
+        </div>
+        <div class="mt-12" id="accordion"></div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATION -->
+    <section class="text-white py-16 lg:py-20" style="background:var(--green-primary);">
+      <div class="mx-auto max-w-[1560px] grid grid-cols-1 lg:grid-cols-12 gap-14 px-6 lg:px-12 items-center">
+        <div class="lg:col-span-7">
+          <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--light-sage);">Certification</p>
+          <h2 class="mt-5 font-serif text-4xl lg:text-[3.3rem] leading-[1.1]">Une certification <em class="italic">reconnue</em></h2>
+          <p class="mt-8 text-[17px] leading-[1.85] max-w-[700px]" style="color:var(--ivory);">À la fin du cours, vous recevez un certificat avec QR Code délivré par l'International Perfume Foundation, et votre nom est inscrit dans l'annuaire de certification de la Fondation.</p>
+        </div>
+        <div class="lg:col-span-5">
+          <div class="p-10 text-center border" style="background:var(--ivory);color:var(--green-primary);border-color:rgba(200,217,198,.4);">
+            <p class="text-[15px] uppercase tracking-[0.3em]" style="color:var(--soft-sage);">Certificat de réussite</p>
+            <p class="mt-6 font-serif text-3xl leading-snug">Sens <em class="italic">olfactif</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENROLMENT / PAYMENT -->
+    <section id="enrol" class="bg-white py-16 lg:py-20">
+      <div class="mx-auto max-w-[1080px] px-6 lg:px-12">
+        <div class="text-center max-w-[1080px] mx-auto">
+          <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Inscription</p>
+          <h2 class="mt-5 font-serif text-4xl lg:text-[3.3rem] leading-[1.1]" style="color:var(--green-primary);">Inscrivez-vous à ce cours</h2>
+          <p class="mt-4 text-[18px] font-medium" style="color:var(--green-primary);">Réservez dès maintenant pour garantir votre place</p>
+        </div>
+        <div class="mt-12 border" style="border-color:rgba(11,65,49,.2);">
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="p-10 flex flex-col justify-center" style="background:var(--ivory);">
+              <p class="text-[15px] uppercase tracking-[0.28em]" style="color:var(--soft-sage);">Prix du cours</p>
+              <p class="mt-3 font-serif text-6xl leading-none" style="color:var(--green-primary);">895&euro;</p>
+              <p class="mt-3 text-[16px]" style="color:var(--text-dark);">Certification 200&euro; incluse.</p>
+              <div class="mt-5 payment-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                <span>Paiement en plusieurs fois (Klarna / PayPal)</span>
+              </div>
+            </div>
+            <div class="p-10 flex flex-col justify-center gap-5 border-t md:border-t-0 md:border-l" style="border-color:rgba(11,65,49,.2);">
+              <a href="https://buy.stripe.com/eVaaIn0VldjCaB2aF9" target="_blank" rel="noopener" class="block w-full text-center px-8 py-4 text-[15px] font-semibold uppercase tracking-[0.2em] text-white transition-opacity hover:opacity-90" style="background:var(--green-primary);">Acheter</a>
+              <div>
+                <p class="mb-2 text-[13px] uppercase tracking-[0.22em] text-center" style="color:var(--soft-sage);">ou Acheter - Payer plus tard</p>
+                <div class="powr-paypal-button" id="1380818b_1642544140"></div>
+              </div>
+              <div class="flex items-center justify-center gap-3 opacity-80 flex-wrap">
+                <span class="text-[13px] uppercase tracking-[0.18em]" style="color:var(--text-dark);">Visa</span><span class="text-[13px]" style="color:var(--soft-sage);">&bull;</span>
+                <span class="text-[13px] uppercase tracking-[0.18em]" style="color:var(--text-dark);">Mastercard</span><span class="text-[13px]" style="color:var(--soft-sage);">&bull;</span>
+                <span class="text-[13px] uppercase tracking-[0.18em]" style="color:var(--text-dark);">Amex</span><span class="text-[13px]" style="color:var(--soft-sage);">&bull;</span>
+                <span class="text-[13px] uppercase tracking-[0.18em]" style="color:var(--text-dark);">PayPal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mt-8 text-center text-[16px] italic" style="color:var(--green-primary);">Aucun achat de matériel requis : les senteurs dont vous avez besoin sont tout autour de vous.</p>
+      </div>
+    </section>
+  </main>
+<script src="https://www.powr.io/powr.js?platform=html"></script>
+<?php get_footer(); ?>

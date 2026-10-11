@@ -1,0 +1,51 @@
+<?php /* Template Name: Partners [partners] */ get_header(); ?>
+<div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+    <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/about/" class="hover:opacity-80">About</a><span class="mx-3">&rarr;</span> <span>Partners</span></div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section style="background:var(--ivory);">
+      <div class="mx-auto max-w-[1080px] px-6 lg:px-12 py-16 lg:py-20 text-center">
+        <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Institutions &amp; Brands</p>
+        <h1 class="mt-6 font-serif text-[2.5rem] sm:text-5xl lg:text-[3.7rem] leading-[1.1]" style="color:var(--green-primary);">Our <em class="font-normal">Partners</em></h1>
+        <p class="mt-6 text-[18px] leading-[1.75] max-w-[720px] mx-auto" style="color:var(--text-dark);">We are very honored to have worked with the following institutions and brands during the 26 years of IPF's existence.</p>
+      </div>
+    </section>
+
+    <!-- PARTNERS GRID -->
+    <section class="bg-white py-16 lg:py-20">
+      <div class="mx-auto max-w-[1320px] px-6 lg:px-12">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+          <div class="border grid place-items-center text-center px-5 py-9 text-[17px] font-medium" style="border-color:rgba(11,65,49,.15);color:var(--green-primary);background:var(--ivory);">Unesco</div>
+          <div class="border grid place-items-center text-center px-5 py-9 text-[17px] font-medium" style="border-color:rgba(11,65,49,.15);color:var(--green-primary);background:var(--ivory);">Ville de Bruxelles</div>
+          <div class="border grid place-items-center text-center px-5 py-9 text-[17px] font-medium" style="border-color:rgba(11,65,49,.15);color:var(--green-primary);background:var(--ivory);">Ville de Paris</div>
+          <div class="border grid place-items-center text-center px-5 py-9 text-[17px] font-medium" style="border-color:rgba(11,65,49,.15);color:var(--green-primary);background:var(--ivory);">Ville d'Athenes</div>
+          <div class="border grid place-items-center text-center px-5 py-9 text-[17px] font-medium" style="border-color:rgba(11,65,49,.15);color:var(--green-primary);background:var(--ivory);">Hotel Conrad</div>
+          <div class="border grid place-items-center text-center px-5 py-9 text-[17px] font-medium" style="border-color:rgba(11,65,49,.15);color:var(--green-primary);background:var(--ivory);">Hotel de Crillon</div>
+          <div class="border grid place-items-center text-center px-5 py-9 text-[17px] font-medium" style="border-color:rgba(11,65,49,.15);color:var(--green-primary);background:var(--ivory);">Hotel Hilton</div>
+          <div class="border grid place-items-center text-center px-5 py-9 text-[17px] font-medium" style="border-color:rgba(11,65,49,.15);color:var(--green-primary);background:var(--ivory);">Hotel Meridien</div>
+          <div class="border grid place-items-center text-center px-5 py-9 text-[17px] font-medium" style="border-color:rgba(11,65,49,.15);color:var(--green-primary);background:var(--ivory);">Technopolis Athens</div>
+          <div class="border grid place-items-center text-center px-5 py-9 text-[17px] font-medium" style="border-color:rgba(11,65,49,.15);color:var(--green-primary);background:var(--ivory);">Takayama</div>
+          <div class="border grid place-items-center text-center px-5 py-9 text-[17px] font-medium" style="border-color:rgba(11,65,49,.15);color:var(--green-primary);background:var(--ivory);">EU Commission</div>
+          <div class="border grid place-items-center text-center px-5 py-9 text-[17px] font-medium" style="border-color:rgba(11,65,49,.15);color:var(--green-primary);background:var(--ivory);">WEF</div>
+          <div class="border grid place-items-center text-center px-5 py-9 text-[17px] font-medium" style="border-color:rgba(11,65,49,.15);color:var(--green-primary);background:var(--ivory);">Cosmotalks</div>
+          <div class="border grid place-items-center text-center px-5 py-9 text-[17px] font-medium" style="border-color:rgba(11,65,49,.15);color:var(--green-primary);background:var(--ivory);">Cosmoprof</div>
+          <div class="border grid place-items-center text-center px-5 py-9 text-[17px] font-medium" style="border-color:rgba(11,65,49,.15);color:var(--green-primary);background:var(--ivory);">PCD Paris</div>
+          <div class="border grid place-items-center text-center px-5 py-9 text-[17px] font-medium" style="border-color:rgba(11,65,49,.15);color:var(--green-primary);background:var(--ivory);">PCD Show Paris</div>
+          <div class="border grid place-items-center text-center px-5 py-9 text-[17px] font-medium sm:col-span-1" style="border-color:rgba(11,65,49,.15);color:var(--green-primary);background:var(--ivory);">Beauty Cluster Barcelona</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="text-white py-16 lg:py-20" style="background:var(--green-primary);">
+      <div class="mx-auto max-w-[900px] px-6 lg:px-12 text-center">
+        <h2 class="font-serif text-4xl lg:text-[3.3rem] leading-[1.1]">Partner With Us</h2>
+        <p class="mt-6 text-[18px] leading-[1.85]" style="color:var(--ivory);">Institutions, brands and schools who share our commitment to natural perfumery heritage are welcome to get in touch.</p>
+        <div class="mt-8"><a href="/contact/" class="inline-flex items-center px-8 py-3.5 text-[14px] font-medium uppercase tracking-[0.22em]" style="background:var(--ivory);color:var(--green-primary);">Contact Us</a></div>
+      </div>
+    </section>
+  </main>
+
+<?php get_footer(); ?>
