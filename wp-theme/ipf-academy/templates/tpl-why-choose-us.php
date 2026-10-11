@@ -11,7 +11,7 @@
     <!-- EDITORIAL -->
     <section class="bg-white py-24 lg:py-28">
       <div class="mx-auto max-w-[1560px] grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-20 px-6 lg:px-12 items-center">
-        <div class="lg:col-span-6"><img src="/assets/4.png" alt="Botanical materials" class="w-full h-[520px] object-cover" loading="lazy"></div>
+        <div class="lg:col-span-6"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/4.png" alt="Botanical materials" class="w-full h-[520px] object-cover" loading="lazy"></div>
         <div class="lg:col-span-6">
           <p class="text-[17px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Our Difference</p>
           <h2 class="mt-5 font-serif text-5xl lg:text-[3.3rem] leading-[1.1]" style="color:var(--green-primary);">What <em class="italic">Sets Us Apart</em></h2>

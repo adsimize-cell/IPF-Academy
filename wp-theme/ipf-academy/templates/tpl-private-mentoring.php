@@ -25,9 +25,9 @@
           </div>
         </div>
         <div class="lg:col-span-5 relative">
-          <img src="/assets/2.png" alt="Natural Perfumery atelier" class="w-full h-[360px] sm:h-[440px] lg:h-[560px] object-cover" loading="eager">
+          <img src="https://adsimize-cell.github.io/IPF-Academy/assets/2.png" alt="Natural Perfumery atelier" class="w-full h-[360px] sm:h-[440px] lg:h-[560px] object-cover" loading="eager">
           <div class="lg:absolute lg:-bottom-10 lg:-left-10 mt-6 lg:mt-0 bg-white border p-7 max-w-[360px] flex items-start gap-4" style="border-color:rgba(11,65,49,.2);">
-            <img src="/assets/photos14teachersandlecturers/Andrej portrait.jpg" alt="Andrej Babicky" class="w-16 h-16 rounded-full object-cover shrink-0">
+            <img src="https://adsimize-cell.github.io/IPF-Academy/assets/photos14teachersandlecturers/Andrej portrait.jpg" alt="Andrej Babicky" class="w-16 h-16 rounded-full object-cover shrink-0">
             <div>
               <p class="text-[15px] uppercase tracking-[0.25em]" style="color:var(--soft-sage);">Your mentor</p>
               <p class="mt-1 font-serif text-xl leading-snug" style="color:var(--green-primary);">Andrej Babicky</p>

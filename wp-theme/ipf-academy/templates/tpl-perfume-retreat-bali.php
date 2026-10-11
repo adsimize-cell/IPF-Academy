@@ -24,7 +24,7 @@
           </div>
         </div>
         <div class="lg:col-span-5 relative">
-          <img src="/assets/perfume-retreat-new.jpg" alt="Perfume Retreat Bali - Ubud, 19-24 January 2027" class="w-full h-[360px] sm:h-[440px] lg:h-[560px] object-contain" style="background-color: var(--ivory);" loading="eager">
+          <img src="https://adsimize-cell.github.io/IPF-Academy/assets/perfume-retreat-new.jpg" alt="Perfume Retreat Bali - Ubud, 19-24 January 2027" class="w-full h-[360px] sm:h-[440px] lg:h-[560px] object-contain" style="background-color: var(--ivory);" loading="eager">
           <div class="lg:absolute lg:-bottom-10 lg:-left-10 mt-6 lg:mt-0 bg-white border p-7 max-w-[340px]" style="border-color:rgba(11,65,49,.2);">
             <p class="text-[15px] uppercase tracking-[0.25em]" style="color:var(--soft-sage);">The Venue</p>
             <p class="mt-3 font-serif text-xl leading-snug" style="color:var(--green-primary);">My Secret Garden Villas</p>

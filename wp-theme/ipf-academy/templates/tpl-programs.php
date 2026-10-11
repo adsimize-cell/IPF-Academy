@@ -70,7 +70,7 @@
     <section id="sec-workshops" class="py-24 lg:py-28" style="background:var(--green-primary);">
       <div class="mx-auto max-w-[1680px] px-6 lg:px-12">
         <article class="grid grid-cols-1 lg:grid-cols-12 bg-white overflow-hidden">
-          <div class="lg:col-span-6 overflow-hidden"><img src="/assets/14.png" alt="Bali Retreat" class="w-full h-[420px] lg:h-full object-cover" loading="lazy"></div>
+          <div class="lg:col-span-6 overflow-hidden"><img src="https://adsimize-cell.github.io/IPF-Academy/assets/14.png" alt="Bali Retreat" class="w-full h-[420px] lg:h-full object-cover" loading="lazy"></div>
           <div class="lg:col-span-6 p-10 lg:p-14 flex flex-col justify-center">
             <p class="text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Upcoming Workshop · 2027</p>
             <h3 class="mt-5 font-serif text-5xl lg:text-6xl leading-[1.05]" style="color:var(--green-primary);">Perfume Retreat <em class="italic">Bali 2027</em></h3>
