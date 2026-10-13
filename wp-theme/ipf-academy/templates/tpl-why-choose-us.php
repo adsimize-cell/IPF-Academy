@@ -21,7 +21,7 @@
             <p>What differentiates the Natural Perfumery Academy is that we emphasise the art of perfumery and prioritise academic and technical education to make each certified IPF perfumer a professional profile.</p>
             <p>Once the perfumer has graduated, they have the opportunity to be fully supported by our international experts with coaching services: fragrance development and production in France, business and marketing, supply chain, and packaging.</p>
           </div>
-          <div class="mt-10"><a href="/#teachers" class="group inline-flex items-center gap-2 text-[17px] font-medium uppercase tracking-[0.22em] border-b pb-1" style="color:var(--green-primary);border-color:rgba(11,65,49,.3);">Meet our teachers <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+          <div class="mt-10"><a href="/teachers/" class="group inline-flex items-center gap-2 text-[17px] font-medium uppercase tracking-[0.22em] border-b pb-1" style="color:var(--green-primary);border-color:rgba(11,65,49,.3);">Meet our teachers <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
         </div>
       </div>
     </section>

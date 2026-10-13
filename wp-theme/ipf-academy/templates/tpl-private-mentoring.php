@@ -115,14 +115,14 @@
             <h3 class="mt-3 font-serif text-3xl" style="color:var(--green-primary);">10-Week Mentoring</h3>
             <p class="mt-5 font-serif text-5xl leading-none" style="color:var(--green-primary);">&euro;4&#8239;800</p>
             <p class="mt-4 text-[17px] leading-[1.75] flex-1" style="color:var(--text-dark);">A focused intensive engagement for advanced refinement.</p>
-            <div class="mt-8"><a href="/#footer" class="block w-full text-center px-8 py-3.5 text-[14px] font-medium uppercase tracking-[0.22em] text-white" style="background:var(--green-primary);">Apply for 10 Weeks</a></div>
+            <div class="mt-8"><a href="/contact/" class="block w-full text-center px-8 py-3.5 text-[14px] font-medium uppercase tracking-[0.22em] text-white" style="background:var(--green-primary);">Apply for 10 Weeks</a></div>
           </div>
           <div class="border p-10 flex flex-col" style="background:var(--ivory);border-color:rgba(11,65,49,.2);">
             <p class="text-[15px] uppercase tracking-[0.28em]" style="color:var(--soft-sage);">Extended</p>
             <h3 class="mt-3 font-serif text-3xl" style="color:var(--green-primary);">14-Week Mentoring</h3>
             <p class="mt-5 font-serif text-5xl leading-none" style="color:var(--green-primary);">&euro;6&#8239;500</p>
             <p class="mt-4 text-[17px] leading-[1.75] flex-1" style="color:var(--text-dark);">An extended engagement for greater depth and complexity.</p>
-            <div class="mt-8"><a href="/#footer" class="block w-full text-center px-8 py-3.5 text-[14px] font-medium uppercase tracking-[0.22em] text-white" style="background:var(--green-primary);">Apply for 14 Weeks</a></div>
+            <div class="mt-8"><a href="/contact/" class="block w-full text-center px-8 py-3.5 text-[14px] font-medium uppercase tracking-[0.22em] text-white" style="background:var(--green-primary);">Apply for 14 Weeks</a></div>
           </div>
         </div>
 

@@ -90,7 +90,7 @@
         <p class="mt-6 text-[18px] leading-[1.8]" style="color:var(--ivory);">Secure your spot today and learn the art of Ancient Chinese Perfume Beads through a unique hands-on experience.</p>
         <p class="mt-8 font-serif text-6xl leading-none">180&euro;</p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="/#footer" class="inline-flex items-center justify-center gap-2 px-8 py-4 text-[15px] font-semibold uppercase tracking-[0.2em]" style="background:white;color:var(--green-primary);">Book Your Spot</a>
+          <a href="/contact/" class="inline-flex items-center justify-center gap-2 px-8 py-4 text-[15px] font-semibold uppercase tracking-[0.2em]" style="background:white;color:var(--green-primary);">Book Your Spot</a>
           <a href="https://wa.me/33659764466" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 px-8 py-4 text-[15px] font-semibold uppercase tracking-[0.2em] border" style="border-color:var(--ivory);color:var(--ivory);">Contact by WhatsApp</a>
         </div>
       </div>
