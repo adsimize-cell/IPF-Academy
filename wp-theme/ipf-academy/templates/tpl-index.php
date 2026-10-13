@@ -609,5 +609,46 @@
             <div class="mt-6 space-y-10">
               <blockquote class="border-l-2 pl-6" style="border-color: var(--soft-sage);">
                 <p class="font-serif italic text-[24px] leading-[1.65]" style="color: var(--text-dark);">"One of the reasons I chose Natural Perfumery was to be able to enjoy fragrances without suffering respiratory and health issues. From IPF I gained a much better understanding of natural raw materials, health, plants and flora, properties, perfume design, and olfaction."</p>
+                <footer class="mt-4">
+                  <p class="text-[17px] font-semibold" style="color: var(--green-primary);">Ana-Elena Sastrias</p>
+                  <p class="text-[16px]" style="color: var(--text-dark);">Founder, AES Creation Naturel</p>
+                </footer>
+              </blockquote>
+
+              <blockquote class="border-l-2 pl-6" style="border-color: var(--soft-sage);">
+                <p class="font-serif italic text-[24px] leading-[1.65]" style="color: var(--text-dark);">"During COVID I took courses with the International Perfume Foundation and began crafting my own botanical perfumes. In 2021 I officially founded Scents of the Texas Hill Country. My greatest influence and encouragement to create the equestrian line of scents was Creezy Courtoy, IPF Founder and Chair."</p>
+                <footer class="mt-4">
+                  <p class="text-[17px] font-semibold" style="color: var(--green-primary);">Jennifer Jones</p>
+                  <p class="text-[16px]" style="color: var(--text-dark);">Founder, Scents of the Texas Hill Country</p>
+                </footer>
+              </blockquote>
+
+              <blockquote class="border-l-2 pl-6" style="border-color: var(--soft-sage);">
+                <p class="font-serif italic text-[24px] leading-[1.65]" style="color: var(--text-dark);">"When I discovered the International Perfume Foundation, for the first time, I felt like I had found my place, a global community dedicated to Natural Perfumery, education, and tradition. Through the foundation, I was able to deepen my studies: aromatherapy, olfaction training, natural extraction techniques, and the art of composing perfumes."</p>
+                <footer class="mt-4">
+                  <p class="text-[17px] font-semibold" style="color: var(--green-primary);">Greta Vaitulione</p>
+                  <p class="text-[16px]" style="color: var(--text-dark);">Founder, Naturalios Idejios</p>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="bg-white py-14 lg:py-20">
+      <div class="mx-auto max-w-[1080px] px-6 lg:px-12">
+        <div class="text-center max-w-[770px] mx-auto">
+          <p class="text-[16px] font-medium uppercase tracking-[0.25em]" style="color: var(--soft-sage);">Frequently Asked Questions</p>
+          <h2 class="mt-6 font-serif text-5xl lg:text-[3.1rem] leading-[1.1]" style="color: var(--green-primary);">Questions, <em class="font-normal">Answered</em></h2>
+        </div>
+        <div id="faq-container" class="mt-14 border-t" style="border-color: rgba(11,65,49,0.15);"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER [MOD 1] Logo, [MOD 4] Creezy, [MOD 5] bigger text -->
 
 <?php get_footer(); ?>
