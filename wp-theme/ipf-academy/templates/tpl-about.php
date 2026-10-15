@@ -55,7 +55,24 @@
           </div>
         </div>
         <div class="lg:col-span-5">
-          <img src="/assets/new-luxury-code.jpg" alt="The New Luxury Code" class="w-full mb-8 border" style="border-color:rgba(11,65,49,.15);background:white;">
+          <div class="border mb-8 px-6 py-10 text-center" style="border-color:rgba(11,65,49,.15);background:white;">
+            <img src="/assets/new-luxury-code-logo.png" alt="New Luxury Code" class="mx-auto h-16 w-auto">
+            <p class="mt-4 text-[17px] font-medium tracking-[0.04em]" style="color:var(--soft-sage);">New Luxury Code</p>
+            <ul class="mt-4 space-y-1.5 text-[17px] sm:text-[18px] leading-snug" style="color:var(--text-dark);">
+              <li>Self Respect</li>
+              <li>Respect of Health</li>
+              <li>Respect of the Earth</li>
+              <li>Respect of Air and Water</li>
+              <li>Respect of the Environment</li>
+              <li>Respect of Products Transparency and Quality</li>
+              <li>Respect for Humans, Animals and Plant Kingdoms</li>
+              <li>Products Made as Works of Art</li>
+              <li>Respect of Truth in Advertising</li>
+              <li>Respect of Cultural Heritage</li>
+              <li>Respect of Communities</li>
+            </ul>
+            <p class="mt-4 text-[18px] font-semibold" style="color:var(--green-primary);">New Economy</p>
+          </div>
           <div class="border p-10" style="background:white;border-color:rgba(11,65,49,.2);">
             <p class="text-[15px] uppercase tracking-[0.28em]" style="color:var(--soft-sage);">Creezy Courtoy</p>
             <p class="mt-3 font-serif text-2xl leading-snug" style="color:var(--green-primary);">IPF Chairman, Creator of The New Luxury Code</p>
