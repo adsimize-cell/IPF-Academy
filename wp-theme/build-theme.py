@@ -9,6 +9,12 @@ Usage (from the IPF-Academy-HTML folder):
   script (already in footer.php)
 - Links: x.html -> /x/, index.html -> /, assets/ -> /assets/
 - Zip built with Python zipfile (forward slashes, required by WP)
+
+Tailwind is compiled locally (no CDN). After changing classes in the pages,
+rebuild the CSS first (pip install pytailwindcss once):
+    TAILWINDCSS_VERSION=v3.4.17 tailwindcss -c wp-theme/tailwind/tailwind.config.js \
+        -i wp-theme/tailwind/input.css -o wp-theme/ipf-academy/assets/tailwind.css --minify
+then check coverage with: python wp-theme/tailwind/check-coverage.py
 """
 import glob, io, os, re, sys, zipfile
 

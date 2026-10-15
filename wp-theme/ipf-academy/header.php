@@ -4,11 +4,9 @@
 <meta charset="<?php bloginfo('charset'); ?>">
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script>tailwind.config={theme:{extend:{fontFamily:{serif:['"Cormorant Garamond"','Georgia','serif'],sans:['"Montserrat"','system-ui','sans-serif']}}}}</script>
   <style>
     :root{--green-primary:#0b4131;--green-secondary:#1a5c44;--ivory:#f7f3ec;--soft-sage:#8fac8a;--light-sage:#c8d9c6;--text-dark:#2a2a2a}
     html{scroll-behavior:smooth}body{font-family:'Montserrat',system-ui,sans-serif;-webkit-font-smoothing:antialiased;color:var(--text-dark);font-weight:500;font-size:18px;text-align:left}
@@ -20,6 +18,7 @@
       .text-center h1,.text-center h2,.text-center h3,.text-center h4,.text-center h5,.text-center h6{text-align:center}
       h1 em,h2 em,h3 em,h4 em,h5 em{font-style:normal}
   body{overflow-wrap:break-word;-webkit-hyphens:auto;hyphens:auto}h1,h2,h3,h4,h5{-webkit-hyphens:manual;hyphens:manual}</style>
+  <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/tailwind.css?v=<?php echo filemtime(get_template_directory() . '/assets/tailwind.css'); ?>">
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> style="background-color: var(--ivory);">
