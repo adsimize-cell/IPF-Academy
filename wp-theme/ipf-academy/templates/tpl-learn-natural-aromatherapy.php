@@ -1,5 +1,7 @@
 <?php /* Template Name: Natural Aromatherapy [learn-natural-aromatherapy] */ get_header(); ?>
-<!-- BREADCRUMB -->
+
+
+  <!-- BREADCRUMB -->
   <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Courses</a><span class="mx-3">&rarr;</span> <span>Natural Aromatherapy</span></div>
   </div>
@@ -174,5 +176,32 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"Module 1 - Introduction to Natural Aromatherapy",items:["The History and Benefits of Aromatherapy; understanding Essential Oil","The nomenclature of Plants; Plants Classification","Relationship between Plant Families and Biochemical Families","How an Essence is extracted and becomes an Essential Oil","Significant properties, Quality and Purity Standards of Essential Oils","The Role of Aromatherapy in Natural Perfumery; how to use Essential Oils"]},
+      {title:"Module 2 - Essential Oils for Sleep Enhancement",items:["The Science of Sleep and Aromatherapy; History of Sleep Research","Aromatherapy and the Nervous System; how Essential Oils enter the system","Top Essential Oils for Sleep (Basil, Bergamot, Cedarwood, Clary Sage, Chamomile, Frankincense, Lavender, Lemon, Neroli, Petitgrain, Sandalwood, Ylang-Ylang)","Create sleep-inducing blends"]},
+      {title:"Module 3 - Aromatherapy for Stress Relief",items:["The impact of stress on wellbeing; different types of stress","The role of aromatherapy in stress management","Essential Oils that calm the mind (Rose, Vetiver, Jasmine Grandiflora, Geranium, Patchouli, Marjoram)","Blending techniques for stress-relief applications"]},
+      {title:"Module 4 - Natural Remedies for Respiratory Health",items:["Understanding respiratory issues, the immune and respiratory systems","Infectious, chronic and stress-related respiratory diseases","Essential Oils for respiratory support; managing possible toxicity","Olfactory use, atmospheric diffusion, oral intake, balneotherapy","Crafting respiratory-relief blends"]},
+      {title:"Module 5 - Aromatherapy in Skincare",items:["The integumentary system (skin): layers and disorders","Aromatherapy and the endocrine, circulatory, lymphatic, muscular-skeletal and urinary systems","Essential Oils for treating skin conditions","Vegetable oils, macerates, butters and clay uses; Essential Oils ratios"]},
+      {title:"Module 6 - Essential Oils for Emotional Wellbeing",items:["The connection between scent and emotion","Essential Oils that uplift and inspire; blending for emotional balance","History and research about emotions; recipes targeting different emotions"]},
+      {title:"Module 7 - Natural Aromatherapy for Digestive Disorders",items:["The digestive system and its disorders","Aromatic plants for better digestion","Top Essential Oils for the digestive system (Anise Star, Basil, Cardamom, Carrot, Cumin, Chamomile, Cinnamon, Clove, Fennel, Ginger, Lemon, Mandarin, Peppermint, Tea Tree)","Aromatherapy solutions for digestive disorders"]},
+      {title:"Module 8 - Aromatherapy in the Garden and at Home",items:["The aromatherapy garden; incorporating aromatic plants","Natural pest control with Essential Oils","Aromatherapy for home use; recipes for home blends"]},
+      {title:"Module 9 - Integration into Natural Perfumery",items:["Using aromatherapy to enhance fragrance profiles","Ethical sourcing and sustainability in natural perfumery","Continuing education and resources","New Luxury Code"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>

@@ -1,5 +1,7 @@
 <?php /* Template Name: World Perfume History Course [world-perfume-history-course] */ get_header(); ?>
-<!-- BREADCRUMB -->
+
+
+  <!-- BREADCRUMB -->
   <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Courses</a><span class="mx-3">&rarr;</span> <span>World Perfume History Course</span></div>
   </div>
@@ -173,5 +175,39 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"Module 1 - Ancient Egypt",items:["Introduction to the Perfume World Heritage","Nefertum, God of Perfumers, Aromatherapists and Healers","Trade, usage and rituals","Hatshepsut's Expedition; Cleopatra"]},
+      {title:"Module 2 - Ancient Greece",items:["From Gods to Human","The Minoans; The Mycenaeans","Perfumery, a branch of medical science","The “First Perfume Industry”"]},
+      {title:"Module 3 - Ancient Rome",items:["Perfume prohibition makes perfume sales","Decadence","The art of glass"]},
+      {title:"Module 4 - The Arabian World",items:["Sumerians, Akkadians, Babylonians, Chaldeans, Cananeans, Phoenicians, Sabeans and Nabateans","Queen of Sheba and the Lords of the Desert","Harun Al Rachid, Bagdad and the Caliphate","Perfume, the continuation of the Arabian heritage"]},
+      {title:"Module 5 - India and Indianized Countries",items:["India, land of a thousand perfumes; Vedas and mythology","Akbar and Nùr Djihân","South East Asia and Indianized Countries","Angkor and the Khmer Kings"]},
+      {title:"Module 6 - China",items:["Cult of ancestors and incense trade","The Chinese dynasties","“A perfume is always a medicine”"]},
+      {title:"Module 7 - Japan",items:["Nature and the quest for absolute perfection","From imperial culture to military aristocracy","Ko-Do, the game of perfume","Chinese influence during the Ming Dynasty"]},
+      {title:"Module 8 - From East to West",items:["Venice: the Crusaders, Venice and Byzance; Venetian glass and modern perfumery","Spain: Cordoba Caliphate and prosperous Andalucia","Famous travellers and their discoveries"]},
+      {title:"Module 9 - The Therapeutic Use of Perfumes",items:["Perfume, medicine and hygiene","Universities, hospitals and knowledge development"]},
+      {title:"Module 10 - France, Part 1",items:["Italian Renaissance with Catherine de Medicis","Louis XIII and Grasse, the cradle of French perfumery","Louis XIV, the King Sun and the fashionable court"]},
+      {title:"Module 11 - France, Part 2",items:["Louis XV, Pompadour, du Barry and the scented court","Louis XVI, Marie Antoinette and the Revolution","Napoleon, Josephine and the Empire","History and addresses of the first perfume brands"]},
+      {title:"Module 12 - England",items:["Queen Elisabeth I and modern hygiene","Queen Victoria: “Perfume should not be put on the skin”","History and addresses of the first perfume brands"]},
+      {title:"Module 13 - Germany",items:["Secrets of glass, gold and porcelain making","Napoleon, miraculous waters and Cologne water","Creation of the first synthetic molecules, base of modern perfumery"]},
+      {title:"Module 14 - Russia",items:["Importance of the Russian perfume industry before the Revolution","“Staro-Nikolskaya”, the world's largest pharmacy","Post-Revolution perfumes and Kostino, the Russian Murano"]},
+      {title:"Module 15 - The Americas",items:["South America: shamans and “Perfumeros”","North America: cosmetics reviewed with famous women called “Professors”","History and addresses of the first perfume brands"]},
+      {title:"Module 16 - Conclusions: 20th Century",items:["Art Deco; Orientalist inspirations and exotic dreams","Start of the fashion designer perfumery","Perfume: evolution and revolution"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>

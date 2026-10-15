@@ -1,5 +1,7 @@
 <?php /* Template Name: Natural Candle Making [naturalcandlemaking] */ get_header(); ?>
-<!-- BREADCRUMB -->
+
+
+  <!-- BREADCRUMB -->
   <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Masterclasses</a><span class="mx-3">&rarr;</span> <span>Natural Candle Making</span></div>
   </div>
@@ -141,5 +143,27 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"Module 1 - Introduction and Equipment",items:["Introduction to candle making; history notions; modern candle making","The New Luxury Code","How to set up a studio; equipment; safety precautions"]},
+      {title:"Module 2 - Materials",items:["Waxes","Wicks and containers","Essential oils, absolutes and infusions"]},
+      {title:"Module 3 - Creating Candles",items:["Jar candles","Pillar candles"]},
+      {title:"Module 4 - Fragrances and Conclusions",items:["Introduction to formulating natural fragrances for candles","Problem solving","Labeling & packaging; storytelling"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>

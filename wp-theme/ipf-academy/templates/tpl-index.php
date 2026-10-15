@@ -1,5 +1,7 @@
 <?php /* Template Name: IPF Natural Perfumery Teacher's Academy [index] */ get_header(); ?>
-<main>
+
+
+  <main>
 
     <!-- ============================================================== -->
     <!-- HERO                                                           -->
@@ -24,7 +26,7 @@
 
           <div class="mt-10 flex flex-wrap items-center gap-4">
             <a href="#programs" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-[17px] font-semibold uppercase tracking-[0.18em] text-white transition-all duration-300 hover:opacity-90" style="background-color: var(--green-primary);">View Curriculum</a>
-            <a href="#footer" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-[17px] font-semibold uppercase tracking-[0.18em] border bg-transparent transition-all duration-300" style="border-color: var(--green-primary); color: var(--green-primary);">Book a Discovery Call</a>
+            <a href="/contact/" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-[17px] font-semibold uppercase tracking-[0.18em] border bg-transparent transition-all duration-300" style="border-color: var(--green-primary); color: var(--green-primary);">Book a Discovery Call</a>
           </div>
 
           <ul class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 max-w-[670px]">
@@ -468,19 +470,19 @@
             <p class="text-[16px] uppercase tracking-[0.22em]" style="color: var(--light-sage);">Teacher Certification</p>
             <h3 class="mt-8 font-serif text-3xl lg:text-[1.9rem] text-white leading-snug">You teach. Get IPF certified.</h3>
             <p class="mt-5 text-[18px] leading-[1.8] flex-1" style="color: var(--ivory);">Earn an internationally recognised IPF Teacher Certification. Your credentials become verifiable worldwide through the IPF registry.</p>
-            <div class="mt-10"><a href="#footer" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-[16px] font-medium uppercase tracking-[0.18em] border bg-transparent" style="border-color: var(--ivory); color: var(--ivory);">Certify your expertise</a></div>
+            <div class="mt-10"><a href="/for-professionals/" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-[16px] font-medium uppercase tracking-[0.18em] border bg-transparent" style="border-color: var(--ivory); color: var(--ivory);">Certify your expertise</a></div>
           </div>
           <div class="border p-10 flex flex-col hover:border-[var(--light-sage)] transition-colors duration-500" style="border-color: rgba(247,243,236,0.2);">
             <p class="text-[16px] uppercase tracking-[0.22em]" style="color: var(--light-sage);">School Certification</p>
             <h3 class="mt-8 font-serif text-3xl lg:text-[1.9rem] text-white leading-snug">Certify your school's programs.</h3>
             <p class="mt-5 text-[18px] leading-[1.8] flex-1" style="color: var(--ivory);">Have your curriculum certified by the IPF. Your students graduate with internationally recognised certificates linked to the IPF registry.</p>
-            <div class="mt-10"><a href="#footer" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-[16px] font-medium uppercase tracking-[0.18em] border bg-transparent" style="border-color: var(--ivory); color: var(--ivory);">Certify your school</a></div>
+            <div class="mt-10"><a href="/for-professionals/" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-[16px] font-medium uppercase tracking-[0.18em] border bg-transparent" style="border-color: var(--ivory); color: var(--ivory);">Certify your school</a></div>
           </div>
           <div class="border p-10 flex flex-col hover:border-[var(--light-sage)] transition-colors duration-500" style="border-color: rgba(247,243,236,0.2);">
             <p class="text-[16px] uppercase tracking-[0.22em]" style="color: var(--light-sage);">IPF Partner School</p>
             <h3 class="mt-8 font-serif text-3xl lg:text-[1.9rem] text-white leading-snug">Open an IPF School.</h3>
             <p class="mt-5 text-[18px] leading-[1.8] flex-1" style="color: var(--ivory);">Become an official IPF partner and open a certified school under your own name in your territory.</p>
-            <div class="mt-10"><a href="#footer" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-[16px] font-medium uppercase tracking-[0.18em] border bg-transparent" style="border-color: var(--ivory); color: var(--ivory);">Become a partner</a></div>
+            <div class="mt-10"><a href="/for-professionals/" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-[16px] font-medium uppercase tracking-[0.18em] border bg-transparent" style="border-color: var(--ivory); color: var(--ivory);">Become a partner</a></div>
           </div>
         </div>
         <!-- [MOD 4] Creezy: IPF Chairman -->
@@ -650,5 +652,33 @@
   </main>
 
   <!-- FOOTER [MOD 1] Logo, [MOD 4] Creezy, [MOD 5] bigger text -->
+
+<script>
+    
+    const faqs = [
+      { q: "How does online learning work?", a: "Each week a new module is released in your student space. You read the lessons, complete practical exercises submit your assignments and receive personal feedback from your teacher. Regular Zoom meetings are scheduled to discuss progress." },
+      { q: "Do I need previous experience?", a: "No. Our Natural Perfumery foundation course is designed for absolute beginners. Advanced programs require completion of prerequisite courses, which is detailed on each course page." },
+      { q: "How can I learn olfaction online?", a: "Olfaction is trained through structured exercises guided olfactive memory work, weekly assignments reviewed by your teacher and personal Zoom sessions. The methodology has been refined over more than 30 years." },
+      { q: "Can I study while working full-time?", a: "Yes. The program is designed for working professionals. Modules are released weekly but you study at your own pace, on your own schedule." },
+      { q: "How long are the courses?", a: "Courses range from 6 to 16 weeks depending on the program. The Master Natural Perfumery program is our longest and most comprehensive certification." },
+      { q: "When do courses start?", a: "Enrolment is open year-round. Once you enrol, a personal Zoom meeting is arranged with your teacher to set your start date." },
+      { q: "Can I pay in instalments?", a: "Yes. All courses and masterclasses can be paid in 3 or 4 instalments at no extra cost. This option is available on every program." },
+    ];
+    const faqContainer = document.getElementById('faq-container');
+    const openFaqs = new Set([0]);
+    function renderFaqs() {
+      faqContainer.innerHTML = faqs.map((f, i) => `
+        <div class="border-b" style="border-color: rgba(11,65,49,0.15);">
+          <button onclick="toggleFaq(${i})" class="w-full flex justify-between items-center gap-6 py-6 text-left">
+            <span class="font-serif text-xl lg:text-2xl" style="color: var(--green-primary);">${f.q}</span>
+            <span class="text-3xl leading-none transition-transform" style="color: var(--green-primary); transform: rotate(${openFaqs.has(i) ? '45deg' : '0deg'});">+</span>
+          </button>
+          ${openFaqs.has(i) ? `<p class="pb-7 pr-10 text-[18px] leading-[1.8]" style="color: var(--text-dark);">${f.a}</p>` : ''}
+        </div>
+      `).join('');
+    }
+    function toggleFaq(i) { if (openFaqs.has(i)) { openFaqs.delete(i); } else { openFaqs.add(i); } renderFaqs(); }
+    renderFaqs();
+  </script>
 
 <?php get_footer(); ?>

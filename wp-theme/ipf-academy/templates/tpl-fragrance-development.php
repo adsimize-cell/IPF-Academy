@@ -1,5 +1,7 @@
 <?php /* Template Name: Fragrance Development [fragrance-development] */ get_header(); ?>
-<div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+
+
+  <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/for-professionals/" class="hover:opacity-80">For Professionals</a><span class="mx-3">&rarr;</span> <span>Fragrance Development</span></div>
   </div>
 

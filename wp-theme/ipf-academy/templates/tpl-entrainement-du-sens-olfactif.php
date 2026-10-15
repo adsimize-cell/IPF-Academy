@@ -1,5 +1,7 @@
 <?php /* Template Name: Entraînement du sens olfactif [entrainement-du-sens-olfactif] */ get_header(); ?>
-<div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+
+
+  <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Programs</a><span class="mx-3">&rarr;</span> <span>Natural Olfaction Training</span></div>
   </div>
 
@@ -129,5 +131,31 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"Module 1 - Initiation à l'Olfaction",items:["Histoire de l'olfaction","Déclin de l'utilisation du sens olfactif dans notre société","Utilisation primaire du sens olfactif","L'olfaction chez les animaux","Importance de l'olfaction"]},
+      {title:"Module 2 - Introduction aux odeurs",items:["La nature de l'odeur et le système olfactif","Définition des odeurs","Fonctions et pouvoir des odeurs","L'odeur humaine"]},
+      {title:"Module 3 - Psychologie de l'olfaction",items:["Comment les senteurs et les parfums ont un impact sur notre esprit","Messages olfactifs au cerveau","Sensations et souvenirs"]},
+      {title:"Module 4 - Physiologie du sens olfactif",items:["Découvrir l'impact des parfums sur votre corps","Voyagez dans votre corps avec un parfum","Messages aux hormones","Messages au système nerveux","Messages à l'ADN"]},
+      {title:"Module 5 - Formation au sens olfactif",items:["Respirer et sentir, apprendre à respirer correctement pour profiter des odeurs","Méthodes pour préserver et développer le sens olfactif","Anosmie, hyposmie & dysosmie","Méthodes pour restaurer le sens olfactif"]},
+      {title:"Module 6 - Le pouvoir bénéfique des fleurs et des plantes",items:["Introduction à l'aromathérapie","Exemple de plusieurs plantes et leurs pouvoirs bénéfiques"]},
+      {title:"Module 7 - Recherches sur l'olfaction",items:["Histoire de la recherche","Importance de l'olfaction en aromathérapie","Introduction à l'ADN végétal pour restaurer l'ADN humain"]},
+      {title:"Module 8 - Devenez un formateur olfactif certifié",items:["Processus et règles","New Luxury Code / Nouveau Code du Luxe"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>

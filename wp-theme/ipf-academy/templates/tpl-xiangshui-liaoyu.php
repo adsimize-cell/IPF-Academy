@@ -1,5 +1,7 @@
 <?php /* Template Name: 要成为一名香水疗愈师 [xiangshui-liaoyu] */ get_header(); ?>
-<div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+
+
+  <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Programs</a><span class="mx-3">&rarr;</span> <span>Perfumotherapy</span></div>
   </div>
 
@@ -126,5 +128,27 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"课程 1 - 香水疗法的历史(Creezy Courtoy 授课)",items:["模块一 - 香水疗法简介:香水疗法的定义;古代世界中香气的使用","模块二 - 医学与香气的历史:第一所大学的发展;第一家医院的发展;香水产业的发展","结论"]},
+      {title:"课程 2 - 天然香料认证班(Françoise Rapp 授课)",items:["模块 1 - 精油简介:芳香疗法的历史;从香精到精油;提取精油的不同过程;纯露与精油的区别;精油的疗愈功效","模块 2 - 精油质量:决定因素;质量控制与标准;数据参考;Logo 与标签;分析证明;理解标签;芳香图谱","模块 3 - 精油的安全:使用精油的 7 个关键;安全使用;使用禁忌;误用的紧急处理","模块 4 - 精油的植物学与化学性质:植物科及其性质与谨慎使用;什么是化学型;鉴别性质与质量;生物化学与健康属性","模块 5 - 25 种精油的详细描述(罗勒、佛手柑、罗马洋甘菊、肉桂、蓝桉、澳洲尤加利、乳香、天竺葵、生姜、蜡菊、卡塔芙、真正薰衣草、黄柠檬、橙花、绿花白千层、甜橙、薄荷、苦橙叶、罗文莎叶、玫瑰、迷迭香、茶树、百里香、冬青、依兰)","模块 6 - 混合精油的科学与艺术:混合规则与安全;各种使用剂量;不同年龄段的剂量;Zoom 实用指导与问答","模块 7 - 纯露与花水:简介;决定质量的 6 个关键点;疗愈;混合规则与安全","模块 8 - 成为认证香料师:流程与规则;新奢侈准则;最终测试"]},
+      {title:"课程 3 - 嗅觉训练师认证班(Creezy Courtoy 授课)",items:["模块 1 - 嗅觉简介:历史;社会中嗅觉使用的下降;主要用途;动物示例;重要性","模块 2 - 气味简介:气味的本质与嗅觉系统;定义;功能与力量;人的气味","模块 3 - 嗅觉心理学:气味、香味与香水对思想的影响;传递给大脑的信息;感觉与记忆","模块 4 - 嗅觉生理学:气味对身体的影响;香气穿越身体;传递给荷尔蒙、神经系统与 DNA 的信息","模块 5 - 嗅觉训练:呼吸与嗅觉;保持与发展嗅觉的方法;嗅觉丧失、减退与障碍;恢复嗅觉的方法","模块 6 - 花草的有益力量:天然芳香疗法简介;几种植物及其有益功效","模块 7 - 嗅觉研究:研究史;嗅觉在香水疗法中的重要性;引入植物 DNA 以恢复人类 DNA","模块 8 - 成为认证嗅觉训练师:流程与规则;新奢侈准则","每个模块都伴有一个测试(一个模块/一周);课程前后设有个人 Zoom 会议"]},
+      {title:"课程 4 - 天然香料调香师认证班(Françoise Rapp 授课)",items:["含个人作业、三节 2 小时 Zoom 课程、9 本练习册与 1 本 270 页教材;建议先购买最多 15 种香料(入门套件约 140 欧元)","模块 1 - 天然香料简介:主要历史时期的香调与原料;收获日历;天然香料词汇表;作业:准备古老的科隆香水配方","模块 2 - 嗅觉家族:西普调、花香调、薰苔调、柑橘调、皮革调、东方香调、木质调;作业:准备固体天然香水用的植物蜡/纯素蜡","模块 3 - 40 本天然香精、净油与 CO2 提取物的详解:嗅觉分类、来源、碱溶性、IFRA 标准、安全性、气味分子、40 种天然谐香、天然单离香精;作业:嗅觉活动与气味评估","模块 4 - 天然香水结构与调制:基于 40 种香精的香水调性;简单与复杂谐香、定香剂、浸渍、储存与安全;作业:创造 10 款谐香并作评估,以及 2 款指定谐香(玫瑰&麂皮绒)","模块 5 与 6 - 创造:练习创造 24 种谐香;4 种主要香调结构(西普、薰苔、东方、古龙水);在不同香水基底中实验;邮寄 2×1ml 样品给 Françoise Rapp 评估","模块 7 - Zoom 大师班:回顾 7 个嗅觉家族;讨论海洋调、果香调、甘甜调、金属调等的解决方案","模块 8 - Zoom 大师班:用不同中性基底调整创作(固体香膏、面霜、天然凝胶)","模块 9 - Zoom 大师班:创意与技术挑战回顾;如何使天然香水完美平衡且持久","模块 10 - 考核香水师的新奢侈准则:了解 IPF 新奢侈准则;邮寄 2ml 样品与创意概念给 Françoise Rapp"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>

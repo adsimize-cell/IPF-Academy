@@ -1,5 +1,7 @@
 <?php /* Template Name: Fragrant Botany & Chemistry [fragrant-botany-chemistry] */ get_header(); ?>
-<div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+
+
+  <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Masterclasses</a><span class="mx-3">&rarr;</span> <span>Fragrant Botany &amp; Chemistry</span></div>
   </div>
 
@@ -144,5 +146,31 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"Module 1 - Introduction to Fragrant Botany",items:["The fragrant plant explorers","The odorant plants and their classification","The stories behind five noble fragrant plants: rose, tuberose, jasmine, neroli and iris"]},
+      {title:"Module 2 - Introduction to Essential Oils",items:["The history of essential oils; from an essence to an essential oil","What is an essential oil? How an essence is extracted from the plant","How to distinguish one botanical species from another","The difference between hydrosols, floral waters and essential oils; the different extraction processes"]},
+      {title:"Module 3 - The Quality of Essential Oils",items:["What determines the quality of an essential oil","The quality controls and criteria","The data references"]},
+      {title:"Module 4 - The Botany and Chemistry of Essential Oils",items:["The botanical families and their properties","The botanical families and their cautious uses"]},
+      {title:"Module 5 - The Relationship between Odor & Molecule",items:["Description and classification of odor perception","Physicochemical properties of odorants","Structure and odor"]},
+      {title:"Module 6 - The Natural Isolates",items:["What are natural isolates and their quality","The place and role of natural isolates in natural perfumery","Detailed portraits of 20 natural isolates: plant of origin, olfactory quality and uses","IPF values & The New Luxury Code"]},
+      {title:"Module 7 - Other Plant Extracts & Scent Evaluation",items:["Sustainable fragrant waters","Smell and learn to recognise specific molecules in essential oils, absolutes and CO2 extracts"]},
+      {title:"Module 8 - The Safety of Essential Oils",items:["Seven keys to using essential oils; the safe uses of essential oils","What not to do when using essential oils","What to do if you misuse essential oils"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>

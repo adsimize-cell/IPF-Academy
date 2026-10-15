@@ -1,5 +1,7 @@
 <?php /* Template Name: Natural Skin Care [natural-skin-care] */ get_header(); ?>
-<!-- BREADCRUMB -->
+
+
+  <!-- BREADCRUMB -->
   <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Courses</a><span class="mx-3">&rarr;</span> <span>Natural Skin Care</span></div>
   </div>
@@ -173,5 +175,31 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"Modules 1 - Understanding Skin & Personal Care Products",items:["Basic understanding of skin from Western and Traditional Chinese medicine","Commercial personal care products: chemical ingredients, safety and processes","Plant-based natural personal care products: ingredients, safety and processes"]},
+      {title:"Modules 2-3 - Preparing Components",items:["Dry ingredients and wet ingredients","Colorants and scents","Natural preservation methods and use of preservatives"]},
+      {title:"Modules 4-5 - Processes & Equipment",items:["Extraction, emulsification and blending","Sifting and cooling","Product preservation, shelf life, equipment and supplies"]},
+      {title:"Modules 6-7 - Cleansing Products & Toners",items:["Cream cleanser and shaving soap","Baby wipes, facial toner and toothpastes","Basic components, purposes and processes"]},
+      {title:"Modules 8-9 - Moisturizers",items:["Liquid moisturizers, creams and whipped moisturizers","After-shave moisturizers, lip balms and hair conditioners"]},
+      {title:"Modules 10-11 - Specialty Creams",items:["Sun protection creams, therapeutic/relief balms, moisturizers for pregnancy","Baby lotion and oils, baby diaper rash cream, hand sanitizer"]},
+      {title:"Modules 12-13 - Bath & Body Care",items:["Body cream/lotion, bath salts and herbal soak","Bath fizzies, body/foot powder and deodorant"]},
+      {title:"Module 14 - Asian Herbs in Personal Care",items:["Connecting and synchronising to balance with nature","Common herbs used in skin care products","Herbs and plants used in natural hair dyes"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>

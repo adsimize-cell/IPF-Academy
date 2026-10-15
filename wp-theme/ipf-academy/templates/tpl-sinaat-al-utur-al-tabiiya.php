@@ -1,5 +1,7 @@
 <?php /* Template Name: تعلّم صناعة العطور الطبيعية [sinaat-al-utur-al-tabiiya] */ get_header(); ?>
-<div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+
+
+  <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div dir="ltr" class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Programs</a><span class="mx-3">&rarr;</span> <span>Natural Perfumery</span></div>
   </div>
 
@@ -127,5 +129,32 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"الوحدة الأولى - مقدمة في صناعة العطور الطبيعية",items:["تاريخ صناعة العطور الطبيعية عبر الفترات الكبرى ووصفاتها الأصلية","النوتات الشميّة والمواد الأولية عبر الفترات التاريخية الكبرى؛ مواسم الحصاد","قائمة مصطلحات استخلاص المواد الطبيعية للتعرف على مختلف نوعيات العطور وتقييمها","نشاط: تعلّم كيفية تحضير وصفة قديمة لماء كولونيا Eau de Cologne Admirable"]},
+      {title:"الوحدة الثانية - العائلات الشميّة",items:["استكشاف العائلات الشميّة والمواد الأولية المخصصة لكل منها وتاريخها","عائلة الشيبر، العائلة الزهرية، عائلة الفوجير، عائلة الحمضيات، عائلة الجلود، العائلة الشرقية، العائلة الخشبية","نشاط: تحضير الشمع النباتي المستعمل في العطور الطبيعية الصلبة"]},
+      {title:"الوحدة الثالثة - استكشاف 40 دراسة لخلاصات طبيعية ومطلقات ومستخلصات CO2",items:["دراسة 40 خلاصة طبيعية (العنبر، حب المسك، الحبق، الجاوي، البرغموت، خشب الورد، الهيل، الأرز الأطلسي، الياسمين، اللافندر الفرنسي، النيرولي، السوسن، الباتشولي، الورد، الفانيليا، نجيل الهند، يلانغ يلانغ وغيرها)","تصنيفها الشمي، أصلها، قابلية الذوبان، معايير IFRA، السلامة، الجزيئات العطرية، انسجامات 40 عطراً طبيعياً","المستخلصات الطبيعية: مكانها ودورها وكيفية إنتاجها","نشاط: أنشطة الشمّ وتقييم الرائحة"]},
+      {title:"الوحدة الرابعة - بنية العطور الطبيعية والمصمَّمة خصيصاً",items:["«عجلة» العطر الطبيعي وفق 40 عطراً، شدتها وأوجهها وتكاملها","الانسجامات البسيطة والمعقدة، المثبّتات، النقع، التخزين والسلامة","النوتات والتراكيب المختلفة لخلق عطر طبيعي متوازن","نشاط: إنشاء 10 انسجامات مع تقييم شمي مفصّل، ومزيجين مخصصين (الجلد المدبوغ والورد)"]},
+      {title:"الوحدتان الخامسة والسادسة - الابتكار شغّال",items:["التدرّب على إنشاء 24 انسجاماً ودمجها مع عطور طبيعية من اختيارك","تعلّم 4 مخططات عطرية رئيسية: تشيبر، فوجير، شرقي، كولونيا","تجربة الوصفات بقواعد مختلفة (الكحول المعطّر، غير المعطّر، الماء، زيت الجوجوبا، الشمع النباتي)","إرسال عيّنتين 1 مل إلى Françoise Rapp للمراجعة (تحضير لامتحانك النهائي)"]},
+      {title:"الوحدة السابعة - ماستر كلاس Zoom: مراجعة المواد الأولية",items:["مراجعة العائلات السبع الشميّة وتكيّفها في صناعة العطور الطبيعية","مناقشة المحاليل والعطور لإنشاء نوتات متنوعة (بحرية، فواكه، حلوة، معدنية...)"]},
+      {title:"الوحدة الثامنة - ماستر كلاس Zoom: تعديل صنعك بقواعد مختلفة",items:["صناعة عطرك الاحترافي","ضبط الصيغة وفق قواعد معتدلة مختلفة: العطور الصلبة بالشمع الطبيعي، الكريمات، المواد الهلامية"]},
+      {title:"الوحدة التاسعة - ماستر كلاس Zoom: مراجعة التحديات الإبداعية والتقنية",items:["الحيل والنصائح لجعل عطرك الطبيعي متوازناً تماماً ويدوم طويلاً"]},
+      {title:"الوحدة العاشرة - قانون الرفاهية الجديد للعطّارين والامتحان النهائي",items:["كل شيء عن IPF Luxury Code for Perfumers","إرسال عيّنة 2 مل إلى Françoise Rapp مع وصف الفكرة وأهداف ابتكارك (لوحة مزجية أو وصف كامل)"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-right" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>

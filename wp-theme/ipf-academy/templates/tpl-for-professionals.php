@@ -1,5 +1,7 @@
 <?php /* Template Name: For Professionals [for-professionals] */ get_header(); ?>
-<main>
+
+
+  <main>
     <!-- HERO -->
     <section class="relative text-white overflow-hidden" style="background:var(--green-primary);">
       <div class="absolute inset-0" style="background:var(--green-primary);"></div>
@@ -138,6 +140,7 @@
       </div>
     </section>
   </main>
+
 <script>
     const FAQS=[
       {q:"Do I need to be an IPF student to become a certified teacher?",a:"Yes. The Teaching Methodology masterclass is reserved for students who are already Certified Natural Perfumers, Certified Aromatherapists or Certified Olfaction Trainers."},
@@ -159,4 +162,5 @@
     }
     renderFaq();
   </script>
+
 <?php get_footer(); ?>

@@ -1,5 +1,7 @@
 <?php /* Template Name: Corso di Profumeria Naturale [profumeria-naturale] */ get_header(); ?>
-<div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+
+
+  <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Programs</a><span class="mx-3">&rarr;</span> <span>Natural Perfumery</span></div>
   </div>
 
@@ -126,5 +128,32 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"Modulo 1 - Introduzione alla Profumeria Naturale",items:["Storia, note olfattive, calendario di raccolto, glossario di estrazione","Attività: preparazione dell'antica formula Eau de Cologne Admirable"]},
+      {title:"Modulo 2 - Famiglie Olfattive",items:["Chypre, floreale, fougère, esperidata, cuoiata, orientale, legnosa","Attività: preparazione di cera vegetale/vegana"]},
+      {title:"Modulo 3 - 40 Monografie",items:["Ambra grigia, basilico, benzoino, bergamotto, cardamomo, cedro, gelsomino, lavanda, neroli, patchouli, rosa, vaniglia, vetiver e altri","Classificazione olfattiva, origine, solubilità, standard IFRA, sicurezza, molecole odorose, 40 accordi"]},
+      {title:"Modulo 4 - Struttura e Creazione Personalizzata",items:["Fragrance wheel, accordi semplici/complessi, fissativi, macerazione, conservazione","Attività: 10 accordi e 2 miscele personalizzate"]},
+      {title:"Moduli 5 e 6 - Creazione",items:["24 accordi, 4 diagrammi principali (chypre, fougère, orientale, colonia)","Invio di 2 campioni da 1ml per valutazione"]},
+      {title:"Modulo 7 - Zoom Masterclass",items:["Sette famiglie olfattive in dettaglio","Essenze per note marine, fruttate, dolci, metalliche"]},
+      {title:"Modulo 8 - Zoom Masterclass",items:["Adattamento della formula a diverse basi neutre","Profumi solidi, creme, gel"]},
+      {title:"Modulo 9 - Zoom Masterclass",items:["Trucchi e consigli per profumi naturali bilanciati e duraturi"]},
+      {title:"Modulo 10 - IPF Luxury Code ed Esame Finale",items:["Invio campione 2ml con descrizione creativa attraverso mood board o saggio"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>

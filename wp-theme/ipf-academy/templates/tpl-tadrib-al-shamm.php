@@ -1,5 +1,7 @@
 <?php /* Template Name: تدريب على الشم الطبيعي [tadrib-al-shamm] */ get_header(); ?>
-<div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+
+
+  <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div dir="ltr" class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Programs</a><span class="mx-3">&rarr;</span> <span>Natural Olfaction Training</span></div>
   </div>
 
@@ -126,5 +128,31 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"الوحدة الأولى - مقدمة في الشّم",items:["تاريخ الشّم","تراجع استخدام حاسة الشّم في مجتمعنا","الاستخدام الأساسي للحاسة الشّمية","أمثلة عن الحيوانات","أهمية الشّم"]},
+      {title:"الوحدة 2 - مقدمة عن الروائح",items:["طبيعة الرائحة والجهاز الشمي","تعريف الروائح","وظائف و قوة الرائحة","رائحة الإنسان"]},
+      {title:"الوحدة الثالثة - سيكولوجية الشم",items:["كيف تؤثر الروائح والعطور على أذهاننا","رسائل شمية إلى الدماغ","الأحاسيس والذكريات"]},
+      {title:"الوحدة 4 - فسيولوجيا حاسة الشم",items:["اكتشف تأثير الروائح على جسمك","سافر برائحة من خلال جسدك","رسائل للهرمونات","رسائل للجهاز العصبي","رسائل إلى DNA"]},
+      {title:"الوحدة الخامسة - تدريب حاسة الشم",items:["التنفس والشم وتعلم كيفية التنفس بشكل صحيح للاستفادة من الروائح","طرق الحفاظ على حاسة الشم وتنميتها","فقدان حاسة الشم ونقص حاسة الشم وعسر حاسة الشم","طرق استعادة حاسة الشم"]},
+      {title:"الوحدة 6 - القوة المفيدة للزهور والنباتات",items:["مقدمة في العلاج بالروائح","أمثلة على عدة نباتات وقوتها المفيدة"]},
+      {title:"الوحدة 7 - البحث عن الشم",items:["تاريخ البحث","أهمية الشم في العلاج بالعطور","مقدمة في الحمض النووي للنبات لتجديد الحمض النووي البشري"]},
+      {title:"الوحدة الثامنة - كيف تصبح مدربًا معتمدًا في الشم",items:["المنهج والقواعد","قانون الرفاهية الجديد"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-right" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>

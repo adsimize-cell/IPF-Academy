@@ -1,5 +1,7 @@
 <?php /* Template Name: Aprende Perfumería Natural [perfumeria-natural] */ get_header(); ?>
-<div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+
+
+  <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Programs</a><span class="mx-3">&rarr;</span> <span>Natural Perfumery</span></div>
   </div>
 
@@ -129,5 +131,25 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"Curso 1: Entrenamiento del Olfato (4 semanas)",items:["Módulo 1 - Introducción al Olfato","Módulo 2 - Introducción a los Olores","Módulo 3 - La Psicología del Olfato","Módulo 4 - La Fisiología del Sentido del Olfato","Módulo 5 - Entrenamiento del Sentido del Olfato","Módulo 6 - El Poder Benéfico de las Flores y Plantas","Módulo 7 - Investigación acerca del Olfato","Módulo 8 - Llegar a ser un Entrenador Certificado del Olfato"]},
+      {title:"Curso 2: Perfumería Natural (8 semanas)",items:["Módulo 1 - Introducción a la Perfumería Natural","Módulo 2 - Familias Olfativas","Módulo 3 - Materias Primas de la Perfumería Natural y Técnicas de Extracción","Módulo 4 - Materias Primas Esenciales","Módulo 5 - La Estructura del Perfume y Creación","Módulos 6-8 - Exploración creativa","Módulo 9 - De una Idea a un Perfume","Módulo 10 - Certificación y Prospectivas Futuras"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>

@@ -1,5 +1,7 @@
 <?php /* Template Name: Natural Olfaction Training [natural-olfaction-training] */ get_header(); ?>
-<!-- BREADCRUMB -->
+
+
+  <!-- BREADCRUMB -->
   <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Courses</a><span class="mx-3">&rarr;</span> <span>Natural Olfaction Training</span></div>
   </div>
@@ -219,5 +221,31 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"Module 1 - Introduction to Olfaction",items:["History of olfaction","Decline of the use of the olfactory sense in our society","Primary use of the olfactory sense","Animal examples","Importance of olfaction"]},
+      {title:"Module 2 - Introduction to Odors",items:["The nature of odor and the olfactory system","Definition of odors","Odor functions and power","Human odor"]},
+      {title:"Module 3 - The Psychology of Olfaction",items:["How scents, fragrances and perfumes impact our mind","Olfactory messages to the brain","Sensations and memories"]},
+      {title:"Module 4 - The Physiology of the Olfactory Sense",items:["Discover the impact of scents on your body","Travel with a scent through your body","Messages to hormones","Messages to the nervous system","Messages to DNA"]},
+      {title:"Module 5 - The Olfactory Sense Training",items:["Breathing and smelling: learning how to breathe correctly to benefit from odors","Methods to preserve and develop the olfactory sense","Anosmia, hyposmia & dysosmia","Methods to restore the olfactory sense"]},
+      {title:"Module 6 - The Beneficial Power of Flowers and Plants",items:["Introduction to aromatherapy","Examples of several plants and their beneficial power"]},
+      {title:"Module 7 - Research on Olfaction",items:["History of Research","Importance of Olfaction in Perfumotherapy","Introduction to plant DNA to restore human DNA"]},
+      {title:"Module 8 - Becoming a Certified Olfaction Trainer",items:["Process & rules","New Luxury Code"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>

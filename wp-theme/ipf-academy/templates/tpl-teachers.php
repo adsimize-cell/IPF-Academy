@@ -1,5 +1,7 @@
 <?php /* Template Name: Teachers [teachers] */ get_header(); ?>
-<div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+
+
+  <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/" class="hover:opacity-80">Home</a><span class="mx-3">&rarr;</span> <span>Teachers</span></div>
   </div>
 
@@ -37,6 +39,7 @@
       </div>
     </section>
   </main>
+
 <script>
     const FACULTY=[
       {name:"Creezy Courtoy",role:"Founder, Director and Teacher",fields:["Natural Olfaction Training","Perfumotherapy","World Perfume History","Anthropology of Perfume","Sustainable Oud","Natural Perfumery Teaching Methodology","Olfaction Training for Children"]},
@@ -67,4 +70,5 @@
         </div>
       </article>`).join('');
   </script>
+
 <?php get_footer(); ?>

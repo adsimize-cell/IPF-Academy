@@ -1,5 +1,7 @@
 <?php /* Template Name: Natural Perfumery [learnnaturalperfumery-790464] */ get_header(); ?>
-<!-- BREADCRUMB -->
+
+
+  <!-- BREADCRUMB -->
   <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Courses</a><span class="mx-3">&rarr;</span> <span>Natural Perfumery</span></div>
   </div>
@@ -172,5 +174,27 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"Course 1 - Olfaction Training (8 modules)",items:["Introduction to Olfaction; Introduction to Odors","The Psychology and the Physiology of the Olfactory Sense","The Olfactory Sense Training; the beneficial power of flowers and plants","Research on Olfaction; Becoming a Certified Olfaction Trainer","2 modules & 2 tests per week; personal Zoom meeting before and survey after"]},
+      {title:"Course 2 - World Perfume History & Anthropology of Perfume",items:["Introduction to the World Perfume History","Understanding scent preferences for creating and distributing fragrances","Created by Creezy Courtoy, perfume historian and anthropologist, author of Les Routes du Parfum"]},
+      {title:"Course 3 - Natural Perfumery Intensive Certification (10 modules, Andrej Babicky)",items:["Foundations of Natural Perfumery; the New Luxury Code and IPF standards","Olfactory families & professional language; structured smelling sessions","Natural raw materials & extraction methods","Detailed study of 50 core natural raw materials","Perfume architecture & formulation; accord construction","Modules 6 to 8: creative development from simple to advanced accords","From concept to finished perfume; mood boards","Certification & professional outlook; final one-on-one Zoom review"]},
+      {title:"Course 4 - Business & Marketing (Terry Johnson)",items:["Introduction to business and marketing in the essential oils and perfumery environment","Given by Terry Johnson, Business and Marketing Expert, Member of the IPF Natural Perfumery Teacher's Academy"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>

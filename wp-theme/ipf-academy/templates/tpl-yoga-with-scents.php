@@ -1,5 +1,7 @@
 <?php /* Template Name: Yoga with Scents [yoga-with-scents] */ get_header(); ?>
-<div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+
+
+  <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Masterclasses</a><span class="mx-3">&rarr;</span> <span>Yoga with Scents</span></div>
   </div>
 
@@ -140,5 +142,31 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"Module 1 - Foundations of Gandhashastra & Safe Scent in Yoga",items:["History of Gandhashastra, Ayurveda and yoga rituals","Essential oil safety: dilution, patch testing, consent in group classes","Session inclusivity: allergies, sensitivities, asthma","Practice: develop a scent-use policy for yoga classes"]},
+      {title:"Module 2 - Ayurveda & Aromas for Dosha Balance",items:["Understanding Vata, Pitta, Kapha through aroma & breath","Carrier oils in Ayurvedic context","Seasonal and class-type considerations","Practice: build a dosha-based oil selection sheet"]},
+      {title:"Module 3 - Pranayama, Breath and Aroma",items:["How aromas affect the olfactory-limbic-autonomic nervous system","Linking inhalation cycles with scents for pranayama","Diffusion vs. inhaler techniques","Practice: create a pranayama-scent plan for one sequence"]},
+      {title:"Module 4 - Oils for Yoga Styles & Outcomes",items:["Grounding oils (vetiver, sandalwood, chamomile); focus oils (peppermint, rosemary)","Uplift & mood oils (citrus family); cooling oils (eucalyptus, mint)","Practice: 90-min yoga sequence with oil roles per segment (emotional & mental health, endocrine, sleep, menstrual cycle, respiratory)"]},
+      {title:"Module 5 - Practical Tools: Diffusion, Spritzes, Topical Use",items:["How to diffuse ethically in a shared space","Creating yoga-mat sprays, room spritzes, personal inhalers","Topical application for self-care (not directly on students)","Practice: design a class diffusion + spritz plan"]},
+      {title:"Module 6 - Safety, Contraindications & Sustainable Practices",items:["Oils contraindicated in pregnancy, epilepsy or asthma; dilution guidelines (1-3%)","Sustainable sourcing, ethical trade, avoiding synthetic oils","Practice: create a student safety notice + consent form"]},
+      {title:"Module 7 - Designing Yoga Classes with Aroma Protocols",items:["Sequencing: grounding, asana, pranayama, meditation","Language for inclusivity & non-coercion; designing student handouts","Practice: create a complete 75-min class plan with oils + handout"]},
+      {title:"Module 8 - Capstone Project",items:["Full yoga + scent protocol (asana, pranayama, oils, ethics)","Peer-reviewed presentation; student-facing resource (protocols + self-care tips)","Practice: final group teaching with integrated oils"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>

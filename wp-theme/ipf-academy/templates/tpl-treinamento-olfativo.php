@@ -1,5 +1,7 @@
 <?php /* Template Name: Treinamento Olfativo [treinamento-olfativo] */ get_header(); ?>
-<div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+
+
+  <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Programs</a><span class="mx-3">&rarr;</span> <span>Natural Olfaction Training</span></div>
   </div>
 
@@ -134,5 +136,31 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"Módulo 1 - Introdução ao Olfato",items:["História do olfato","Declínio do uso do sentido olfativo em nossa sociedade","Uso primário do sentido olfativo","Exemplos de animais","Importância do olfato"]},
+      {title:"Módulo 2 - Introdução aos Odores",items:["A natureza do odor e o sistema olfativo","Definição de odores","Funções de odor e poder","Odor humano"]},
+      {title:"Módulo 3 - A Psicologia do Olfato",items:["Como aromas, fragrâncias e perfumes impactam nossa mente","Mensagens olfativas para o cérebro","Sensações e memórias"]},
+      {title:"Módulo 4 - A Fisiologia do Sentido Olfativo",items:["Descubra o impacto dos aromas no seu corpo","Viaje com um perfume pelo corpo","Mensagens para hormônios","Mensagens para o sistema nervoso","Mensagens para o DNA"]},
+      {title:"Módulo 5 - O Treinamento do Sentido Olfativo",items:["Respirar e cheirar, aprender a respirar corretamente para aproveitar os odores","Métodos para preservar e desenvolver o sentido olfativo","Anosmia, hiposmia e disosmia","Métodos para restaurar o sentido olfativo"]},
+      {title:"Módulo 6 - O poder benéfico das flores e plantas",items:["Introdução à aromaterapia","Exemplo de várias plantas e seu poder benéfico"]},
+      {title:"Módulo 7 - Pesquisa sobre o olfato",items:["História da Pesquisa","Importância do Olfato na Perfumaria","Introdução ao DNA vegetal para restaurar o DNA humano"]},
+      {title:"Módulo 8 - Tornando-se um instrutor de olfato certificado",items:["Processo e regras","Novo Código de Luxo"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>

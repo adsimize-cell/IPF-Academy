@@ -1,5 +1,7 @@
 <?php /* Template Name: About [about] */ get_header(); ?>
-<div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+
+
+  <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/" class="hover:opacity-80">Home</a><span class="mx-3">&rarr;</span> <span>About</span></div>
   </div>
 

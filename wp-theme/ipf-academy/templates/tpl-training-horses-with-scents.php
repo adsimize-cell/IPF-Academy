@@ -1,5 +1,7 @@
 <?php /* Template Name: Facilitate Horse Training with Scents [training-horses-with-scents] */ get_header(); ?>
-<!-- BREADCRUMB -->
+
+
+  <!-- BREADCRUMB -->
   <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Masterclasses</a><span class="mx-3">&rarr;</span> <span>Training Horses with Scents</span></div>
   </div>
@@ -149,5 +151,31 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"Module 1 - Foundations of Equine Scent Perception",items:["How horses smell: anatomy of the equine olfactory system","The vomeronasal organ and flehmen response; why scent is a primary sense","How scent influences behaviour - emotions, memory and trust-building","Scent cues vs. visual or auditory cues; observing scent investigation behaviour"]},
+      {title:"Module 2 - Introduction to Aromatherapy for Horses",items:["Essential oil basics: extraction and properties","Therapeutic-grade vs. synthetic fragrance","Safe usage: dilution rates and application methods","Setting up a “scent bar” for horses to self-select oils"]},
+      {title:"Module 3 - Scent Profiling & Individual Horse Responses",items:["Reading horse body language with scents; signs of interest, pleasure, avoidance or stress","Recognizing overstimulation","Creating a horse's scent profile; tracking preferred vs. disliked scents","Using observation logs to document scent reactions"]},
+      {title:"Module 4 - Training Applications of Scent",items:["Scents for calming and focus (lavender, chamomile, neroli); before farrier, vet or trailer loading","Scents for motivation and energy (peppermint, rosemary, ginger)","Behavioural conditioning: associating a scent with a training cue","Pairing a specific scent with a groundwork cue"]},
+      {title:"Module 5 - Scent-Based Desensitization",items:["Introducing novel smells safely; avoiding sensory overload","Rehabilitating spooky or anxious horses with scent; counter-conditioning","Controlled scent exposure for a reactive horse"]},
+      {title:"Module 6 - Advanced Applications",items:["Scents in competition and performance; relaxing before the arena","Maintaining mental focus during warm-up","Tracking and trail work; designing a scent trail for a horse to follow"]},
+      {title:"Module 7 - Safety, Ethics & Customization",items:["Toxicity and contraindications (avoid tea tree, camphor, wintergreen); dosage control","Ethical use of scents; avoiding dependency; respecting horse choice and consent","Safety protocols and emergency response for allergic reactions"]},
+      {title:"Module 8 - Capstone Project",items:["A personalised scent-based training plan for a specific horse","Horse profile & goals; chosen scents & rationale","Application method & safety measures; progress tracking log"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>

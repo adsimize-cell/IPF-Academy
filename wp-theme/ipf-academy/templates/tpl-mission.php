@@ -1,5 +1,7 @@
 <?php /* Template Name: Mission [mission] */ get_header(); ?>
-<div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+
+
+  <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/about/" class="hover:opacity-80">About</a><span class="mx-3">&rarr;</span> <span>Mission</span></div>
   </div>
 
@@ -63,7 +65,7 @@
       <div class="mx-auto max-w-[900px] px-6 lg:px-12 text-center">
         <h2 class="font-serif text-4xl lg:text-[3.3rem] leading-[1.1]">We're Changing That</h2>
         <p class="mt-6 text-[19px] leading-[1.85]" style="color:var(--ivory);">Our perfumes and our bees are disappearing. We're changing that in creating more teachers, more perfumers and more jobs worldwide!</p>
-        <div class="mt-8"><a href="/programs/" class="inline-flex items-center px-8 py-3.5 text-[14px] font-medium uppercase tracking-[0.22em]" style="background:var(--ivory);color:var(--green-primary);">Become a Teacher</a></div>
+        <div class="mt-8"><a href="/teaching-methodology/" class="inline-flex items-center px-8 py-3.5 text-[14px] font-medium uppercase tracking-[0.22em]" style="background:var(--ivory);color:var(--green-primary);">Become a Teacher</a></div>
       </div>
     </section>
   </main>

@@ -1,5 +1,7 @@
 <?php /* Template Name: Master Natural Perfumery [master-natural-perfumery] */ get_header(); ?>
-<!-- BREADCRUMB -->
+
+
+  <!-- BREADCRUMB -->
   <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Courses</a><span class="mx-3">→</span><span style="color:var(--green-primary);">Master Natural Perfumery</span></div>
   </div>

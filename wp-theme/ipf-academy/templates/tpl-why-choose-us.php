@@ -1,5 +1,7 @@
 <?php /* Template Name: Why Choose Us [why-choose-us] */ get_header(); ?>
-<main>
+
+
+  <main>
     <!-- HERO -->
     <section class="text-white" style="background:var(--green-primary);">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12 py-24 lg:py-32">

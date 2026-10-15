@@ -1,5 +1,7 @@
 <?php /* Template Name: Luxury Private Mentoring [private-mentoring] */ get_header(); ?>
-<!-- BREADCRUMB -->
+
+
+  <!-- BREADCRUMB -->
   <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Courses</a><span class="mx-3">&rarr;</span> <span>Luxury Private Mentoring</span></div>
   </div>
@@ -144,5 +146,29 @@
       </div>
     </section>
   </main>
+
+<script>
+    const MODULES=[
+      {title:"Phase I - Alignment & Diagnostic",items:["Establish a shared ground: a common language, a clear rhythm, and a precise understanding of where the participant stands","Surface strengths, habits and hesitations","Remove noise, clarify intent, and define a consciously chosen trajectory"]},
+      {title:"Phase II - Advanced Material & Sensory Intelligence",items:["Listening to materials without interruption","Raw materials approached as entities with structure, tension, memory and limits","Move beyond recognition and preference, toward material understanding - discernment replaces accumulation"]},
+      {title:"Phase III - Accord Construction & Structural Authority",items:["Accords and structures built, dismantled, reduced and rebuilt to cultivate control","Develop structural confidence: shape complexity without losing clarity","Recognise when a composition has already said enough - authority replaces hesitation"]},
+      {title:"Phase IV - Bespoke Fragrance & Applied Projects",items:["Concepts tested through finished works: perfumes, bases and applied formats","Translate vision without dilution across mediums","Where vision becomes accountable"]},
+      {title:"Phase V - Critical Review, Language & Positioning",items:["Work examined for coherence between intention and outcome, material choice and ethical stance","Language as a tool for precision, not persuasion","Allow the work to stand without justification, and the maker to recognise their position without imitation"]},
+      {title:"Phase VI - Integration, Documentation & Outcome",items:["The work is consolidated, not closed","Materials, accords, decisions and methods gathered into a personal archive","Ensure the practice becomes autonomous, repeatable and internally coherent - a stable point of departure"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
 
 <?php get_footer(); ?>

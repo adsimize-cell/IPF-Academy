@@ -1,5 +1,7 @@
 <?php /* Template Name: Business and Marketing [business-marketing] */ get_header(); ?>
-<!-- BREADCRUMB -->
+
+
+  <!-- BREADCRUMB -->
   <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Courses</a><span class="mx-3">&rarr;</span> <span>Business &amp; Marketing</span></div>
   </div>
@@ -175,5 +177,29 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"Week 1 - Modules 1 & 2",items:["Pre-course Zoom introduction (1 hour)","Module 1: A New Beginning - proper preparation for future business","Module 2: Transforming the language of marketing"]},
+      {title:"Week 2 - Modules 3 & 4",items:["Module 3: Identifying and engaging post-pandemic consumers","Module 4: Reimagining your mission, vision and value proposition"]},
+      {title:"Week 3 - Modules 5 & 6",items:["Zoom review (1 hour)","Module 5: Understanding and practising marketing fundamentals","Module 6: Identifying and building post-pandemic brand value"]},
+      {title:"Week 4 - Module 7",items:["Module 7: Renewing your post-pandemic business plan"]},
+      {title:"Week 5 - Modules 8, 9 & 10",items:["Zoom review (1 hour)","Module 8: Welcome to the High-Value Natural Essence Community","Module 9: Sourcing value-added essential oil","Module 10: The importance of sustainability"]},
+      {title:"Week 6 - Modules 11 & 12",items:["Module 11: Profiting from the growth of a high-value market","Module 12: Monitoring and managing a successful future","Post-course Zoom review (1 hour)"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>

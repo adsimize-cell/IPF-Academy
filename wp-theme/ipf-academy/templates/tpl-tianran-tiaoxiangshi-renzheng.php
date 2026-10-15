@@ -1,5 +1,7 @@
 <?php /* Template Name: 天然香料调香师认证班 [tianran-tiaoxiangshi-renzheng] */ get_header(); ?>
-<div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+
+
+  <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Programs</a><span class="mx-3">&rarr;</span> <span>Natural Perfumery</span></div>
   </div>
 
@@ -127,5 +129,32 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"模块 1 - 天然香料简介",items:["主要历史时期的嗅觉香调和原料","收获日历","天然香料词汇表：认识各种形式天然香精的不同品质","作业：学习如何准备古老的科隆香水配方"]},
+      {title:"模块 2 - 嗅觉家族",items:["西普调、花香调、薰苔调、柑橘调","皮革调、东方香调、木质调","了解各嗅觉家族的天然原料及其历史","作业：准备用于固体天然香水的植物蜡 / VEGAN 蜡"]},
+      {title:"模块 3 - 探索 40 种天然香精、净油和 CO2 提取物",items:["龙涎香、黄葵、安息香、佛手柑、玫瑰木、金合欢、豆蔻、大西洋雪松、岩玫瑰、法国快乐鼠尾草、可可、愈创木、白松香、埃及天竺葵、生姜、大花茉莉、杜松浆果、法国真正薰衣草、红柑橘、摩洛哥橙花、鸢尾、广藿香、苦橙叶、柠檬草、粉红胡椒、玫瑰、万寿菊、烟草、零陵香豆、晚香玉、香草、海地岩兰草、特级依兰 等","嗅觉分类、来源、碱溶性、IFRA 标准、安全性与注意事项、气味分子与评价","天然单离香精在天然香料世界中的地位和作用","作业：嗅觉活动和气味评估"]},
+      {title:"模块 4 - 天然香水结构和调制",items:["基于 40 种天然香精的香水调性、强度、芳香家族与协同作用","简单与复杂的谐香、定香剂、浸渍过程、储存与安全","运用香调打造微妙而完美平衡的香水","了解天然香水和古典香水的区别与注意事项","作业：创造 10 款谐香并进行嗅觉评估，创造玫瑰 & 麂皮绒谐香"]},
+      {title:"模块 5 和 6 - 创造",items:["练习创造 24 种谐香（垂直、水平、玫瑰、麂皮绒等）","学习 4 种主要香调结构：西普调、薰苔调、东方香调、古龙水","准备加香酒精与定香剂","在加香酒精、无味酒精、纯露、荷荷巴油、植物蜡等基底中实验配方","邮寄 2×1 ml 样品给 Kristin Chen 老师评估（结业考试前期准备）","作业：24 种谐香实践、配方制定与定价（提供 Excel 文档）"]},
+      {title:"模块 7 - Zoom 大师班：天然原料回顾与答疑",items:["回顾 7 个嗅觉家族的香调呈现及其在天然香水中的适应性","讨论海洋调、果香调、甘甜调、金属调等的解决方案"]},
+      {title:"模块 8 - Zoom 大师班：用不同中性基底调整创作",items:["打造您的专业香水","根据固体香膏、面霜、天然凝胶等不同基底调整配方"]},
+      {title:"模块 9 - Zoom 大师班：创意与技术挑战回顾",items:["学习如何使您的天然香水完美平衡且持久"]},
+      {title:"模块 10 - 香水师与天然香料师的新奢侈准则",items:["了解 IPF 新奢侈准则的全部内容","体验自己制作的成熟香水作品","可将 2 ml 样品与描述性概念 / 情绪板寄给 Kristin Chen 老师评估（不迟于课程结束后一个月）"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>

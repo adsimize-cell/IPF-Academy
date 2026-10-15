@@ -1,5 +1,7 @@
 <?php /* Template Name: Botánica y Química Aromáticas [botanica-y-quimica-aromaticas] */ get_header(); ?>
-<div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+
+
+  <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] sm:text-[16px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="/programs/" class="hover:opacity-80">Programs</a><span class="mx-3">&rarr;</span> <span>Fragrant Botany &amp; Chemistry</span></div>
   </div>
 
@@ -126,5 +128,31 @@
       </div>
     </section>
   </main>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
+
+<script>
+    const MODULES=[
+      {title:"Módulo 1 - Introducción a la Botánica Aromática",items:["Fundamentos de la botánica aplicada a la perfumería"]},
+      {title:"Módulo 2 - Introducción a los Aceites Esenciales",items:["Naturaleza y obtención de los aceites esenciales"]},
+      {title:"Módulo 3 - La Calidad de los Aceites Esenciales",items:["Criterios de calidad y evaluación"]},
+      {title:"Módulo 4 - La Botánica y Química de los Aceites Esenciales",items:["Relación entre la planta, su química y su aroma"]},
+      {title:"Módulo 5 - La Relación entre Olor y Molécula",items:["Cómo la molécula determina la percepción del olor"]},
+      {title:"Módulo 6 - Los Aislados Naturales",items:["Incluye 20 aislados naturales detallados"]},
+      {title:"Módulo 7 - Otros Extractos de Plantas y Evaluación del Aroma",items:["Extractos vegetales y evaluación olfativa"]},
+      {title:"Módulo 8 - La Seguridad de los Aceites Esenciales",items:["Buenas prácticas y seguridad en el uso"]},
+    ];
+    let openIdx=0;
+    function renderAcc(){
+      document.getElementById('accordion').innerHTML=MODULES.map((m,i)=>`
+        <div class="border-b" style="border-color:rgba(11,65,49,.15);">
+          <button onclick="openIdx=${openIdx===i?-1:i};renderAcc();" class="w-full flex items-center justify-between gap-4 text-white px-5 sm:px-6 py-5 text-left" style="background:var(--green-primary);">
+            <span class="font-serif text-lg sm:text-xl lg:text-2xl">${m.title}</span>
+            <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform .3s;transform:rotate(${openIdx===i?180:0}deg)"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          ${openIdx===i?`<div class="bg-white px-5 sm:px-6 lg:px-10 py-7"><ul class="space-y-3 text-[17px] sm:text-[18px] leading-relaxed" style="color:var(--text-dark);">${m.items.map(it=>`<li class="flex gap-3"><span style="color:var(--soft-sage);">&#9670;</span><span>${it}</span></li>`).join('')}</ul></div>`:''}
+        </div>`).join('');
+    }
+    renderAcc();
+    
+  </script>
+
 <?php get_footer(); ?>
