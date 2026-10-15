@@ -84,8 +84,11 @@ print("unrewritten .html links:", len(bad), bad[:5])
 
 zpath = os.path.join(ROOT, "wp-theme", "ipf-academy-theme.zip")
 with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED) as z:
+    z.writestr("ipf-academy/", "")
     for dp, dn, fn in os.walk(THEME):
-        for f in fn:
+        for d in sorted(dn):
+            z.writestr("ipf-academy/" + os.path.relpath(os.path.join(dp, d), THEME).replace("\\", "/") + "/", "")
+        for f in sorted(fn):
             full = os.path.join(dp, f)
             z.write(full, "ipf-academy/" + os.path.relpath(full, THEME).replace("\\", "/"))
 print("zip:", zpath, round(os.path.getsize(zpath) / 1024), "KB")
