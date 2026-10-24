@@ -67,7 +67,7 @@
           <p class="mt-7 text-[17px] sm:text-[18px] leading-[1.75] max-w-[680px]" style="color:var(--text-dark);">All of our Academicians are certified by the International Perfume Foundation and selected by a Committee of Experts. Each brings a distinct field of mastery to the Natural Perfumery Teacher's Academy.</p>
         </div>
         <div class="lg:col-span-5">
-          <img src="assets/16.png" alt="The Academicians of the Teacher's Academy" class="w-full h-[360px] sm:h-[440px] lg:h-[520px] object-cover" loading="eager">
+          <img src="assets/teachers/general-picture-16-teachers.jpg" alt="The 16 teachers of the Natural Perfumery Teacher's Academy" class="w-full h-auto" loading="eager">
         </div>
       </div>
     </section>
@@ -75,7 +75,16 @@
     <!-- FACULTY GRID -->
     <section class="bg-white py-16 lg:py-20">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
-        <div id="facultyGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        <div class="text-center max-w-[1080px] mx-auto">
+          <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">12 Lead Teachers</p>
+          <h2 class="mt-5 font-serif text-4xl lg:text-[3.1rem] leading-[1.1]" style="color:var(--green-primary);">Natural Perfumery Teacher's Academy <em class="font-normal">Lead Teachers</em></h2>
+        </div>
+        <div id="facultyGrid" class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        <div class="mt-20 text-center max-w-[1080px] mx-auto">
+          <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Teachers</p>
+          <h2 class="mt-5 font-serif text-4xl lg:text-[3.1rem] leading-[1.1]" style="color:var(--green-primary);">Our <em class="font-normal">Teachers</em></h2>
+        </div>
+        <div id="teachersGrid" class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-[1100px] mx-auto"></div>
       </div>
     </section>
 
@@ -132,25 +141,31 @@
   </footer>
 
   <script>
+    const P='assets/teachers/';
     const FACULTY=[
-      {name:"Creezy Courtoy",role:"Founder, Director and Teacher",fields:["Natural Olfaction Training","Perfumotherapy","World Perfume History","Anthropology of Perfume","Sustainable Oud","Natural Perfumery Teaching Methodology","Olfaction Training for Children"]},
-      {name:"Andrej Babicky",role:"Teacher",fields:["Natural Perfumery","Olfaction Training (Impara l'Olfazione)","Natural Raw Material Extraction Methods","Accords Chypre","Accords Fougeres and Herbs","Accords White Florals","Natural Candle Making"]},
-      {name:"Pinar Lacroix",role:"Teacher",fields:["Fragrance Brand Design","Building Visual Legacy Systems for your Fragrance"]},
-      {name:"Rodney Hughes",role:"Teacher",fields:["Packaging"]},
-      {name:"Vennie Chou",role:"Teacher",fields:["Natural Skin Care"]},
-      {name:"Dr Danica-Lea Larcombe",role:"Teacher",fields:["Healing Gardening"]},
-      {name:"Terry Johnson",role:"Teacher",fields:["Business and Marketing","Supply Chain Sustainability","Sustainable Luxury: The New Luxury Code"]},
-      {name:"Chen Li Morisset",role:"Teacher",fields:["Aromatherapy","Olfaction Training","Market Entry and Regulatory (China)","Marketing in China"]},
-      {name:"Kristin Chen",role:"Teacher",fields:["Aromatherapy","Olfaction Training"]},
-      {name:"Ana-Elena Sastrias",role:"Teacher",fields:["Aromatherapy","Olfaction Training","Natural Perfumery (Perfumeria Natural)"]},
-      {name:"Roxana Villa",role:"Teacher",fields:["Botanical Perfumery"]},
-      {name:"Rachel Binder",role:"Teacher",fields:["Wine and Fragrance Expert","Fermentation and Microbiology Expert"]},
+      {name:"Creezy Courtoy",photo:"creezy-courtoy.jpg",role:"Founder, Director and Teacher",fields:["Natural Olfaction Training","Perfumotherapy","World Perfume History","Anthropology of Perfume","Sustainable Oud","Natural Perfumery Teaching Methodology","Olfaction Training for Children"]},
+      {name:"Andrej Babicky",photo:"andrej-babicky.jpg",role:"Teacher",fields:["Natural Perfumery","Olfaction Training (Impara l'Olfazione)","Natural Raw Material Extraction Methods","Accords Chypre","Accords Fougeres and Herbs","Accords White Florals","Natural Candle Making"]},
+      {name:"Pinar Lacroix",photo:"pinar-lacroix.jpg",role:"Teacher",fields:["Fragrance Brand Design","Building Visual Legacy Systems for your Fragrance"]},
+      {name:"Rodney Hughes",photo:"rodney-hughes.jpg",role:"Teacher",fields:["Packaging"]},
+      {name:"Vennie Chou",photo:"vennie-chou.jpg",role:"Teacher",fields:["Natural Skin Care"]},
+      {name:"Dr Danica-Lea Larcombe",photo:"danica-lea-larcombe.jpg",role:"Teacher",fields:["Healing Gardening"]},
+      {name:"Terry Johnson",photo:"terry-johnson.jpg",role:"Teacher",fields:["Business and Marketing","Supply Chain Sustainability","Sustainable Luxury: The New Luxury Code"]},
+      {name:"Chen Li Morisset",photo:"chen-li-morisset.jpg",role:"Teacher",fields:["Aromatherapy","Olfaction Training","Market Entry and Regulatory (China)","Marketing in China"]},
+      {name:"Kristin Chen",photo:"kristin-chen.jpg",role:"Teacher",fields:["Aromatherapy","Olfaction Training"]},
+      {name:"Ana-Elena Sastrias",photo:"ana-elena-sastrias.jpg",role:"Teacher",fields:["Aromatherapy","Olfaction Training","Natural Perfumery (Perfumeria Natural)"]},
+      {name:"Jennifer Jones",photo:"jennifer-jones.jpg",role:"Teacher",fields:["Scent Design and Formula Building","Training Horses with Scents"]},
+      {name:"Rachel Binder",photo:"rachel-binder.jpg",role:"Teacher",fields:["Wine and Fragrance Expert","Fermentation and Microbiology Expert"]},
     ];
-    function initials(n){return n.replace(/^Dr\s+/,'').split(/\s+/).slice(0,2).map(w=>w[0]).join('').toUpperCase();}
+    const TEACHERS=[
+      {name:"Roxana Villa",photo:"assets/photos14teachersandlecturers/Roxana.jpg",fields:["Botanical Perfumery"]},
+      {name:"Lili",photo:"assets/photos14teachersandlecturers/lili.jpg",fields:[]},
+      {name:"Naziha",photo:"assets/photos14teachersandlecturers/Naziha.JPG",fields:[]},
+      {name:"Sabrina Zidane",photo:"assets/photos14teachersandlecturers/Sabrina Zidane.jpg",fields:[]},
+    ];
     document.getElementById('facultyGrid').innerHTML=FACULTY.map(t=>`
       <article class="flex flex-col h-full border p-8 text-left" style="border-color:rgba(11,65,49,.18);background:#fff;">
-        <div class="flex items-center gap-4">
-          <div class="avatar shrink-0" style="width:64px;height:64px;border-radius:50%;font-size:22px;">${initials(t.name)}</div>
+        <div class="flex items-center gap-5">
+          <img src="${P+t.photo}" alt="${t.name}" class="shrink-0 w-24 h-24 object-contain" loading="lazy">
           <div>
             <h3 class="font-serif text-2xl leading-tight" style="color:var(--green-primary);">${t.name}</h3>
             <p class="mt-1 text-[13px] uppercase tracking-[0.18em]" style="color:var(--soft-sage);">${t.role}</p>
@@ -159,6 +174,12 @@
         <div class="mt-6 flex flex-wrap gap-2">
           ${t.fields.map(f=>`<span class="tag">${f}</span>`).join('')}
         </div>
+      </article>`).join('');
+    document.getElementById('teachersGrid').innerHTML=TEACHERS.map(t=>`
+      <article class="text-center">
+        <img src="${t.photo}" alt="${t.name}" class="mx-auto w-32 h-32 rounded-full object-cover object-top" loading="lazy">
+        <h3 class="mt-4 font-serif text-xl leading-tight" style="color:var(--green-primary);">${t.name}</h3>
+        ${t.fields.length?`<p class="mt-1 text-[14px]" style="color:var(--text-dark);">${t.fields.join(', ')}</p>`:''}
       </article>`).join('');
   </script>
   <script>
