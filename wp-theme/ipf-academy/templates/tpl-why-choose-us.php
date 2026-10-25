@@ -4,14 +4,14 @@
   <main>
     <!-- HERO -->
     <section class="text-white" style="background:var(--green-primary);">
-      <div class="mx-auto max-w-[1560px] px-6 lg:px-12 py-24 lg:py-32">
+      <div class="mx-auto max-w-[1560px] px-6 lg:px-12 py-16 lg:py-24">
         <h1 class="mt-7 font-serif text-[3.1rem] sm:text-6xl lg:text-[4.8rem] leading-[1.05]">Discover the <em class="font-normal">Authentic</em> Difference</h1>
         <p class="mt-8 text-[18px] leading-[1.75] max-w-[820px]" style="color:var(--ivory);">At our Natural Perfumery Academy, we stand out by nurturing and certifying genuine Natural Perfumers.</p>
       </div>
     </section>
 
     <!-- EDITORIAL -->
-    <section class="bg-white py-24 lg:py-28">
+    <section class="bg-white py-16 lg:py-20">
       <div class="mx-auto max-w-[1560px] grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-20 px-6 lg:px-12 items-center">
         <div class="lg:col-span-6"><img src="/assets/4.png" alt="Botanical materials" class="w-full h-[520px] object-cover" loading="lazy"></div>
         <div class="lg:col-span-6">
@@ -29,12 +29,12 @@
     </section>
 
     <!-- REASONS GRID -->
-    <section class="py-24 lg:py-28" style="background:var(--ivory);">
+    <section class="py-16 lg:py-20" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <h2 class="font-serif text-5xl lg:text-[3.3rem] leading-[1.1]" style="color:var(--green-primary);">Why Choose IPF Natural Perfumery <em class="italic">Teacher's Academy</em></h2>
         </div>
-        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px" style="background:rgba(11,65,49,.15);">
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px" style="background:rgba(11,65,49,.15);">
           <div class="p-9 border-t-2" style="background:var(--ivory);border-color:var(--green-primary);">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" style="color:var(--green-primary);"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
             <h3 class="mt-5 font-serif text-2xl leading-snug" style="color:var(--green-primary);">&#10022; International Certification</h3>
@@ -70,7 +70,7 @@
     </section>
 
     <!-- QUOTE -->
-    <section class="text-white py-28 lg:py-36" style="background:var(--green-primary);">
+    <section class="text-white py-20 lg:py-28" style="background:var(--green-primary);">
       <div class="mx-auto max-w-[1320px] px-6 lg:px-12 text-center">
         <p class="font-serif italic text-3xl lg:text-[2.9rem] leading-[1.35]" style="color:var(--ivory);">"The French Natural Perfumery Academy's Academicians are chosen carefully for their extensive scientific knowledge and their passion to transmit this precious heritage in many languages, in each part of the world."</p>
         <p class="mt-8 text-[17px] uppercase tracking-[0.3em]" style="color:var(--light-sage);">- Creezy Courtoy, IPF Chairman</p>
@@ -78,12 +78,12 @@
     </section>
 
     <!-- COMMITMENT -->
-    <section class="bg-white py-24 lg:py-28">
+    <section class="bg-white py-16 lg:py-20">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <h2 class="font-serif text-5xl lg:text-[3.3rem] leading-[1.1]" style="color:var(--green-primary);">Our Commitment <em class="italic">to You</em></h2>
         </div>
-        <div class="mt-14 grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10">
           <div class="border-t-2 pt-6" style="border-color:var(--green-primary);">
             <h3 class="font-serif text-3xl" style="color:var(--green-primary);">Standards</h3>
             <p class="mt-4 text-[18px] leading-[1.85]" style="color:var(--text-dark);">We guide our students in crafting their unique perfumes, adhering to professional formulas while upholding the New Luxury Code, the standards of the International Perfume Foundation, and international safety regulations.</p>
@@ -101,7 +101,7 @@
     </section>
 
     <!-- CTA -->
-    <section class="py-24 lg:py-28" style="background:var(--ivory);">
+    <section class="py-16 lg:py-20" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1080px] px-6 lg:px-12 text-center">
         <h2 class="font-serif text-5xl lg:text-[3.5rem] leading-[1.05]" style="color:var(--green-primary);">Begin Your <em class="italic">Journey</em></h2>
         <p class="mt-3 text-[17px] font-medium" style="color:var(--green-primary);">&#10022; Payment in 3 or 4 instalments available on all courses</p>

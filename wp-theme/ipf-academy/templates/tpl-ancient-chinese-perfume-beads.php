@@ -9,7 +9,7 @@
   <main>
     <!-- HERO -->
     <section style="background:var(--ivory);">
-      <div class="mx-auto max-w-[1680px] grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 px-6 lg:px-12 py-16 lg:py-20 items-center">
+      <div class="mx-auto max-w-[1680px] grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 px-6 lg:px-12 py-12 lg:py-16 items-center">
         <div class="lg:col-span-7">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">World Perfume Heritage &middot; Hands-on Masterclass</p>
           <h1 class="mt-6 font-serif text-[2.5rem] sm:text-5xl lg:text-[3.9rem] leading-[1.06]" style="color:var(--green-primary);">Ancient Chinese <em class="font-normal">Perfume Beads</em></h1>
@@ -41,7 +41,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="bg-white py-16 lg:py-20">
+    <section class="bg-white py-12 lg:py-16">
       <div class="mx-auto max-w-[1080px] px-6 lg:px-12">
         <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium text-center" style="color:var(--soft-sage);">About the Master Class</p>
         <h2 class="mt-5 font-serif text-4xl lg:text-[3.1rem] leading-[1.1] text-center" style="color:var(--green-primary);">An Immersion into an Ancient Practice</h2>
@@ -53,7 +53,7 @@
     </section>
 
     <!-- WHAT YOU'LL LEARN -->
-    <section id="learn" class="py-16 lg:py-20" style="background:var(--ivory);">
+    <section id="learn" class="py-12 lg:py-16" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1320px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto mb-12">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">What You Will Experience</p>
@@ -72,7 +72,7 @@
     </section>
 
     <!-- TESTIMONIAL -->
-    <section class="bg-white py-16 lg:py-20">
+    <section class="bg-white py-12 lg:py-16">
       <div class="mx-auto max-w-[1000px] px-6 lg:px-12">
         <figure class="border p-8 lg:p-10 flex flex-col" style="background:var(--ivory);border-color:rgba(11,65,49,.15);">
           <blockquote class="font-serif italic text-[22px] lg:text-[26px] leading-[1.55]" style="color:var(--text-dark);">"Vennie is a natural born teacher who possesses a treasure trove of information following a lifetime devoted to natural skincare research, study and experimentation. She has been so very generous in sharing her knowledge and expertise throughout the entire course."</blockquote>
@@ -85,7 +85,7 @@
     </section>
 
     <!-- ENROLMENT -->
-    <section id="enrol" class="py-16 lg:py-20" style="background:var(--green-primary);">
+    <section id="enrol" class="py-12 lg:py-16" style="background:var(--green-primary);">
       <div class="mx-auto max-w-[880px] px-6 lg:px-12 text-center text-white">
         <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--light-sage);">Secure Your Spot</p>
         <h2 class="mt-5 font-serif text-4xl lg:text-[3.3rem] leading-[1.1]">Learn a Rare Art, <em class="italic">by Hand</em></h2>
@@ -99,7 +99,7 @@
     </section>
 
     <!-- RELATED -->
-    <section class="py-16 lg:py-20" style="background:var(--ivory);">
+    <section class="py-12 lg:py-16" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Related Courses</p>

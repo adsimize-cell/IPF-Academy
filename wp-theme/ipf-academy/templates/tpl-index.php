@@ -17,7 +17,7 @@
     </section>
 
     <section class="relative overflow-hidden" style="background-color: var(--ivory);">
-      <div class="mx-auto max-w-[1680px] grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 px-6 lg:px-12 py-14 lg:py-20 items-center">
+      <div class="mx-auto max-w-[1680px] grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 px-6 lg:px-12 py-10 lg:py-16 items-center">
         <div class="lg:col-span-7 animate-fade-in">
           <p class="text-[17px] font-semibold uppercase tracking-[0.25em]" style="color: var(--green-primary);">Education and Certification Since 2017</p>
           <p class="text-[17px] font-medium uppercase tracking-[0.18em] mt-3" style="color: var(--soft-sage);">The IPF Natural Teacher's Academy Program</p>
@@ -43,7 +43,7 @@
             </div>
           </div>
 
-          <div class="mt-14 relative">
+          <div class="mt-10 relative">
             <div class="text-white px-6 py-8 lg:px-8 lg:py-10 shadow-[0_30px_60px_-20px_rgba(11,65,49,0.5)] relative overflow-hidden" style="background-color: var(--green-primary);">
               <p class="text-[17px] uppercase tracking-[0.25em] mb-6" style="color: var(--light-sage);">The IPF Legacy in Numbers</p>
               <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 lg:gap-4 relative">
@@ -90,7 +90,7 @@
     </section>
 
     <!-- PERSONAL ACCOMPANIMENT -->
-    <section class="py-16 lg:py-20" style="background-color: var(--green-primary);">
+    <section class="py-12 lg:py-16" style="background-color: var(--green-primary);">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="text-center max-w-[960px] mx-auto mb-14">
           <p class="text-[16px] font-medium uppercase tracking-[0.25em]" style="color: var(--light-sage);">What Makes Us Different</p>
@@ -121,14 +121,14 @@
     <!-- TRUSTED WORLDWIDE                                              -->
     <!-- [MOD 2] Title + text centered, full-width                      -->
     <!-- ============================================================== -->
-    <section class="bg-white py-14 lg:py-20 border-b" style="border-color: rgba(11,65,49,0.1);">
+    <section class="bg-white py-10 lg:py-16 border-b" style="border-color: rgba(11,65,49,0.1);">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[16px] font-medium uppercase tracking-[0.25em]" style="color: var(--soft-sage);">Trusted Worldwide</p>
           <h2 class="mt-6 font-serif text-4xl lg:text-[3.1rem] leading-[1.15]" style="color: var(--green-primary);">Trusted by Institutions, Cities and Industry Leaders</h2>
           <p class="mt-6 text-[18px] leading-[1.8]" style="color: var(--text-dark);">For more than three decades, IPF and its educational initiatives have collaborated with public institutions, international organisations and leading hospitality and beauty industry stakeholders.</p>
         </div>
-        <ul class="mt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-px border" style="background-color: rgba(11,65,49,0.12); border-color: rgba(11,65,49,0.12);">
+        <ul class="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-px border" style="background-color: rgba(11,65,49,0.12); border-color: rgba(11,65,49,0.12);">
           <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/UNESCO-logo-364BB2205E-seeklogo.com.png" alt="UNESCO" class="max-h-24 max-w-[160px] object-contain"></li>
           <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/Logo EU Commission.jpeg" alt="European Commission" class="max-h-24 max-w-[160px] object-contain"></li>
           <li class="h-36 flex items-center justify-center px-6 py-5" style="background-color: var(--ivory);"><img src="/assets/wetransfer_unesco-logo-364bb2205e-seeklogo-com-png_2026-06-11_0944/logo_paris-logo_ae463.jpg" alt="Mairie de Paris" class="max-h-24 max-w-[160px] object-contain"></li>
@@ -152,7 +152,7 @@
     <!-- [MOD 2] Title spans full width above the two columns           -->
     <!-- [MOD 4] No claim of creating natural perfumery                 -->
     <!-- ============================================================== -->
-    <section id="about" class="bg-white py-14 lg:py-20">
+    <section id="about" class="bg-white py-10 lg:py-16">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <!-- [MOD 2] Title centered, full-width above columns -->
         <div class="text-center max-w-[1080px] mx-auto mb-8">
@@ -182,14 +182,14 @@
     <!-- [MOD 5] Bigger text                                            -->
     <!-- [MOD 6] Payment prominent                                      -->
     <!-- ============================================================== -->
-    <section class="bg-white py-14 lg:py-20 border-t" style="border-color: rgba(11,65,49,0.12);">
+    <section class="bg-white py-10 lg:py-16 border-t" style="border-color: rgba(11,65,49,0.12);">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="text-center max-w-[960px] mx-auto">
           <p class="text-[16px] font-medium uppercase tracking-[0.25em]" style="color: var(--soft-sage);">The Study Experience</p>
           <h2 class="mt-6 font-serif text-5xl lg:text-[3.5rem] leading-[1.1]" style="color: var(--green-primary);">How Studying from Home <em class="font-normal">Actually Works</em></h2>
           <p class="mt-6 text-[19px] leading-[1.85]" style="color: var(--text-dark);">Natural perfumery is a sensory craft. Study-from-home does not mean studying alone. It means structured, mentored learning that fits your life, wherever you are.</p>
         </div>
-        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border" style="border-color: rgba(11,65,49,0.15);">
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border" style="border-color: rgba(11,65,49,0.15);">
           <div class="p-10 flex flex-col border-b md:border-b-0 md:border-r lg:border-r" style="border-color: rgba(11,65,49,0.15);">
             <p class="font-serif text-6xl leading-none" style="color: var(--soft-sage);">01</p>
             <h3 class="mt-6 font-serif text-2xl leading-snug" style="color: var(--green-primary);">Enrol &amp; Meet Your Teacher</h3>
@@ -227,14 +227,14 @@
     <!-- [MOD 2] Title centered full-width                              -->
     <!-- [MOD 5] Bigger labels                                          -->
     <!-- ============================================================== -->
-    <section id="programs" class="py-14 lg:py-20" style="background-color: var(--ivory);">
+    <section id="programs" class="py-10 lg:py-16" style="background-color: var(--ivory);">
       <div class="mx-auto max-w-[1680px] px-6 lg:px-12">
         <div class="text-center max-w-[960px] mx-auto">
           <p class="text-[16px] font-medium uppercase tracking-[0.25em]" style="color: var(--soft-sage);">Academic Programs</p>
           <h2 class="mt-6 font-serif text-5xl lg:text-[3.5rem] leading-[1.1]" style="color: var(--green-primary);">A Curriculum Shaped by Three Decades of IPF Certification</h2>
         </div>
 
-        <article class="mt-16 grid grid-cols-1 lg:grid-cols-12 bg-white overflow-hidden">
+        <article class="mt-12 grid grid-cols-1 lg:grid-cols-12 bg-white overflow-hidden">
           <div class="lg:col-span-7 relative overflow-hidden">
             <img src="/assets/4.png" alt="Natural perfumery workbench with essential oils and notebook" class="w-full h-[420px] lg:h-full object-cover transition-transform duration-[1500ms] hover:scale-105" loading="lazy">
           </div>
@@ -257,7 +257,7 @@
           </div>
         </article>
 
-        <div class="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div class="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           <article class="group bg-white flex flex-col transition-shadow duration-500 hover:shadow-[0_20px_60px_-30px_rgba(11,65,49,0.3)]">
             <div class="overflow-hidden"><img src="/assets/2.png" alt="Master Natural Perfumery" class="w-full h-64 object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
             <div class="p-8 flex flex-col flex-1">
@@ -314,20 +314,20 @@
           </article>
         </div>
 
-        <div class="mt-16 text-center">
+        <div class="mt-12 text-center">
           <a href="/programs/" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-[16px] font-medium uppercase tracking-[0.18em] border bg-transparent transition-all duration-300" style="border-color: var(--green-primary); color: var(--green-primary);">View all programs &amp; masterclasses</a>
         </div>
       </div>
     </section>
 
     <!-- CHOOSE YOUR PATH [MOD 2] centered title -->
-    <section class="py-14 lg:py-20 border-t" style="background-color: var(--ivory); border-color: rgba(11,65,49,0.12);">
+    <section class="py-10 lg:py-16 border-t" style="background-color: var(--ivory); border-color: rgba(11,65,49,0.12);">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="text-center max-w-[960px] mx-auto">
           <p class="text-[16px] font-medium uppercase tracking-[0.25em]" style="color: var(--soft-sage);">Find Your Starting Point</p>
           <h2 class="mt-6 font-serif text-5xl lg:text-[3.5rem] leading-[1.1]" style="color: var(--green-primary);">Which Path <em class="font-normal">Is Right for You?</em></h2>
         </div>
-        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="bg-white p-10 flex flex-col hover:shadow-[0_20px_60px_-30px_rgba(11,65,49,0.2)] transition-shadow duration-500">
             <p class="text-[17px] font-medium uppercase tracking-[0.22em]" style="color: var(--soft-sage);">I'm new to natural perfumery</p>
             <h3 class="mt-5 font-serif text-4xl leading-snug" style="color: var(--green-primary);">Start with the Foundation</h3>
@@ -369,14 +369,14 @@
     </section>
 
     <!-- STUDENT SUCCESS [MOD 2] centered, [MOD 3] dates, [MOD 5] bigger -->
-    <section id="students" class="bg-white py-14 lg:py-20">
+    <section id="students" class="bg-white py-10 lg:py-16">
       <div class="mx-auto max-w-[1680px] px-6 lg:px-12">
         <div class="max-w-[840px] mx-auto text-center">
           <p class="text-[16px] font-medium uppercase tracking-[0.25em]" style="color: var(--soft-sage);">Student Successes</p>
           <h2 class="mt-6 font-serif text-5xl lg:text-[3.5rem] leading-[1.1]" style="color: var(--green-primary);">Our Students from Around the World</h2>
           <p class="mt-6 text-[19px] leading-[1.8]" style="color: var(--text-dark);">From Texas to Hong Kong, our graduates have founded brands, opened schools and built independent perfumery practices on every continent.</p>
         </div>
-        <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
+        <div class="mt-14 grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
           <figure class="group">
             <div class="overflow-hidden aspect-[5/4]"><img src="/assets/20.png" alt="Portrait of Jennifer Jones" class="w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy"></div>
             <figcaption class="mt-7">
@@ -407,27 +407,27 @@
         </div>
 
         <!-- [MOD 3] Stats: IPF Certification, not "years of teaching" -->
-        <div class="mt-20 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-[1080px] mx-auto border-t pt-12" style="border-color: rgba(11,65,49,0.15);">
+        <div class="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-[1080px] mx-auto border-t pt-12" style="border-color: rgba(11,65,49,0.15);">
           <div class="text-center"><p class="font-serif text-6xl lg:text-7xl xl:text-8xl leading-none" style="color: var(--green-primary);">205</p><p class="mt-2 text-[16px] uppercase tracking-[0.18em]" style="color: var(--green-primary);">Certified Graduates</p></div>
           <div class="text-center"><p class="font-serif text-6xl lg:text-7xl xl:text-8xl leading-none" style="color: var(--green-primary);">42</p><p class="mt-2 text-[16px] uppercase tracking-[0.18em]" style="color: var(--green-primary);">Countries</p></div>
           <div class="text-center"><p class="font-serif text-6xl lg:text-7xl xl:text-8xl leading-none" style="color: var(--green-primary);">9</p><p class="mt-2 text-[16px] uppercase tracking-[0.18em]" style="color: var(--green-primary);">Years of IPF Certification</p></div>
           <div class="text-center"><p class="font-serif text-6xl lg:text-7xl xl:text-8xl leading-none" style="color: var(--green-primary);">35+</p><p class="mt-2 text-[16px] uppercase tracking-[0.18em]" style="color: var(--green-primary);">Courses &amp; Masterclasses</p></div>
         </div>
 
-        <div class="mt-14 text-center">
+        <div class="mt-10 text-center">
           <a href="https://www.perfumefoundation.org/parfumeurs-naturels-certifies.html" target="_blank" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-[16px] font-medium uppercase tracking-[0.18em] border bg-transparent" style="border-color: var(--green-primary); color: var(--green-primary);">Meet our certified perfumers</a>
         </div>
       </div>
     </section>
 
     <!-- WHY CHOOSE IPF [MOD 2] centered, [MOD 3] dates -->
-    <section id="why" class="py-14 lg:py-20" style="background-color: var(--ivory);">
+    <section id="why" class="py-10 lg:py-16" style="background-color: var(--ivory);">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="text-center max-w-[960px] mx-auto">
           <p class="text-[20px] font-semibold uppercase tracking-[0.28em]" style="color: var(--green-primary);">Why Choose IPF</p>
           <h2 class="mt-6 font-serif text-5xl lg:text-[3.5rem] leading-[1.1]" style="color: var(--green-primary);">An Institution Built on Knowledge, Trust and Heritage</h2>
         </div>
-        <div class="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+        <div class="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
           <div class="border-t pt-7" style="border-color: rgba(11,65,49,0.2);">
             <h3 class="mt-4 font-serif text-3xl leading-snug" style="color: var(--green-primary);">International Certification</h3>
             <p class="mt-4 text-[17px] leading-[1.8]" style="color: var(--text-dark);">Credentials recognised across 42 countries, verified through the International Perfume Foundation (IPF).</p>
@@ -457,7 +457,7 @@
     </section>
 
     <!-- FOR PROFESSIONALS [MOD 2] centered, [MOD 4] Creezy, [MOD 5] bigger -->
-    <section id="professionals" class="text-white py-14 lg:py-20 relative overflow-hidden" style="background-color: var(--green-primary);">
+    <section id="professionals" class="text-white py-10 lg:py-16 relative overflow-hidden" style="background-color: var(--green-primary);">
       <div class="absolute inset-0 opacity-[0.08]"><img src="/assets/19.png" alt="" class="w-full h-full object-cover"></div>
       <div class="relative mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="text-center max-w-[960px] mx-auto">
@@ -465,7 +465,7 @@
           <h2 class="mt-6 font-serif text-5xl lg:text-[3.5rem] xl:text-[4rem] leading-[1.1] text-white">You Already Teach. <em class="font-normal">We Certify.</em></h2>
           <p class="mt-8 text-[19px] leading-[1.85] max-w-[840px] mx-auto" style="color: var(--ivory);">The IPF certification is not only for students. If you teach, run a school, or plan to open one, the International Perfume Foundation offers a dedicated pathway.</p>
         </div>
-        <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="border p-10 flex flex-col hover:border-[var(--light-sage)] transition-colors duration-500" style="border-color: rgba(247,243,236,0.2);">
             <p class="text-[16px] uppercase tracking-[0.22em]" style="color: var(--light-sage);">Teacher Certification</p>
             <h3 class="mt-8 font-serif text-3xl lg:text-[1.9rem] text-white leading-snug">You teach. Get IPF certified.</h3>
@@ -486,7 +486,7 @@
           </div>
         </div>
         <!-- [MOD 4] Creezy: IPF Chairman -->
-        <div class="mt-14 pt-8 border-t flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5" style="border-color: rgba(247,243,236,0.15);">
+        <div class="mt-10 pt-8 border-t flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5" style="border-color: rgba(247,243,236,0.15);">
           <p class="font-serif italic text-2xl max-w-[600px] leading-snug" style="color: var(--ivory);">"Our long-term vision is to have IPF certified schools on every continent, teaching natural perfumery in every language."</p>
           <p class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--light-sage);">Creezy Courtoy, IPF Chairman</p>
         </div>
@@ -494,7 +494,7 @@
     </section>
 
     <!-- CERTIFICATION [MOD 2] centered, [MOD 5] bigger -->
-    <section id="certification" class="text-white py-14 lg:py-20 relative overflow-hidden border-t" style="background-color: var(--green-primary); border-color: rgba(247,243,236,0.18);">
+    <section id="certification" class="text-white py-10 lg:py-16 relative overflow-hidden border-t" style="background-color: var(--green-primary); border-color: rgba(247,243,236,0.18);">
       <div class="relative mx-auto max-w-[1560px] px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
         <div class="lg:col-span-7">
           <p class="text-[16px] font-medium uppercase tracking-[0.25em]" style="color: var(--light-sage);">International Recognition</p>
@@ -518,7 +518,7 @@
     </section>
 
     <!-- TEACHERS [MOD 4] Creezy: Chairman, no "creator" claim -->
-    <section id="teachers" class="bg-white py-14 lg:py-20">
+    <section id="teachers" class="bg-white py-10 lg:py-16">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="text-center max-w-[960px] mx-auto mb-16">
           <p class="text-[16px] font-medium uppercase tracking-[0.25em]" style="color: var(--soft-sage);">Our Teachers</p>
@@ -539,7 +539,7 @@
           </div>
         </div>
 
-        <div class="mt-20">
+        <div class="mt-14">
           <h3 class="text-center font-serif text-3xl lg:text-4xl mb-12" style="color: var(--green-primary);">Our Teachers &amp; Lecturers</h3>
           <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
             <div class="text-center">
@@ -596,7 +596,7 @@
     </section>
 
     <!-- THE BOOK -->
-    <section class="py-14 lg:py-20" style="background-color: var(--ivory);">
+    <section class="py-10 lg:py-16" style="background-color: var(--ivory);">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-20 items-center">
           <div class="lg:col-span-4 flex justify-center">
@@ -639,13 +639,13 @@
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="bg-white py-14 lg:py-20">
+    <section id="faq" class="bg-white py-10 lg:py-16">
       <div class="mx-auto max-w-[1080px] px-6 lg:px-12">
         <div class="text-center max-w-[770px] mx-auto">
           <p class="text-[16px] font-medium uppercase tracking-[0.25em]" style="color: var(--soft-sage);">Frequently Asked Questions</p>
           <h2 class="mt-6 font-serif text-5xl lg:text-[3.1rem] leading-[1.1]" style="color: var(--green-primary);">Questions, <em class="font-normal">Answered</em></h2>
         </div>
-        <div id="faq-container" class="mt-14 border-t" style="border-color: rgba(11,65,49,0.15);"></div>
+        <div id="faq-container" class="mt-10 border-t" style="border-color: rgba(11,65,49,0.15);"></div>
       </div>
     </section>
 

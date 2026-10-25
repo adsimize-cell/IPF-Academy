@@ -8,7 +8,7 @@
 
   <main>
     <!-- HERO -->
-    <section class="py-20 lg:py-24" style="background:var(--ivory);">
+    <section class="py-16 lg:py-20" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[17px] font-medium uppercase tracking-[0.3em]" style="color:var(--soft-sage);">International Directory</p>
@@ -19,7 +19,7 @@
     </section>
 
     <!-- IPF DIRECTORIES -->
-    <section class="bg-white py-16 lg:py-20">
+    <section class="bg-white py-12 lg:py-16">
       <div class="mx-auto max-w-[1320px] px-6 lg:px-12">
         <div class="text-center max-w-[900px] mx-auto">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Official Registries</p>

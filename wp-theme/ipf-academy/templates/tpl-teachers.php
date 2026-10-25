@@ -8,7 +8,7 @@
   <main>
     <!-- HERO -->
     <section style="background:var(--ivory);">
-      <div class="mx-auto max-w-[1680px] grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 px-6 lg:px-12 py-16 lg:py-20 items-center">
+      <div class="mx-auto max-w-[1680px] grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 px-6 lg:px-12 py-12 lg:py-16 items-center">
         <div class="lg:col-span-7">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Our Academicians</p>
           <h1 class="mt-6 font-serif text-[2.5rem] sm:text-5xl lg:text-[3.9rem] leading-[1.06]" style="color:var(--green-primary);">Our Teachers &amp; Their <em class="font-normal">Expertise</em></h1>
@@ -21,14 +21,14 @@
     </section>
 
     <!-- FACULTY GRID -->
-    <section class="bg-white py-16 lg:py-20">
+    <section class="bg-white py-12 lg:py-16">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">12 Lead Teachers</p>
           <h2 class="mt-5 font-serif text-4xl lg:text-[3.1rem] leading-[1.1]" style="color:var(--green-primary);">Natural Perfumery Teacher's Academy <em class="font-normal">Lead Teachers</em></h2>
         </div>
         <div id="facultyGrid" class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
-        <div class="mt-20 text-center max-w-[1080px] mx-auto">
+        <div class="mt-14 text-center max-w-[1080px] mx-auto">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Teachers</p>
           <h2 class="mt-5 font-serif text-4xl lg:text-[3.1rem] leading-[1.1]" style="color:var(--green-primary);">Our <em class="font-normal">Teachers</em></h2>
         </div>
@@ -37,7 +37,7 @@
     </section>
 
     <!-- CLOSING -->
-    <section class="py-16 lg:py-20" style="background:var(--ivory);">
+    <section class="py-12 lg:py-16" style="background:var(--ivory);">
       <div class="mx-auto max-w-[900px] px-6 lg:px-12 text-center">
         <h2 class="font-serif text-4xl lg:text-[3.1rem] leading-[1.1] text-center" style="color:var(--green-primary);">Sharing Knowledge Worldwide</h2>
         <p class="mt-6 text-[18px] leading-[1.85]" style="color:var(--text-dark);">The Teacher's Academy is happy to transmit such important knowledge with institutions and corporations through individual consultancy, school curriculum, conferences, workshops and exhibitions.</p>

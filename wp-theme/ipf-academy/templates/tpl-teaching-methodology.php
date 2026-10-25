@@ -9,7 +9,7 @@
   <main>
     <!-- HERO -->
     <section class="relative text-white overflow-hidden" style="background:var(--green-primary);">
-      <div class="mx-auto max-w-[1560px] px-6 lg:px-12 py-16 lg:py-32">
+      <div class="mx-auto max-w-[1560px] px-6 lg:px-12 py-12 lg:py-24">
         <p class="text-[17px] uppercase tracking-[0.32em] font-medium" style="color:var(--light-sage);">Teacher Certification &middot; 4 weeks</p>
         <h1 class="mt-8 font-serif text-[3.1rem] sm:text-6xl lg:text-[4.8rem] leading-[1.05]">Teaching <em class="font-normal">Methodology</em></h1>
         <p class="mt-10 font-serif italic text-3xl lg:text-4xl leading-snug max-w-[980px]" style="color:var(--ivory);">"The best way to preserve the heritage of perfume is to teach natural perfumery."</p>
@@ -19,7 +19,6 @@
           <a href="#enrol" class="inline-flex items-center px-8 py-3.5 text-[17px] font-medium uppercase tracking-[0.22em] border" style="border-color:var(--ivory);color:var(--ivory);">Pay in instalments</a>
         </div>
       </div>
-      <div class="relative h-32 overflow-hidden"><img src="/assets/8.png" alt="" class="w-full h-full object-cover opacity-20" loading="lazy"></div>
     </section>
 
     <!-- INFO STRIP -->
@@ -27,21 +26,21 @@
       <div class="mx-auto max-w-[1560px] grid grid-cols-1 md:grid-cols-3 gap-px" style="background:rgba(11,65,49,.15);">
         <div class="px-6 lg:px-10 py-8" style="background:var(--ivory);">
           <p class="text-[17px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">Duration</p>
-          <p class="mt-3 font-serif text-xl leading-snug" style="color:var(--green-primary);">4 weeks (1 module/week)</p>
+          <p class="mt-3 font-serif text-2xl leading-snug" style="color:var(--green-primary);">4 weeks (1 module/week)</p>
         </div>
         <div class="px-6 lg:px-10 py-8" style="background:var(--ivory);">
           <p class="text-[17px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">Price</p>
-          <p class="mt-3 font-serif text-xl leading-snug" style="color:var(--green-primary);">895&euro; (incl. 200&euro; certification)</p>
+          <p class="mt-3 font-serif text-2xl leading-snug" style="color:var(--green-primary);">895&euro; (incl. 200&euro; certification)</p>
         </div>
         <div class="px-6 lg:px-10 py-8" style="background:var(--ivory);">
           <p class="text-[17px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">Prerequisite</p>
-          <p class="mt-3 font-serif text-xl leading-snug" style="color:var(--green-primary);">Reserved for Certified Natural Perfumers, Aromatherapists or Olfaction Trainers</p>
+          <p class="mt-3 font-serif text-2xl leading-snug" style="color:var(--green-primary);">Reserved for Certified Natural Perfumers, Aromatherapists or Olfaction Trainers</p>
         </div>
       </div>
     </section>
 
     <!-- OVERVIEW -->
-    <section class="bg-white py-16 lg:py-20">
+    <section class="bg-white py-12 lg:py-16">
       <div class="mx-auto max-w-[1560px] grid grid-cols-1 lg:grid-cols-12 gap-14 px-6 lg:px-12">
         <div class="lg:col-span-7">
           <p class="text-[17px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Overview</p>
@@ -69,7 +68,7 @@
     </section>
 
     <!-- CURRICULUM -->
-    <section class="py-16 lg:py-20" style="background:var(--ivory);">
+    <section class="py-12 lg:py-16" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[17px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Curriculum</p>
@@ -101,7 +100,7 @@
     </section>
 
     <!-- PREREQUISITE -->
-    <section class="text-white py-16 lg:py-20" style="background:var(--green-primary);">
+    <section class="text-white py-12 lg:py-16" style="background:var(--green-primary);">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <h2 class="font-serif text-5xl lg:text-[3.3rem] leading-[1.1]">This Masterclass Requires <em class="italic">Prior IPF Certification</em></h2>
@@ -109,7 +108,7 @@
         <div class="mt-10 max-w-[900px] mx-auto text-center px-8 py-6 rounded-lg" style="background:rgba(255,255,255,0.12); border:2px solid rgba(255,255,255,0.3);">
           <p class="text-[20px] font-semibold leading-[1.7]" style="color:#fff;">This class is reserved for students who are already Certified Natural Perfumers, Certified Aromatherapists, or Certified Olfaction Trainers.</p>
         </div>
-        <div class="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div class="bg-white p-7" style="color:var(--text-dark);"><h3 class="font-serif text-2xl" style="color:var(--green-primary);">Natural Perfumery</h3><p class="mt-3 text-[17px] leading-relaxed">Foundational botanical perfumery training.</p></div>
           <div class="bg-white p-7" style="color:var(--text-dark);"><h3 class="font-serif text-2xl" style="color:var(--green-primary);">Natural Olfaction Training</h3><p class="mt-3 text-[17px] leading-relaxed">Develop a refined, expert nose.</p></div>
           <div class="bg-white p-7" style="color:var(--text-dark);"><h3 class="font-serif text-2xl" style="color:var(--green-primary);">Natural Aromatherapy</h3><p class="mt-3 text-[17px] leading-relaxed">Therapeutic essential oil practice.</p></div>
@@ -118,13 +117,13 @@
     </section>
 
     <!-- ENROLMENT -->
-    <section id="enrol" class="bg-white py-16 lg:py-20">
+    <section id="enrol" class="bg-white py-12 lg:py-16">
       <div class="mx-auto max-w-[1440px] px-6 lg:px-12">
         <div class="text-center max-w-[770px] mx-auto">
           <p class="text-[17px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Enrolment</p>
           <h2 class="mt-5 font-serif text-5xl lg:text-[3.3rem] leading-[1.1]" style="color:var(--green-primary);">Enrol in This Masterclass</h2>
         </div>
-        <div class="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="border p-10" style="background:var(--ivory);border-color:rgba(11,65,49,.2);">
             <p class="text-[17px] uppercase tracking-[0.28em]" style="color:var(--soft-sage);">Option</p>
             <h3 class="mt-3 font-serif text-3xl" style="color:var(--green-primary);">Pay in Full</h3>

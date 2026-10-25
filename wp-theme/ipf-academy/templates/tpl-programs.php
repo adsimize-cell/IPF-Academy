@@ -4,7 +4,7 @@
   <main>
     <!-- HERO -->
     <section style="background:var(--ivory);">
-      <div class="mx-auto max-w-[1560px] px-6 lg:px-12 py-20 lg:py-24">
+      <div class="mx-auto max-w-[1560px] px-6 lg:px-12 py-16 lg:py-20">
         <h1 class="font-serif text-[3.1rem] sm:text-6xl lg:text-[4.6rem] leading-[1.05] max-w-[1080px]" style="color:var(--green-primary);">All <em class="font-normal">Programs</em></h1>
         <p class="mt-8 text-[18px] leading-[1.75] max-w-[770px]" style="color:var(--text-dark);">Internationally certified by the IPF. Study from home in 6 languages.</p>
         <div id="filters" class="mt-12 flex flex-wrap gap-x-8 gap-y-3 border-b" style="border-color:rgba(11,65,49,.15);"></div>
@@ -12,26 +12,26 @@
     </section>
 
     <!-- COURSES -->
-    <section id="sec-courses" class="bg-white py-24 lg:py-28">
+    <section id="sec-courses" class="bg-white py-16 lg:py-20">
       <div class="mx-auto max-w-[1680px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Professional Training Courses</p>
           <h2 class="mt-5 font-serif text-5xl lg:text-[3.3rem] leading-[1.1]" style="color:var(--green-primary);">Develop Your <em class="italic">Expertise</em></h2>
         </div>
-        <div id="course-grid" class="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        <div id="course-grid" class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
         <p class="mt-3 text-[16px] font-medium" style="color:var(--green-primary);">&#10022; Payment in 3 or 4 instalments available</p>
       </div>
     </section>
 
     <!-- MASTERCLASSES -->
-    <section id="sec-masterclasses" class="py-24 lg:py-28" style="background:var(--ivory);">
+    <section id="sec-masterclasses" class="py-16 lg:py-20" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1680px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">French Natural Perfumery Specifications</p>
           <h2 class="mt-5 font-serif text-5xl lg:text-[3.3rem] leading-[1.1]" style="color:var(--green-primary);">Master Classes</h2>
         </div>
         <p class="mt-6 text-[17px] max-w-[770px]" style="color:var(--text-dark);">All Masterclasses are certified by the International Perfume Foundation.</p>
-        <div class="mt-14">
+        <div class="mt-10">
           <p class="text-[16px] uppercase tracking-[0.28em] font-medium" style="color:var(--green-primary);">French Natural Perfumery Specifications</p>
           <div id="mc-grid" class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
           <p class="mt-3 text-[16px] font-medium" style="color:var(--green-primary);">&#10022; Payment in 3 or 4 instalments available</p>
@@ -40,7 +40,7 @@
     </section>
 
     <!-- ACCORDS -->
-    <section id="sec-accords" class="bg-white py-20 lg:py-24">
+    <section id="sec-accords" class="bg-white py-16 lg:py-20">
       <div class="mx-auto max-w-[1680px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[16px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">Mastery of Natural Perfumery Accords</p>
@@ -54,7 +54,7 @@
     </section>
 
     <!-- WORLD PERFUME HISTORY -->
-    <section id="sec-history" class="py-20 lg:py-24" style="background:var(--ivory);">
+    <section id="sec-history" class="py-16 lg:py-20" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1680px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[16px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">World Perfume History</p>
@@ -69,7 +69,7 @@
     </section>
 
     <!-- WORKSHOPS -->
-    <section id="sec-workshops" class="py-24 lg:py-28" style="background:var(--green-primary);">
+    <section id="sec-workshops" class="py-16 lg:py-20" style="background:var(--green-primary);">
       <div class="mx-auto max-w-[1680px] px-6 lg:px-12">
         <article class="grid grid-cols-1 lg:grid-cols-12 bg-white overflow-hidden">
           <div class="lg:col-span-6 overflow-hidden"><img src="/assets/14.png" alt="Bali Retreat" class="w-full h-[420px] lg:h-full object-cover" loading="lazy"></div>
@@ -116,8 +116,8 @@
       document.getElementById('sec-accords').style.display=show('accords')?'':'none';
       document.getElementById('sec-history').style.display=show('masterclasses')?'':'none';
       document.getElementById('sec-workshops').style.display=show('workshops')?'':'none';
-      document.getElementById('course-grid').innerHTML=COURSES.map(c=>`<article class="bg-white border group h-full flex flex-col" style="border-color:rgba(11,65,49,.15);"><div class="overflow-hidden"><img src="${c.img}" alt="${c.n}" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy"></div><div class="p-7 flex flex-col flex-1"><p class="text-[16px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">${c.l} · ${c.d}</p><h3 class="mt-3 font-serif text-2xl min-h-[3.75rem]" style="color:var(--green-primary);">${c.n}</h3><p class="mt-3 text-[16px] leading-relaxed flex-1" style="color:var(--text-dark);">A structured certification taught by international IPF experts.</p><div class="mt-6"><a href="${c.u}" class="inline-flex items-center gap-2 text-[14px] font-medium uppercase tracking-[0.22em] border-b pb-1" style="color:var(--green-primary);border-color:rgba(11,65,49,.3);">Discover <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div></article>`).join('');
-      document.getElementById('mc-grid').innerHTML=MCS.map(m=>`<div class="bg-white border p-6 h-full flex flex-col hover:border-[rgba(11,65,49,.4)] transition-colors" style="border-color:rgba(11,65,49,.15);">${m.tag?`<p class="text-[16px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">${m.tag}</p>`:'<p class="text-[16px] tracking-[0.28em]">&nbsp;</p>'}<h4 class="mt-2 font-serif text-xl leading-snug min-h-[3.5rem]" style="color:var(--green-primary);">${m.n}</h4><div class="mt-auto pt-4"><a href="${m.u}" class="inline-flex items-center gap-2 text-[14px] font-medium uppercase tracking-[0.22em] border-b pb-1" style="color:var(--green-primary);border-color:rgba(11,65,49,.3);">Discover <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div>`).join('');
+      document.getElementById('course-grid').innerHTML=COURSES.map(c=>`<a href="${c.u}" class="bg-white border group h-full flex flex-col" style="border-color:rgba(11,65,49,.15);text-decoration:none;"><div class="overflow-hidden"><img src="${c.img}" alt="${c.n}" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy"></div><div class="p-7 flex flex-col flex-1"><p class="text-[16px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">${c.l} · ${c.d}</p><h3 class="mt-3 font-serif text-2xl min-h-[3.75rem]" style="color:var(--green-primary);">${c.n}</h3><p class="mt-3 text-[16px] leading-relaxed flex-1" style="color:var(--text-dark);">A structured certification taught by international IPF experts.</p><div class="mt-6"><span class="inline-flex items-center gap-2 text-[14px] font-medium uppercase tracking-[0.22em] border-b pb-1 group-hover:gap-3 transition-all" style="color:var(--green-primary);border-color:rgba(11,65,49,.3);">Discover <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></div></a>`).join('');
+      document.getElementById('mc-grid').innerHTML=MCS.map(m=>`<a href="${m.u}" class="bg-white border p-6 h-full flex flex-col hover:border-[rgba(11,65,49,.4)] transition-colors group" style="border-color:rgba(11,65,49,.15);text-decoration:none;">${m.tag?`<p class="text-[16px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">${m.tag}</p>`:'<p class="text-[16px] tracking-[0.28em]">&nbsp;</p>'}<h4 class="mt-2 font-serif text-xl leading-snug min-h-[3.5rem]" style="color:var(--green-primary);">${m.n}</h4><div class="mt-auto pt-4"><span class="inline-flex items-center gap-2 text-[14px] font-medium uppercase tracking-[0.22em] border-b pb-1 group-hover:gap-3 transition-all" style="color:var(--green-primary);border-color:rgba(11,65,49,.3);">Discover <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a>`).join('');
       document.getElementById('history-tags').innerHTML=HTAGS.map(t=>`<span class="text-[16px] uppercase tracking-[0.2em] border px-3 py-1.5" style="color:var(--green-primary);border-color:rgba(11,65,49,.25);">${t}</span>`).join('');
     }
     render();

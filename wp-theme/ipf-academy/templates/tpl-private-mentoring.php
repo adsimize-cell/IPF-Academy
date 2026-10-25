@@ -9,7 +9,7 @@
   <main>
     <!-- HERO -->
     <section style="background:var(--ivory);">
-      <div class="mx-auto max-w-[1680px] grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 px-6 lg:px-12 py-16 lg:py-20 items-center">
+      <div class="mx-auto max-w-[1680px] grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 px-6 lg:px-12 py-12 lg:py-16 items-center">
         <div class="lg:col-span-7">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Luxury Atelier<br>By Application Only</p>
           <h1 class="mt-6 font-serif text-[2.6rem] sm:text-5xl lg:text-[3.9rem] leading-[1.06]" style="color:var(--green-primary);">Natural Perfumery <em class="font-normal">Luxury Advanced Private Mentoring</em></h1>
@@ -41,7 +41,7 @@
     </section>
 
     <!-- WHY / OVERVIEW -->
-    <section class="bg-white py-16 lg:py-20">
+    <section class="bg-white py-12 lg:py-16">
       <div class="mx-auto max-w-[1560px] grid grid-cols-1 lg:grid-cols-12 gap-14 px-6 lg:px-12">
         <div class="lg:col-span-7">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Why This Mentorship Exists</p>
@@ -69,7 +69,7 @@
     </section>
 
     <!-- HOW IT WORKS -->
-    <section class="bg-white border-t py-16 lg:py-20" style="border-color:rgba(11,65,49,.1);">
+    <section class="bg-white border-t py-12 lg:py-16" style="border-color:rgba(11,65,49,.1);">
       <div class="mx-auto max-w-[1560px] grid grid-cols-1 lg:grid-cols-2 gap-14 px-6 lg:px-12">
         <div>
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">How It Is Conducted</p>
@@ -92,7 +92,7 @@
     </section>
 
     <!-- PHASES -->
-    <section id="phases" class="py-16 lg:py-20" style="background:var(--ivory);">
+    <section id="phases" class="py-12 lg:py-16" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1320px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Program Structure</p>
@@ -104,7 +104,7 @@
     </section>
 
     <!-- APPLY / PRICING -->
-    <section id="apply" class="bg-white py-16 lg:py-20">
+    <section id="apply" class="bg-white py-12 lg:py-16">
       <div class="mx-auto max-w-[1200px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Durations &amp; Formats</p>
@@ -129,7 +129,7 @@
         </div>
 
         <!-- Acceptance criteria -->
-        <div class="mt-14 border p-10" style="border-color:rgba(11,65,49,.2);">
+        <div class="mt-10 border p-10" style="border-color:rgba(11,65,49,.2);">
           <p class="text-[15px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">Acceptance Criteria</p>
           <h3 class="mt-4 font-serif text-3xl" style="color:var(--green-primary);">Admission by Application Only</h3>
           <p class="mt-5 text-[17px] leading-[1.8] max-w-[900px]" style="color:var(--text-dark);">Admission is selective, based on alignment, readiness and potential rather than formal credentials alone. A background in perfumery is not mandatory, but relevant experience in perfumery, art, design or material-based practices will be evaluated. Applicants should demonstrate:</p>

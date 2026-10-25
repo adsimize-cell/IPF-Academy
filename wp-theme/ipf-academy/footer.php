@@ -1,5 +1,5 @@
 <footer id="footer" class="text-white" style="background-color: var(--green-primary);">
-    <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-20 grid grid-cols-1 lg:grid-cols-12 gap-14">
+    <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-16 grid grid-cols-1 lg:grid-cols-12 gap-14">
       <div class="lg:col-span-5">
         <img src="/assets/teachers-academy-logo_57.png" alt="IPF Teacher's Academy" class="h-28 w-auto mb-6" style="border-radius: 50%;">
         <p class="mt-3 font-serif text-4xl text-white leading-tight">IPF Natural Perfumery<br><em class="italic">Teacher's Academy</em></p>

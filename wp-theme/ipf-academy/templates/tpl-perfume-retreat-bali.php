@@ -8,7 +8,7 @@
   <main>
     <!-- HERO -->
     <section style="background:var(--ivory);">
-      <div class="mx-auto max-w-[1680px] grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 px-6 lg:px-12 py-16 lg:py-20 items-center">
+      <div class="mx-auto max-w-[1680px] grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 px-6 lg:px-12 py-12 lg:py-16 items-center">
         <div class="lg:col-span-7">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Luxury Retreat &middot; Ubud, Bali &middot; January 19-24, 2027</p>
           <h1 class="mt-6 font-serif text-[1.9rem] sm:text-5xl lg:text-[3.9rem] leading-[1.06]" style="color:var(--green-primary);">Perfume Retreat <br class="sm:hidden"><em class="font-normal">Bali 2027</em></h1>
@@ -37,7 +37,7 @@
     </section>
 
     <!-- OVERVIEW -->
-    <section class="bg-white py-16 lg:py-20">
+    <section class="bg-white py-12 lg:py-16">
       <div class="mx-auto max-w-[1560px] grid grid-cols-1 lg:grid-cols-12 gap-14 px-6 lg:px-12">
         <div class="lg:col-span-7">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Overview</p>
@@ -66,7 +66,7 @@
     </section>
 
     <!-- INCLUDED -->
-    <section class="py-16 lg:py-20" style="background:var(--ivory);">
+    <section class="py-12 lg:py-16" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1320px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">What's Included</p>
@@ -85,7 +85,7 @@
     </section>
 
     <!-- FACULTY -->
-    <section class="bg-white py-16 lg:py-20">
+    <section class="bg-white py-12 lg:py-16">
       <div class="mx-auto max-w-[1320px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Your Teachers</p>
@@ -101,7 +101,7 @@
     </section>
 
     <!-- ITINERARY -->
-    <section id="itinerary" class="py-16 lg:py-20" style="background:var(--ivory);">
+    <section id="itinerary" class="py-12 lg:py-16" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1320px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Itinerary</p>
@@ -112,7 +112,7 @@
     </section>
 
     <!-- RESERVE -->
-    <section id="reserve" class="bg-white py-16 lg:py-20">
+    <section id="reserve" class="bg-white py-12 lg:py-16">
       <div class="mx-auto max-w-[1080px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Reservation</p>

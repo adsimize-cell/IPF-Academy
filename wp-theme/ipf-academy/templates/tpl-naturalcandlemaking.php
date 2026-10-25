@@ -9,7 +9,7 @@
   <main>
     <!-- HERO -->
     <section style="background:var(--ivory);">
-      <div class="mx-auto max-w-[1680px] grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 px-6 lg:px-12 py-16 lg:py-20 items-center">
+      <div class="mx-auto max-w-[1680px] grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 px-6 lg:px-12 py-12 lg:py-16 items-center">
         <div class="lg:col-span-7">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Masterclass &middot; 4 weeks</p>
           <h1 class="mt-6 font-serif text-[1.9rem] sm:text-6xl lg:text-[4.4rem] leading-[1.05]" style="color:var(--green-primary);">Natural <br class="sm:hidden"><em class="font-normal">Candle Making</em></h1>
@@ -41,7 +41,7 @@
     </section>
 
     <!-- OVERVIEW -->
-    <section class="bg-white py-16 lg:py-20">
+    <section class="bg-white py-12 lg:py-16">
       <div class="mx-auto max-w-[1560px] grid grid-cols-1 lg:grid-cols-12 gap-14 px-6 lg:px-12">
         <div class="lg:col-span-7">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Overview</p>
@@ -70,7 +70,7 @@
     </section>
 
     <!-- CURRICULUM -->
-    <section id="curriculum" class="py-16 lg:py-20" style="background:var(--ivory);">
+    <section id="curriculum" class="py-12 lg:py-16" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1320px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Curriculum</p>
@@ -82,7 +82,7 @@
     </section>
 
     <!-- TESTIMONIAL -->
-    <section class="bg-white py-16 lg:py-20">
+    <section class="bg-white py-12 lg:py-16">
       <div class="mx-auto max-w-[1000px] px-6 lg:px-12 text-center">
         <svg class="mx-auto" width="34" height="34" viewBox="0 0 24 24" fill="var(--soft-sage)"><path d="M9.5 4C6.5 4 4 6.5 4 9.5c0 2.6 1.8 4.8 4.3 5.4-.3 2-1.6 3.6-3.3 4.1v1c3.2-.4 6-3.1 6-7V9.5C11 6.5 9.5 4 9.5 4zm9 0C15.5 4 13 6.5 13 9.5c0 2.6 1.8 4.8 4.3 5.4-.3 2-1.6 3.6-3.3 4.1v1c3.2-.4 6-3.1 6-7V9.5C20 6.5 18.5 4 18.5 4z"/></svg>
         <blockquote class="mt-6 font-serif italic text-[24px] sm:text-[28px] leading-[1.55]" style="color:var(--text-dark);">"It has been a very good learning experience with The Perfume Foundation International Academy. The instructors pay very high attention, ensuring the learning procedures are correct and updated. I was amazed with the course material because it was fun and easy to understand."</blockquote>
@@ -92,7 +92,7 @@
     </section>
 
     <!-- ENROLMENT / PAYMENT -->
-    <section id="enrol" class="py-16 lg:py-20" style="background:var(--ivory);">
+    <section id="enrol" class="py-12 lg:py-16" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1080px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Enrolment</p>
@@ -129,7 +129,7 @@
     </section>
 
     <!-- RELATED -->
-    <section class="bg-white py-16 lg:py-20">
+    <section class="bg-white py-12 lg:py-16">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[15px] sm:text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Related Courses</p>

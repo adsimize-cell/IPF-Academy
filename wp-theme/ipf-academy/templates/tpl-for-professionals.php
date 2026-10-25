@@ -6,7 +6,7 @@
     <section class="relative text-white overflow-hidden" style="background:var(--green-primary);">
       <div class="absolute inset-0" style="background:var(--green-primary);"></div>
       <div class="absolute inset-0 opacity-20" style="background-image:radial-gradient(circle at 30% 40%,var(--light-sage) 0%,transparent 50%),radial-gradient(circle at 70% 60%,var(--green-secondary) 0%,transparent 55%);"></div>
-      <div class="relative mx-auto max-w-[1560px] px-6 lg:px-12 py-16 lg:py-32">
+      <div class="relative mx-auto max-w-[1560px] px-6 lg:px-12 py-12 lg:py-24">
         <p class="text-[17px] uppercase tracking-[0.32em] font-medium" style="color:var(--light-sage);">For Professionals</p>
         <h1 class="mt-7 font-serif text-[3.1rem] sm:text-6xl lg:text-[4.8rem] leading-[1.05] max-w-[1200px]">You Already Teach. <em class="font-normal">We Certify.</em></h1>
         <p class="mt-8 text-[18px] leading-[1.75] max-w-[860px]" style="color:var(--ivory);">The IPF certification is not only for students. If you teach, run a school, or plan to open one, the International Perfume Foundation offers a dedicated pathway - one that places your expertise, your school and your territory on the world map of natural perfumery education.</p>
@@ -15,14 +15,14 @@
     </section>
 
     <!-- PATHWAYS -->
-    <section class="bg-white py-16 lg:py-20">
+    <section class="bg-white py-12 lg:py-16">
       <div class="mx-auto max-w-[1680px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <h2 class="font-serif text-5xl lg:text-[3.3rem] leading-[1.1]" style="color:var(--green-primary);">Three Ways to Work <em class="italic">with the IPF</em></h2>
         </div>
-        <div class="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-6">
 
-          <article class="border-t-2 p-9 flex flex-col" style="background:var(--ivory);border-color:var(--green-primary);">
+          <article class="border-t-2 p-9 flex flex-col h-full" style="background:var(--ivory);border-color:var(--green-primary);">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" style="color:var(--green-primary);"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
             <p class="mt-6 text-[17px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">Individual Professionals</p>
             <h3 class="mt-3 font-serif text-3xl lg:text-[2.1rem] leading-snug" style="color:var(--green-primary);">Certify Your Teaching Expertise</h3>
@@ -34,10 +34,10 @@
               <li class="flex gap-2"><span style="color:var(--soft-sage);">&middot;</span>Annual recertification test</li>
             </ul>
             <p class="mt-3 text-[17px] font-medium" style="color:var(--green-primary);">&#10022; Payment in 3 or 4 instalments available on all courses</p>
-            <div class="mt-auto pt-6 border-t" style="border-color:rgba(11,65,49,.15);"><a href="#contact" class="text-[17px] uppercase tracking-[0.22em] font-medium border-b pb-1" style="color:var(--green-primary);border-color:rgba(11,65,49,.4);">Discover Teaching Methodology &rarr;</a></div>
+            <div class="mt-auto pt-6 border-t flex items-end min-h-[5.5rem]" style="border-color:rgba(11,65,49,.15);"><a href="#contact" class="text-[17px] uppercase tracking-[0.22em] font-medium border-b pb-1" style="color:var(--green-primary);border-color:rgba(11,65,49,.4);">Discover Teaching Methodology &rarr;</a></div>
           </article>
 
-          <article class="border-t-2 p-9 flex flex-col" style="background:var(--ivory);border-color:var(--green-primary);">
+          <article class="border-t-2 p-9 flex flex-col h-full" style="background:var(--ivory);border-color:var(--green-primary);">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" style="color:var(--green-primary);"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
             <p class="mt-6 text-[17px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">Schools &amp; Institutions</p>
             <h3 class="mt-3 font-serif text-3xl lg:text-[2.1rem] leading-snug" style="color:var(--green-primary);">Certify Your School's Programs</h3>
@@ -48,10 +48,10 @@
               <li class="flex gap-2"><span style="color:var(--soft-sage);">&middot;</span>Students receive QR-linked IPF certificates</li>
               <li class="flex gap-2"><span style="color:var(--soft-sage);">&middot;</span>Listed on the IPF international directory</li>
             </ul>
-            <div class="mt-auto pt-6 border-t" style="border-color:rgba(11,65,49,.15);"><a href="#contact" class="text-[17px] uppercase tracking-[0.22em] font-medium border-b pb-1" style="color:var(--green-primary);border-color:rgba(11,65,49,.4);">Contact us &rarr;</a></div>
+            <div class="mt-auto pt-6 border-t flex items-end min-h-[5.5rem]" style="border-color:rgba(11,65,49,.15);"><a href="#contact" class="text-[17px] uppercase tracking-[0.22em] font-medium border-b pb-1" style="color:var(--green-primary);border-color:rgba(11,65,49,.4);">Contact us &rarr;</a></div>
           </article>
 
-          <article class="border-t-2 p-9 flex flex-col" style="background:var(--ivory);border-color:var(--green-primary);">
+          <article class="border-t-2 p-9 flex flex-col h-full" style="background:var(--ivory);border-color:var(--green-primary);">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" style="color:var(--green-primary);"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             <p class="mt-6 text-[17px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">Franchise &amp; Territory</p>
             <h3 class="mt-3 font-serif text-3xl lg:text-[2.1rem] leading-snug" style="color:var(--green-primary);">Open an IPF School in Your Country</h3>
@@ -62,14 +62,14 @@
               <li class="flex gap-2"><span style="color:var(--soft-sage);">&middot;</span>Ongoing support from Creezy Courtoy and IPF faculty</li>
               <li class="flex gap-2"><span style="color:var(--soft-sage);">&middot;</span>Long-term vision: IPF schools on every continent</li>
             </ul>
-            <div class="mt-auto pt-6 border-t" style="border-color:rgba(11,65,49,.15);"><a href="#contact" class="text-[17px] uppercase tracking-[0.22em] font-medium border-b pb-1" style="color:var(--green-primary);border-color:rgba(11,65,49,.4);">Enquire about partnership &rarr;</a></div>
+            <div class="mt-auto pt-6 border-t flex items-end min-h-[5.5rem]" style="border-color:rgba(11,65,49,.15);"><a href="#contact" class="text-[17px] uppercase tracking-[0.22em] font-medium border-b pb-1" style="color:var(--green-primary);border-color:rgba(11,65,49,.4);">Enquire about partnership &rarr;</a></div>
           </article>
         </div>
       </div>
     </section>
 
     <!-- FOUNDER VISION -->
-    <section class="py-16 lg:py-20" style="background:var(--ivory);">
+    <section class="py-12 lg:py-16" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1560px] grid grid-cols-1 lg:grid-cols-12 gap-14 px-6 lg:px-12 items-center">
         <div class="lg:col-span-5"><img src="/assets/10.png" alt="Creezy Courtoy" class="w-full h-[520px] object-cover" loading="lazy"></div>
         <div class="lg:col-span-7">
@@ -83,12 +83,12 @@
     </section>
 
     <!-- PROCESS -->
-    <section class="bg-white py-16 lg:py-20">
+    <section class="bg-white py-12 lg:py-16">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <h2 class="font-serif text-5xl lg:text-[3.3rem] leading-[1.1]" style="color:var(--green-primary);">How It Works</h2>
         </div>
-        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div class="w-14 h-14 rounded-full text-white grid place-items-center font-serif text-3xl" style="background:var(--green-primary);">1</div>
             <h3 class="mt-6 font-serif text-3xl" style="color:var(--green-primary);">Step 1 - Contact Us</h3>
@@ -109,7 +109,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="py-16 lg:py-20" style="background:var(--ivory);">
+    <section class="py-12 lg:py-16" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1320px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <h2 class="font-serif text-5xl lg:text-[3.3rem] leading-[1.1]" style="color:var(--green-primary);">Frequently Asked <em class="italic">Questions</em></h2>
@@ -119,7 +119,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="text-white py-16 lg:py-20" style="background:var(--green-primary);">
+    <section id="contact" class="text-white py-12 lg:py-16" style="background:var(--green-primary);">
       <div class="mx-auto max-w-[1320px] px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-14">
         <div class="lg:col-span-5">
           <h2 class="font-serif text-5xl lg:text-[3.3rem] leading-[1.05]">Ready to Take the <em class="italic">Next Step?</em></h2>

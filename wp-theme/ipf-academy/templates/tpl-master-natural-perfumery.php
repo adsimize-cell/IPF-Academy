@@ -9,7 +9,7 @@
   <main>
     <!-- HERO -->
     <section style="background:var(--ivory);">
-      <div class="mx-auto max-w-[1680px] grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 px-6 lg:px-12 py-16 lg:py-20 items-center">
+      <div class="mx-auto max-w-[1680px] grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 px-6 lg:px-12 py-12 lg:py-16 items-center">
         <div class="lg:col-span-7">
           <p class="text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Advanced Program · 16 weeks</p>
           <h1 class="mt-7 font-serif text-[3.1rem] sm:text-6xl lg:text-[4.6rem] leading-[1.05]" style="color:var(--green-primary);">Master <br class="sm:hidden"><em class="font-normal">Natural Perfumery</em></h1>
@@ -36,7 +36,7 @@
     </section>
 
     <!-- OVERVIEW -->
-    <section class="bg-white py-16 lg:py-20">
+    <section class="bg-white py-12 lg:py-16">
       <div class="mx-auto max-w-[1560px] grid grid-cols-1 lg:grid-cols-12 gap-14 px-6 lg:px-12">
         <div class="lg:col-span-7">
           <div class="text-center max-w-[1080px] mx-auto">
@@ -72,7 +72,7 @@
     </section>
 
     <!-- WHAT YOU'LL RECEIVE -->
-    <section class="bg-white border-t py-16 lg:py-20" style="border-color:rgba(11,65,49,.1);">
+    <section class="bg-white border-t py-12 lg:py-16" style="border-color:rgba(11,65,49,.1);">
       <div class="mx-auto max-w-[1560px] grid grid-cols-1 lg:grid-cols-2 gap-14 px-6 lg:px-12">
         <div>
           <div class="text-center max-w-[1080px] mx-auto">
@@ -104,7 +104,7 @@
     </section>
 
     <!-- CURRICULUM -->
-    <section class="py-16 lg:py-20" style="background:var(--ivory);">
+    <section class="py-12 lg:py-16" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1320px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">The Programme</p>
@@ -120,7 +120,7 @@
     </section>
 
     <!-- CERTIFICATION -->
-    <section class="text-white py-16 lg:py-20" style="background:var(--green-primary);">
+    <section class="text-white py-12 lg:py-16" style="background:var(--green-primary);">
       <div class="mx-auto max-w-[1560px] grid grid-cols-1 lg:grid-cols-12 gap-14 px-6 lg:px-12 items-center">
         <div class="lg:col-span-7">
           <div class="text-center max-w-[1080px] mx-auto">
@@ -139,14 +139,14 @@
     </section>
 
     <!-- ENROLMENT -->
-    <section id="enrol" class="bg-white py-16 lg:py-20">
+    <section id="enrol" class="bg-white py-12 lg:py-16">
       <div class="mx-auto max-w-[1440px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Enrolment</p>
           <h2 class="mt-5 font-serif text-5xl lg:text-[3.3rem] leading-[1.1]" style="color:var(--green-primary);">Enrol in This Program</h2>
           <p class="mt-4 text-[18px] font-medium" style="color:var(--green-primary);">Payment possible in 3 or 4 instalments</p>
         </div>
-        <div class="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="border p-10" style="background:var(--ivory);border-color:rgba(11,65,49,.2);">
             <p class="text-[16px] uppercase tracking-[0.28em]" style="color:var(--soft-sage);">Option</p>
             <h3 class="mt-3 font-serif text-3xl" style="color:var(--green-primary);">Pay in Full</h3>
@@ -165,7 +165,7 @@
     </section>
 
     <!-- RELATED -->
-    <section class="py-16 lg:py-20" style="background:var(--ivory);">
+    <section class="py-12 lg:py-16" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1560px] px-6 lg:px-12">
         <div class="text-center max-w-[1080px] mx-auto">
           <p class="text-[16px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Related Courses</p>
