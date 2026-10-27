@@ -42,16 +42,23 @@
       h1 em,h2 em,h3 em,h4 em,h5 em{font-style:normal}
   body{overflow-wrap:break-word;-webkit-hyphens:auto;hyphens:auto}h1,h2,h3,h4,h5{-webkit-hyphens:manual;hyphens:manual}</style>
 <style>
-.post-body{font-size:18px;line-height:1.85;color:var(--text-dark);}
-.post-body p{margin:0 0 1.25em;}
-.post-body h1,.post-body h2,.post-body h3,.post-body h4{font-family:'Cormorant Garamond',Georgia,serif;color:var(--green-primary);line-height:1.2;margin:1.6em 0 .5em;font-weight:600;-webkit-hyphens:manual;hyphens:manual;}
-.post-body h2{font-size:2rem;}.post-body h3{font-size:1.5rem;}
-.post-body img{max-width:100%;height:auto;display:block;margin:1.8em auto;}
+.post-body{font-size:18px;line-height:1.8;color:var(--text-dark);}
+.post-body p{margin:0 0 1.1em;}
+.post-body p[style*="center"]{text-align:center;}
+.post-body h1,.post-body h2,.post-body h3{font-family:'Cormorant Garamond',Georgia,serif;color:var(--green-primary);line-height:1.2;margin:1.4em 0 .4em;font-weight:600;}
+.post-body h2{font-size:1.9rem;}.post-body h3{font-size:1.5rem;}
+.post-body figure{margin:1.8em 0;}
+.post-body figure img{display:block;margin:0 auto;max-width:100%;height:auto;}
+.post-body figcaption{text-align:center;font-size:14px;color:#6f6f6f;margin-top:.55em;}
+.post-body img{max-width:100%;height:auto;}
 .post-body a{color:var(--green-primary);text-decoration:underline;}
-.post-body ul,.post-body ol{margin:0 0 1.25em 1.3em;}.post-body ul{list-style:disc;}.post-body ol{list-style:decimal;}
+.post-body ul,.post-body ol{margin:0 0 1.1em 1.3em;}.post-body ul{list-style:disc;}.post-body ol{list-style:decimal;}
 .post-body li{margin:.3em 0;}
 .post-body strong{font-weight:600;}.post-body em{font-style:italic;}
-.post-body blockquote{border-left:3px solid var(--soft-sage);padding-left:1.1em;font-style:italic;color:var(--green-primary);margin:1.5em 0;}
+.post-body blockquote{border-left:3px solid var(--soft-sage);padding-left:1.1em;font-style:italic;color:var(--green-primary);margin:1.4em 0;}
+.blog-aside-title{font-size:13px;text-transform:uppercase;letter-spacing:.2em;font-weight:600;color:var(--soft-sage);}
+.blog-aside a{display:block;padding:.3em 0;font-size:15px;color:var(--text-dark);text-decoration:none;}
+.blog-aside a:hover{color:var(--green-primary);}
 </style>
 </head>
 <body class="bg-white">
@@ -151,17 +158,65 @@
     </div>
   </header>
   <main>
-    <section class="py-12 lg:py-16" style="background:var(--ivory);">
+    <section class="py-10 lg:py-14" style="background:var(--ivory);">
       <div class="mx-auto max-w-[1100px] px-6 lg:px-12 text-center">
         <p class="text-[15px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Journal</p>
         <h1 class="mt-4 font-serif text-5xl lg:text-[3.5rem] leading-[1.05]" style="color:var(--green-primary);">Blog</h1>
       </div>
     </section>
-    <section class="py-12 lg:py-16 bg-white"><div class="mx-auto max-w-[1100px] px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="mx-auto max-w-[1320px] px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 py-10 lg:py-14">
+      <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
         <a href="blog-australian-scents.html" class="block border p-8 hover:border-[rgba(11,65,49,.4)] transition-colors" style="border-color:rgba(11,65,49,.15);background:#fff;text-decoration:none;"><p class="text-[13px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">26 September 2026</p><h2 class="mt-3 font-serif text-2xl leading-snug" style="color:var(--green-primary);">Australian Essences: Native Botanicals in Natural Perfumery</h2></a>
         <a href="blog-the-language-of-scents.html" class="block border p-8 hover:border-[rgba(11,65,49,.4)] transition-colors" style="border-color:rgba(11,65,49,.15);background:#fff;text-decoration:none;"><p class="text-[13px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">28 May 2026</p><h2 class="mt-3 font-serif text-2xl leading-snug" style="color:var(--green-primary);">The Language of Scents: How Olfaction Connects Memory, Emotion, Healing, and Nature</h2></a>
         <a href="blog-nefertum-god-of-perfumers.html" class="block border p-8 hover:border-[rgba(11,65,49,.4)] transition-colors" style="border-color:rgba(11,65,49,.15);background:#fff;text-decoration:none;"><p class="text-[13px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">30 June 2021</p><h2 class="mt-3 font-serif text-2xl leading-snug" style="color:var(--green-primary);">Nefertum, God of Perfumers</h2></a>
-      </div></section>
+      </div>
+      <aside class="lg:col-span-4 lg:pl-8 lg:border-l blog-aside" style="border-color:rgba(11,65,49,.12);">
+        <div class="lg:sticky lg:top-28">
+          <p class="blog-aside-title">Archives</p>
+          <div class="mt-3"><a href="blog.html">August 2026</a>
+          <a href="blog.html">July 2026</a>
+          <a href="blog.html">June 2026</a>
+          <a href="blog.html">May 2026</a>
+          <a href="blog.html">April 2026</a>
+          <a href="blog.html">March 2026</a>
+          <a href="blog.html">February 2026</a>
+          <a href="blog.html">January 2026</a>
+          <a href="blog.html">December 2025</a>
+          <a href="blog.html">November 2025</a>
+          <a href="blog.html">October 2025</a>
+          <a href="blog.html">September 2025</a>
+          <a href="blog.html">July 2025</a>
+          <a href="blog.html">June 2025</a>
+          <a href="blog.html">May 2025</a>
+          <a href="blog.html">April 2025</a>
+          <a href="blog.html">March 2025</a>
+          <a href="blog.html">February 2025</a>
+          <a href="blog.html">January 2025</a>
+          <a href="blog.html">December 2024</a>
+          <a href="blog.html">November 2024</a>
+          <a href="blog.html">October 2024</a></div>
+          <p class="blog-aside-title mt-10">Categories</p>
+          <div class="mt-3"><a href="blog.html">AFNOR</a>
+          <a href="blog.html">Accords</a>
+          <a href="blog.html">Al-Andalus</a>
+          <a href="blog.html">Alexander The Great</a>
+          <a href="blog.html">Ana  Elena Sastrias</a>
+          <a href="blog.html">Ana Elena Sastrias</a>
+          <a href="blog.html">Ana- Elena Sastrias</a>
+          <a href="blog.html">Ancient Chinese Perfumes</a>
+          <a href="blog.html">Ancient Egypt</a>
+          <a href="blog.html">Ancient Fragrance Rituals</a>
+          <a href="blog.html">Andrej Babicky</a>
+          <a href="blog.html">Angelina Padron</a>
+          <a href="blog.html">Animal Cruelty</a>
+          <a href="blog.html">Anne D'Autriche</a>
+          <a href="blog.html">Anosmia</a>
+          <a href="blog.html">Anthropology Of Perfume</a>
+          <a href="blog.html">Arab World</a>
+          <a href="blog.html">Arabia Felix</a></div>
+        </div>
+      </aside>
+    </div>
   </main>
 <footer id="footer" class="text-white" style="background-color: var(--green-primary);">
     <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-24 grid grid-cols-1 lg:grid-cols-12 gap-14">

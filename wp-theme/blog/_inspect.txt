@@ -1,0 +1,9 @@
+=== IMG ancestor (4 up) classes: [('a', None), ('div', ['wsite-image', 'wsite-image-border-none']), ('div', None), ('div', ['blog-content']), ('div', ['blog-post']), ('div', None)]
+=== IMG wrapper html:
+<a href="/uploads/5/2/2/8/52289947/edited/australian-sandalwood-santalum-spicatum.jpeg" onclick="if (!lightboxLoaded) return false" rel="lightbox"> <img alt="Sandalwood" src="/uploads/5/2/2/8/52289947/editor/australian-sandalwood-santalum-spicatum.jpeg?1790474184" style="width:655;max-width:100%"/> </a>
+=== 'Boronia' text node parent chain:
+  <div class=None> text='Boronia '
+  <div class=['wsite-image', 'wsite-image-border-none']> text='    Boronia  '
+  <div class=None> text='    Boronia  '
+  <div class=['blog-content']> text='\n      \u200bHow  Australian Perfumery Rewrit'
+=== direct children tags: [('div', None), ('h2', ['wsite-content-title']), ('div', ['paragraph']), ('div', ['paragraph']), ('div', None), ('div', ['paragraph']), ('div', ['paragraph']), ('div', None), ('div', ['paragraph']), ('div', None), ('div', ['paragraph']), ('div', None), ('div', ['paragraph']), ('div', None), ('div', ['paragraph'])]

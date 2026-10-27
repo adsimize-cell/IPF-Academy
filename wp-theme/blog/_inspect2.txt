@@ -1,0 +1,11 @@
+=== #paragraph divs: 8
+--- paragraph raw:
+<div class="paragraph" style="text-align:center;"><strong><font color="#8d2424">By Ana-Elena Sastrias Certified Natural Perfumer and Aromatherapist</font></strong></div>
+--- paragraph raw:
+<div class="paragraph"><strong>Exploration to Australian Native Botanicals Heritage</strong><br/>Australia’s varied climates and soils have shaped the unique qualities of its botanicals. Australia is home to more than 18,000 described native vascular plant species, many found nowhere else on Earth. Shaped by an ancient evolutionary history and the long isolation of the Australian continent, Oceania. These botanicals represent a living botanical heritage that reaches back to the landscapes of Gon
+--- paragraph raw:
+<div class="paragraph"><strong>1. Boronia — Boronia megastigma</strong><br/>Boronia and its essential oil are renowned for their distinctive, complex aroma. The fragrance combines fruity, floral, and green nuances, with facets that may suggest raspberry, apricot, violet, and freesia. It blends particularly well with Sandalwood, Clary Sage, Bergamot, and floral materials and can be used in Chypre- and Fougère-inspired compositions.</div>
+=== 'By Ana' parent raw:
+<font color="#8d2424">By Ana-Elena Sastrias Certified Natural Perfumer and Aromatherapist</font>
+=== categories in sidebar: ['All', 'Accords', 'AFNOR', 'Al-Andalus', 'Alexander The Great', 'Ana  Elena Sastrias', 'Ana Elena Sastrias', 'Ana- Elena Sastrias', 'Ancient Chinese Perfumes', 'Ancient Egypt', 'Ancient Fragrance Rituals', 'Andrej Babicky', 'Angelina Padron', 'Animal Cruelty', "Anne D'Autriche", 'Anosmia', 'Anthropology Of Perfume', 'Arabia Felix', 'Arab World', 'Aristotle', 'Aromachology', 'Aromachology Course', 'Aromachology Masterclass', 'Aromatherapy', 'Aromatic Plants', 'Art', 'Art Of Fragrance Extraction', 'Asian Culture', 'Autumn Poetics', 'Autumn Scents']
+=== sidebar headings: ['Archives', 'Categories']
