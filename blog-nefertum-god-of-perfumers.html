@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nefertum, God of Perfumers - IPF Natural Perfumery Teacher's Academy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Montserrat"', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    :root {
+      --green-primary: #0b4131;
+      --green-secondary: #1a5c44;
+      --ivory: #f7f3ec;
+      --warm-beige: #e8dfc8;
+      --soft-sage: #8fac8a;
+      --light-sage: #c8d9c6;
+      --text-dark: #2a2a2a;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Montserrat', system-ui, sans-serif; -webkit-font-smoothing: antialiased; color: var(--text-dark); font-weight: 500; font-size: 18px; text-align: left; }
+    h1, h2, h3, h4, h5 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; letter-spacing: -0.01em; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    .animate-fade-in { animation: fadeIn 0.6s ease-out forwards; }
+    /* Payment badge - outline style */
+    .payment-badge { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--green-primary); border: 2px solid var(--green-primary); padding: 10px 20px; font-size: 18px; font-weight: 600; text-align: left; letter-spacing: 0.04em; }
+    .payment-badge svg { flex-shrink: 0; }
+      .text-center h1,.text-center h2,.text-center h3,.text-center h4,.text-center h5,.text-center h6{text-align:center}
+      h1 em,h2 em,h3 em,h4 em,h5 em{font-style:normal}
+  body{overflow-wrap:break-word;-webkit-hyphens:auto;hyphens:auto}h1,h2,h3,h4,h5{-webkit-hyphens:manual;hyphens:manual}</style>
+<style>
+.post-body{font-size:18px;line-height:1.85;color:var(--text-dark);}
+.post-body p{margin:0 0 1.25em;}
+.post-body h1,.post-body h2,.post-body h3,.post-body h4{font-family:'Cormorant Garamond',Georgia,serif;color:var(--green-primary);line-height:1.2;margin:1.6em 0 .5em;font-weight:600;-webkit-hyphens:manual;hyphens:manual;}
+.post-body h2{font-size:2rem;}.post-body h3{font-size:1.5rem;}
+.post-body img{max-width:100%;height:auto;display:block;margin:1.8em auto;}
+.post-body a{color:var(--green-primary);text-decoration:underline;}
+.post-body ul,.post-body ol{margin:0 0 1.25em 1.3em;}.post-body ul{list-style:disc;}.post-body ol{list-style:decimal;}
+.post-body li{margin:.3em 0;}
+.post-body strong{font-weight:600;}.post-body em{font-style:italic;}
+.post-body blockquote{border-left:3px solid var(--soft-sage);padding-left:1.1em;font-style:italic;color:var(--green-primary);margin:1.5em 0;}
+</style>
+</head>
+<body class="bg-white">
+
+  <!-- ============================================================== -->
+  <!-- NAVIGATION  [MOD 1] Logo changed to IPF Teacher's Academy      -->
+  <!-- [MOD 5] Nav text slightly bigger, no transparency              -->
+  <!-- ============================================================== -->
+  <header id="nav-header" class="sticky top-0 z-50 w-full transition-all duration-500" style="background-color: var(--ivory);">
+    <div class="mx-auto flex max-w-[1680px] items-center justify-between gap-4 px-6 py-4 lg:px-10">
+      <!-- [MOD 1] New logo -->
+      <a href="index.html" class="shrink-0 flex items-center gap-3">
+        <img src="assets/teachers-academy-logo_57.png" alt="IPF Natural Perfumery Teacher's Academy" class="h-20 w-auto sm:h-24" style="background-color: var(--ivory); border-radius: 50%;">
+      </a>
+
+      <nav class="hidden xl:flex items-center gap-2 2xl:gap-5">
+        <div class="relative" onmouseenter="document.getElementById('progDD').classList.remove('hidden')" onmouseleave="document.getElementById('progDD').classList.add('hidden')">
+          <button class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">Programs ▾</button>
+          <div id="progDD" class="hidden absolute left-0 top-full pt-2 min-w-[640px] max-w-[92vw]">
+            <div class="border shadow-lg p-6" style="background-color: var(--ivory); border-color: rgba(11,65,49,0.15);">
+              <a href="programs.html" class="block pb-3 mb-4 border-b text-[14px] font-semibold uppercase tracking-[0.18em]" style="color: var(--green-primary); border-color: rgba(11,65,49,0.12);">All Programs</a>
+              <div class="grid grid-cols-2 gap-x-10">
+                <div>
+                  <p class="pb-2 text-[11px] uppercase tracking-[0.22em] font-semibold" style="color: var(--soft-sage);">Courses</p>
+                  <a href="master-natural-perfumery.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Master Natural Perfumery</a>
+                  <a href="learnnaturalperfumery-790464.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Natural Perfumery</a>
+                  <a href="private-mentoring.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Private Mentoring</a>
+                  <a href="fragrance-brand-design.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Fragrance Brand Design</a>
+                  <a href="natural-olfaction-training.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Natural Olfaction Training</a>
+                  <a href="learn-natural-aromatherapy.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Natural Aromatherapy</a>
+                  <a href="learnperfumotherapy-170401.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Perfumotherapy</a>
+                  <a href="natural-skin-care.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Natural Skin Care</a>
+                  <a href="world-perfume-history-course.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">World Perfume History</a>
+                  <a href="world-perfume-distribution.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">World Perfume Distribution</a>
+                  <a href="business-marketing.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Business & Marketing</a>
+                </div>
+                <div>
+                  <p class="pb-2 text-[11px] uppercase tracking-[0.22em] font-semibold" style="color: var(--soft-sage);">Masterclasses</p>
+                  <a href="teaching-methodology.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Teaching Methodology</a>
+                  <a href="raw-material-extraction-course.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Raw Material Extraction</a>
+                  <a href="naturalcandlemaking.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Natural Candle Making</a>
+                  <a href="healing-gardening.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Healing Gardening</a>
+                  <a href="sustainable-oud-masterclass.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Sustainable Oud</a>
+                  <a href="world-perfume-history-master-class.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">World Perfume History Master Class</a>
+                  <a href="perfume-design-concept-and-storytelling.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Perfume Design & Storytelling</a>
+                  <a href="olfaction-training-for-children.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Olfaction Training for Children</a>
+                  <a href="training-horses-with-scents.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Training Horses with Scents</a>
+                  <a href="ancient-chinese-perfume-beads.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Ancient Chinese Perfume Beads</a>
+                  <a href="accords-chypre.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Accords - Chypre</a>
+                  <a href="accords-white-florals.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Accords - White Florals</a>
+                  <a href="accords-fougeres-aromatics.html" class="block py-1 text-[13.5px] transition-colors whitespace-nowrap" style="color: var(--text-dark);" onmouseenter="this.style.color='var(--green-primary)'" onmouseleave="this.style.color='var(--text-dark)'">Accords - Fougeres & Aromatics</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#teachers" class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">Teachers</a>
+        <a href="https://www.perfumefoundation.org" target="_blank" class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">IPF Certification</a>
+        <a href="why-choose-us.html" class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">Why Choose Us</a>
+        <a href="#faq" class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">Q&amp;A</a>
+        <a href="contact.html" class="text-[12.5px] 2xl:text-[15px] font-medium uppercase tracking-[0.08em] hover:opacity-70 transition-colors whitespace-nowrap" style="color: var(--green-primary);">Contact</a>
+      </nav>
+
+      <div class="hidden xl:flex items-center gap-2 shrink-0">
+        <a href="master-natural-perfumery.html" class="text-white text-[13px] 2xl:text-[14px] font-medium uppercase tracking-[0.1em] px-3 2xl:px-4 py-2.5 hover:opacity-90 transition-colors whitespace-nowrap" style="background-color: var(--green-primary);">Begin Your Training</a>
+        <div class="relative" onmouseenter="document.getElementById('proDD').classList.remove('hidden')" onmouseleave="document.getElementById('proDD').classList.add('hidden')">
+          <button class="border text-[13px] 2xl:text-[14px] font-medium uppercase tracking-[0.1em] px-2.5 2xl:px-3 py-2.5 transition-colors whitespace-nowrap" style="border-color: var(--green-primary); color: var(--green-primary);" onmouseenter="this.style.backgroundColor='var(--green-primary)';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color='var(--green-primary)'">For Institutions ▾</button>
+          <div id="proDD" class="hidden absolute right-0 top-full pt-2 min-w-[240px]">
+            <div class="border shadow-lg" style="background-color: var(--ivory); border-color: rgba(11,65,49,0.15);">
+              <a href="for-professionals.html" class="block px-5 py-3 text-[15px] font-medium uppercase tracking-[0.16em] transition-colors" style="color: var(--green-primary);" onmouseenter="this.style.backgroundColor='var(--green-primary)';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color='var(--green-primary)'">School Certification</a>
+              <a href="for-professionals.html" class="block px-5 py-3 text-[15px] font-medium uppercase tracking-[0.16em] transition-colors" style="color: var(--green-primary);" onmouseenter="this.style.backgroundColor='var(--green-primary)';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color='var(--green-primary)'">For Professionals</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="xl:hidden p-1" style="color: var(--green-primary);" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" aria-label="Toggle menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden xl:hidden border-t" style="border-color: rgba(11,65,49,0.1); background-color: var(--ivory);">
+      <div class="px-6 py-8 flex flex-col gap-5">
+        <a href="master-natural-perfumery.html" class="text-white text-[16px] font-medium uppercase tracking-[0.18em] px-5 py-3.5 text-center" style="background-color: var(--green-primary);">Begin Your Training</a>
+        <div class="flex flex-col gap-2">
+          <a href="programs.html" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">All Programs</a>
+          <p class="text-[14px] uppercase tracking-[0.2em] px-1 mt-2" style="color: var(--soft-sage);">Masterclasses</p>
+          <a href="master-natural-perfumery.html" class="text-[16px] font-medium uppercase tracking-[0.18em] pl-3" style="color: var(--green-primary);">Master Natural Perfumery</a>
+          <a href="teaching-methodology.html" class="text-[16px] font-medium uppercase tracking-[0.18em] pl-3" style="color: var(--green-primary);">Teaching Methodology</a>
+        </div>
+        <a href="#teachers" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">Teachers</a>
+        <a href="https://www.perfumefoundation.org" target="_blank" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">IPF Certification</a>
+        <a href="why-choose-us.html" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">Why Choose Us</a>
+        <a href="#faq" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">Q&amp;A</a>
+        <a href="contact.html" class="text-[16px] font-medium uppercase tracking-[0.18em]" style="color: var(--green-primary);">Contact</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="border-b" style="background:var(--ivory);border-color:rgba(11,65,49,.1);">
+      <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-5 text-[15px] uppercase tracking-[0.22em]" style="color:var(--green-primary);"><a href="blog.html" class="hover:opacity-80">Blog</a><span class="mx-3">&rarr;</span> <span>Nefertum, God of Perfumers</span></div>
+    </div>
+    <article class="mx-auto max-w-[760px] px-6 py-12 lg:py-16">
+      <p class="text-[14px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">30 June 2021</p>
+      <h1 class="mt-4 font-serif text-4xl lg:text-[3rem] leading-[1.1]" style="color:var(--green-primary);">Nefertum, God of Perfumers</h1>
+      <div class="post-body mt-10"><a href="/uploads/5/2/2/8/52289947/180048710-4042965552413928-6857658377614098424-n_orig.jpg"> <img alt="Nefertum" src="assets/blog/nefertum-god-of-perfumers/180048710-4042965552413928-6857658377614098424-n.jpg"/> </a>   <strong>PERFUME IN ANCIENT EGYPT<br/>NEFERTUM, God of Perfumers and Aromatherapists</strong><br/><strong>by Creezy Courtoy</strong><br/> Nefertum (Nefertem, Nefertemu) was an ancient god, the God of Perfumers and Aromatherapists ( at this time perfumers were all aromatherapists ) mentioned in the Pyramid Texts (c. 2350 BC), but became more prominent during the New Kingdom (1539 - c. 1075 BC) and later.
+<strong>Nefertum was the son of Ptah and Sekhmet.</strong><br/>Ptah, his father, was the creator God and the Patron of artisans.<br/>His mother, Sekhmet, was the Goddess with a dragon head who protected Egypt from its enemies but she was also the Goddess of plants and herbs and the Patron of medical and alchemist distillation.  Nefertum ruled over ointments and perfumed oils.
+<strong>In Ancient Egypt, fragrances were considered as the essence of materialization of all things. Nefertum was thus considered the spirit of life.</strong> <br/>He represented beauty in its perfection and was associated with purification and youthfulness. His symbol and representation was the blue lotus flower, the sacred flower of Egypt through which the sun rose. <br/>Nefertum was the god of the lotus blossom who emerged from the primeaval waters at the beginning of time, and a god of perfume and aromatherapy. <br/>Nefertum was the god of healing, medicine and beauty and strongly associated with the lotus and often depicted in Egyptian art with a large lotus blossom forming his crown. The lotus was the only flowering plant in Egypt that bloomed nonstop throughout the year. Held by gods and goddesses near the nose of royal kings, queens and pharaohs as its scent, this flower was believed to be restorative and protective.   <a href="/uploads/5/2/2/8/52289947/blue-lotus-ancient-egyptians-large_orig.jpg"> <img alt="Nefertum and the lotus flower" src="assets/blog/nefertum-god-of-perfumers/blue-lotus-ancient-egyptians-large.jpg"/> </a>   <br/><strong>Nefertum was seen as the sun god and the grandson of the sun god.</strong><br/>He was not originally worshipped in temples, but was an important aspect of the sun god, who was later discovered as the grandson of the sun god.<br/>For the people in Egypt, he was their protector and their healer. <br/>Nefertum was linked both to the pleasant scent of the lotus flower and to its medical properties which were well known to the ancient Egyptians.<br/>​He was also associated with a number of the Egyptians favorite flowers, such as rose, geranium and cornflower. In fact, he could be described as the archetypal aromatherapist.<br/>According to one legend, he brought a bouquet of beautiful lotuses to the aging Ra to ease his suffering. As a result, he was described in the Pyramid Texts as "the lotus blossom which is before the nose of Ra".  He may have originally been considered to be an aspect of Atum. According to one version of the creation story of the Ennead in Heliopolis, Nefertum (translated as beautiful Atum, or perfect Atum) was born from a blue lotus bud which emerged from the waters of Nun at the beginning of creation.<br/>Atum represented the sun and so Nefertum represented the sunrise. He cried because he was alone and his tears created humanity. It was thought that he was born with every sunrise, matured into Atum during the day before passing into the world of the dead every sunset. The cycle of birth in the morning and death every evening (as the sun travelled through the underworld) represented the daily struggle between Chaos and Order (Ma´at).  When Atum was absorbed by Ra (Atum-Ra), Nefertum came to be considered as a seperate deity, still closely associated with the newborn sun. Then Ptah was promoted to the chief national god and proclaimed the ultimate creator, and Nefertum was described as his son by either Sekhmet or Bast (both "Daughters of Ra"). However, as the son of Ptah, he also became patron of the perfume and healing arts derived from flowers. Thus, Nefertum was seen as both an aspect of the sun god, and also his grandson.  He was also linked to rebirth, both as a personification of the newborn sun and as the patron of many of the necessary ingredients of the mummification process. A passage of the Book of the Dead says the blessed dead will  <blockquote><strong>"Rise like Nefertum from the lotus, to the nostrils of Ra, and come forth upon the horizon each day"</strong>.<br/></blockquote> The Egyptian pantheon is particularly huge and fluid, with a wide variety of deities entering and exiting each other's myths.<br/>Nefertum used to be depicted as a beautiful young man wearing a lotus headdress, sometimes standing on the back of a lion.<br/>Occasionally he wears a headdress with two feathers and two necklace weights that were fertility symbols associated with Hathor (who in turn was closely associated with the two goddesses described as his mother, Sekhmet and Bast).<br/>He was sometimes depicted as a man with the head of a lion or as a reclining lion or cat. In this form, he was associated with the lion god Maahes, who may have been his brother, but may also have been an aspect of Nefertum. Like the newborn sun, he was generally depicted as a beautiful baby sitting on a lotus bud. Sometimes his body was shown wrapped like a mummy, with his arms and face unbound. He also had a lion or cat shape, attributed to his mother. He was also depicted as a human head emerging from a large water lily.  <a> <img alt="Picture" src="assets/blog/nefertum-god-of-perfumers/dt10890_orig.jpg"/> </a>   <strong>For the ancient Egyptians, however, with their holistic understanding of the universe, fragrances and perfumes were not only beautiful, but were also spiritual and therapeutic.</strong> <u><strong>The Blue Lotus</strong></u> The lotus flower flourishes on the banks of the Nile. It opens its large petals with the rising of the sun. To the ancient Egyptians it represented the sun because it banished darkness. Blue Lotus played a unique and important role in Ancient Egyptian culture. The plant was widely popular for its mood enhancing and mild psychedelic properties. Used both recreational and for spiritual effects, they often made a concoction out of Blue Lotus and wine.
+This flower has even been placed alongside the deceased in ancient tombs. The plant is often depicted on walls and paintings as well, often depicted together with wine. <br/>The Blue Lotus was even the symbol for the union of Upper and Lower Egypt. Commonly used in art as a symbol of Upper Egypt. It was often shown with its long stems intertwined with papyrus reeds (a symbol of Lower Egypt) as a representation of the unification of the two lands.
+<strong><em>For the Ancient Egyptians, The Blue Lotus represented how the sky greeted the sun. Just as the sun rises above the horizon to start the day, the flower opens in the morning. Then just when the sun is setting, the flower closes itself at dusk. And because of this, the Egyptians coined the Blue Lotus the sacred flower of the sun and sun gods. </em></strong>
+As this symbol means also the creation and rebirth, the lotus is a fixed part of tomb and coffin decoration, often in combination with the scarab, which has similar symbolic meaning.
+<strong><em>If you want to learn more about national flowers visit my blog <br/><a href="https://powerfulflower.blogspot.com">powerfulflower.blogspot.com</a></em></strong></div>
+    </article>
+  </main>
+<footer id="footer" class="text-white" style="background-color: var(--green-primary);">
+    <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-24 grid grid-cols-1 lg:grid-cols-12 gap-14">
+      <div class="lg:col-span-5">
+        <img src="assets/teachers-academy-logo_57.png" alt="IPF Teacher's Academy" class="h-28 w-auto mb-6" style="border-radius: 50%;">
+        <p class="mt-3 font-serif text-4xl text-white leading-tight">IPF Natural Perfumery<br><em class="italic">Teacher's Academy</em></p>
+        <p class="mt-6 text-[17px] leading-[1.8] max-w-xl" style="color: var(--ivory);">A Paris-based academy preserving and transmitting the heritage of natural perfumery to perfumers, teachers and schools across the world. IPF Certification since 2017.</p>
+        <div class="mt-8 flex gap-5 text-white">
+          <a href="https://www.facebook.com/perfumefoundation" target="_blank" rel="noopener" class="hover:opacity-70 transition-colors" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="contact.html" class="hover:opacity-70 transition-colors" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+      </div>
+      <div class="lg:col-span-3">
+        <p class="text-[16px] uppercase tracking-[0.22em]" style="color: var(--light-sage);">Explore</p>
+        <ul class="mt-6 space-y-3 text-[17px] text-white">
+          <li><a href="programs.html" class="hover:opacity-70 transition-colors">Programs</a></li>
+          <li><a href="#teachers" class="hover:opacity-70 transition-colors">Teachers</a></li>
+          <li><a href="https://www.perfumefoundation.org" target="_blank" class="hover:opacity-70 transition-colors">IPF Certification</a></li>
+          <li><a href="why-choose-us.html" class="hover:opacity-70 transition-colors">Why Choose Us</a></li>
+          <li><a href="contact.html" class="hover:opacity-70 transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-4">
+        <p class="text-[16px] uppercase tracking-[0.22em]" style="color: var(--light-sage);">Newsletter</p>
+        <p class="mt-5 text-[17px] leading-relaxed text-white">Monthly insights on natural perfumery, certifications and new programs.</p>
+        <form class="mt-6 flex flex-col gap-3 max-w-sm" onsubmit="event.preventDefault()">
+          <input type="email" placeholder="Your email" class="bg-transparent border px-4 py-3 text-[17px] text-white placeholder:text-white/50 focus:outline-none transition-colors" style="border-color: rgba(247,243,236,0.3);">
+          <button type="submit" class="border px-6 py-3 text-[16px] font-medium uppercase tracking-[0.18em] text-white hover:bg-white hover:text-[var(--green-primary)] transition-all self-start" style="border-color: white;">Subscribe to Newsletter</button>
+        </form>
+        <address class="not-italic mt-10 text-[16px] leading-[1.8] text-white">49 Quai des Grands Augustins<br>75006 Paris, France</address>
+        <a href="https://wa.me/33659764466" target="_blank" class="mt-5 inline-flex items-center gap-3 border px-5 py-3 text-[15px] font-medium uppercase tracking-[0.14em] text-white hover:bg-white hover:text-[var(--green-primary)] transition-all" style="border-color: white;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="border-t" style="border-color: rgba(247,243,236,0.15);">
+      <div class="mx-auto max-w-[1680px] px-6 lg:px-12 py-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-[15px] uppercase tracking-[0.18em] text-white">
+        <p>&copy; 1995-2026 IPF Natural Perfumery Teacher's Academy</p>
+        <p>Certified by the International Perfume Foundation</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "australian-scents",
+    "title": "Australian Essences: Native Botanicals in Natural Perfumery",
+    "date_raw": "26/9/2026",
+    "date_human": "26 September 2026",
+    "date_iso": "2026-09-26",
+    "images": 8
+  },
+  {
+    "slug": "the-language-of-scents",
+    "title": "The Language of Scents: How Olfaction Connects Memory, Emotion, Healing, and Nature",
+    "date_raw": "28/5/2026",
+    "date_human": "28 May 2026",
+    "date_iso": "2026-05-28",
+    "images": 1
+  },
+  {
+    "slug": "nefertum-god-of-perfumers",
+    "title": "Nefertum, God of Perfumers",
+    "date_raw": "30/6/2021",
+    "date_human": "30 June 2021",
+    "date_iso": "2021-06-30",
+    "images": 3
+  }
+]
