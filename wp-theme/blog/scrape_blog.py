@@ -126,8 +126,12 @@ def scrape(slug):
     # categories from sidebar (for display / later bulk)
     cats = sorted({a.get_text().strip() for a in soup.select(".blog-sidebar a")
                    if "/category/" in (a.get("href") or "") and a.get_text().strip().lower() != "all"})
+    # this post's OWN categories = category links outside the global sidebar
+    post_cats = sorted({a.get_text().strip() for a in soup.select("a[href*='/category/']")
+                        if not a.find_parent(class_="blog-sidebar")
+                        and a.get_text().strip() and a.get_text().strip().lower() != "all"})
     return {"slug": slug, "title": title, "date_human": dhuman, "date_iso": diso,
-            "content": body, "images": n, "cats": cats}
+            "content": body, "images": n, "cats": cats, "cats_post": post_cats}
 
 # ---- shell from index.html (CDN tailwind + full dropdown) ----
 idx = open("index.html", encoding="utf-8").read()
@@ -195,32 +199,82 @@ def build_page(p):
         page = page[:ts] + "<title>" + p["title"] + " - IPF Natural Perfumery Teacher's Academy" + page[te:]
     return page + main + FOOTER
 
-slugs = sys.argv[1:] or PILOT
-meta = []
+WXR_IMG_BASE = "https://adsimize-cell.github.io/IPF-Academy/"
+
+def xml_esc(s):
+    return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+def cdata(s):
+    return "<![CDATA[" + (s or "").replace("]]>", "]]]]><![CDATA[>") + "]]>"
+
+def to_wxr(posts):
+    head = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<rss version="2.0" xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"'
+            ' xmlns:content="http://purl.org/rss/1.0/modules/content/"'
+            ' xmlns:wfw="http://wellformedweb.org/CommentAPI/"'
+            ' xmlns:dc="http://purl.org/dc/elements/1.1/"'
+            ' xmlns:wp="http://wordpress.org/export/1.2/">\n<channel>\n'
+            '  <title>IPF Blog</title>\n  <link>%s</link>\n  <description>Blog import</description>\n'
+            '  <language>en-US</language>\n  <wp:wxr_version>1.2</wp:wxr_version>\n'
+            '  <wp:base_site_url>%s</wp:base_site_url>\n  <wp:base_blog_url>%s</wp:base_blog_url>\n'
+            '  <wp:author><wp:author_id>1</wp:author_id><wp:author_login>%s</wp:author_login>'
+            '<wp:author_email>%s</wp:author_email>'
+            '<wp:author_display_name>%s</wp:author_display_name></wp:author>\n'
+            % (SITE, SITE, SITE, cdata("admin"), cdata("cc@perfumefoundation.org"), cdata("IPF")))
+    items = []
+    for p in posts:
+        content = p["content"].replace('src="assets/blog/', 'src="' + WXR_IMG_BASE + 'assets/blog/')
+        dt = (p["date_iso"] or "2020-01-01") + " 09:00:00"
+        catxml = ""
+        for c in (p.get("cats_post") or ["Blog"]):
+            nice = re.sub(r"[^a-z0-9]+", "-", c.lower()).strip("-")
+            catxml += '\n    <category domain="category" nicename="%s">%s</category>' % (nice, cdata(c))
+        items.append(
+            '  <item>\n    <title>%s</title>\n    <link>%s/blog/%s</link>\n'
+            '    <dc:creator>%s</dc:creator>\n'
+            '    <guid isPermaLink="false">%s/blog/%s</guid>\n    <description></description>\n'
+            '    <content:encoded>%s</content:encoded>\n    <excerpt:encoded>%s</excerpt:encoded>\n'
+            '    <wp:post_date>%s</wp:post_date>\n    <wp:post_date_gmt>%s</wp:post_date_gmt>\n'
+            '    <wp:comment_status>%s</wp:comment_status>\n    <wp:ping_status>%s</wp:ping_status>\n'
+            '    <wp:post_name>%s</wp:post_name>\n    <wp:status>%s</wp:status>\n'
+            '    <wp:post_parent>0</wp:post_parent>\n    <wp:menu_order>0</wp:menu_order>\n'
+            '    <wp:post_type>%s</wp:post_type>\n    <wp:is_sticky>0</wp:is_sticky>%s\n  </item>\n'
+            % (xml_esc(p["title"]), SITE, p["slug"], cdata("admin"), SITE, p["slug"],
+               cdata(content), cdata(""), cdata(dt), cdata(dt), cdata("open"), cdata("open"),
+               cdata(p["slug"]), cdata("publish"), cdata("post"), catxml))
+    return head + "".join(items) + "</channel>\n</rss>\n"
+
+args = [a for a in sys.argv[1:] if not a.startswith("--")]
+slugs = args or PILOT
+posts = []
 for s in slugs:
     print("scraping", s, "...")
-    p = scrape(s)
-    open("blog-%s.html" % s, "w", encoding="utf-8", newline="").write(build_page(p))
-    meta.append({k: p[k] for k in ("slug", "title", "date_human", "date_iso", "images", "cats")})
-    print("   ", p["title"], "|", p["date_human"], "| imgs:", p["images"], "| cats:", len(p["cats"]), "| chars:", len(p["content"]))
+    posts.append(scrape(s))
+    p = posts[-1]
+    print("   ", p["title"], "|", p["date_human"], "| imgs:", p["images"], "| post-cats:", p.get("cats_post"))
 
-# blog listing
-cards = ""
-allcats = sorted({c for m in meta for c in m["cats"]})
-for p in sorted(meta, key=lambda x: x["date_iso"] or "", reverse=True):
-    cards += ('\n        <a href="blog-%s.html" class="block border p-8 hover:border-[rgba(11,65,49,.4)] transition-colors" style="border-color:rgba(11,65,49,.15);background:#fff;text-decoration:none;">'
-              '<p class="text-[13px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">%s</p>'
-              '<h2 class="mt-3 font-serif text-2xl leading-snug" style="color:var(--green-primary);">%s</h2></a>') % (p["slug"], p["date_human"], p["title"])
-listing = ('\n  <main>\n'
-           '    <section class="py-10 lg:py-14" style="background:var(--ivory);">\n'
-           '      <div class="mx-auto max-w-[1100px] px-6 lg:px-12 text-center">\n'
-           '        <p class="text-[15px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Journal</p>\n'
-           '        <h1 class="mt-4 font-serif text-5xl lg:text-[3.5rem] leading-[1.05]" style="color:var(--green-primary);">Blog</h1>\n'
-           '      </div>\n    </section>\n'
-           '    <div class="mx-auto max-w-[1320px] px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 py-10 lg:py-14">\n'
-           '      <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">%s\n      </div>\n'
-           '      %s\n'
-           '    </div>\n  </main>\n') % (cards, sidebar(allcats))
-open("blog.html", "w", encoding="utf-8", newline="").write(PREFIX + listing + FOOTER)
-json.dump(meta, open("wp-theme/blog/pilot-meta.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
-print("\nDONE. blog.html +", ", ".join("blog-%s.html" % m["slug"] for m in meta))
+if "--wxr" in sys.argv:
+    out = "wp-theme/blog/import-%s.xml" % ("pilot" if len(posts) > 1 else posts[0]["slug"])
+    open(out, "w", encoding="utf-8", newline="").write(to_wxr(posts))
+    print("\nWXR written:", out, "(", len(posts), "posts )")
+else:
+    for p in posts:
+        open("blog-%s.html" % p["slug"], "w", encoding="utf-8", newline="").write(build_page(p))
+    meta = [{k: p[k] for k in ("slug", "title", "date_human", "date_iso", "images", "cats")} for p in posts]
+    cards = ""
+    allcats = sorted({c for p in posts for c in p["cats"]})
+    for p in sorted(posts, key=lambda x: x["date_iso"] or "", reverse=True):
+        cards += ('\n        <a href="blog-%s.html" class="block border p-8 hover:border-[rgba(11,65,49,.4)] transition-colors" style="border-color:rgba(11,65,49,.15);background:#fff;text-decoration:none;">'
+                  '<p class="text-[13px] uppercase tracking-[0.28em] font-medium" style="color:var(--soft-sage);">%s</p>'
+                  '<h2 class="mt-3 font-serif text-2xl leading-snug" style="color:var(--green-primary);">%s</h2></a>') % (p["slug"], p["date_human"], p["title"])
+    listing = ('\n  <main>\n    <section class="py-10 lg:py-14" style="background:var(--ivory);">\n'
+               '      <div class="mx-auto max-w-[1100px] px-6 lg:px-12 text-center">\n'
+               '        <p class="text-[15px] uppercase tracking-[0.32em] font-medium" style="color:var(--soft-sage);">Journal</p>\n'
+               '        <h1 class="mt-4 font-serif text-5xl lg:text-[3.5rem] leading-[1.05]" style="color:var(--green-primary);">Blog</h1>\n'
+               '      </div>\n    </section>\n'
+               '    <div class="mx-auto max-w-[1320px] px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 py-10 lg:py-14">\n'
+               '      <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">%s\n      </div>\n'
+               '      %s\n    </div>\n  </main>\n') % (cards, sidebar(allcats))
+    open("blog.html", "w", encoding="utf-8", newline="").write(PREFIX + listing + FOOTER)
+    json.dump(meta, open("wp-theme/blog/pilot-meta.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
+    print("\nDONE preview. blog.html +", ", ".join("blog-%s.html" % p["slug"] for p in posts))

@@ -57,6 +57,8 @@ def title_of(s, slug):
 built = []
 for path in sorted(glob.glob(os.path.join(ROOT, "*.html"))):
     slug = os.path.basename(path)[:-5]
+    if slug == "blog" or slug.startswith("blog-"):
+        continue  # blog preview pages are not WP page templates (blog is posts, not pages)
     s = open(path, encoding="utf-8").read()
     m = re.search(r'</header>(.*?)<footer id="footer"', s, re.S)
     if not m:

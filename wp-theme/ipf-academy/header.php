@@ -17,7 +17,29 @@
     .powr-paypal-button{min-height:44px}
       .text-center h1,.text-center h2,.text-center h3,.text-center h4,.text-center h5,.text-center h6{text-align:center}
       h1 em,h2 em,h3 em,h4 em,h5 em{font-style:normal}
-  body{overflow-wrap:break-word;-webkit-hyphens:auto;hyphens:auto}h1,h2,h3,h4,h5{-webkit-hyphens:manual;hyphens:manual}</style>
+  body{overflow-wrap:break-word;-webkit-hyphens:auto;hyphens:auto}h1,h2,h3,h4,h5{-webkit-hyphens:manual;hyphens:manual}
+    /* Blog */
+    .post-body{font-size:18px;line-height:1.8;color:var(--text-dark);}
+    .post-body p{margin:0 0 1.1em;}
+    .post-body p[style*="center"]{text-align:center;}
+    .post-body h1,.post-body h2,.post-body h3{font-family:'Cormorant Garamond',Georgia,serif;color:var(--green-primary);line-height:1.2;margin:1.4em 0 .4em;font-weight:600;}
+    .post-body h2{font-size:1.9rem;}.post-body h3{font-size:1.5rem;}
+    .post-body figure{margin:1.8em 0;}
+    .post-body figure img{display:block;margin:0 auto;max-width:100%;height:auto;}
+    .post-body figcaption,.post-body .wp-caption-text{text-align:center;font-size:14px;color:#6f6f6f;margin-top:.55em;}
+    .post-body img{max-width:100%;height:auto;}
+    .post-body a{color:var(--green-primary);text-decoration:underline;}
+    .post-body ul,.post-body ol{margin:0 0 1.1em 1.3em;}.post-body ul{list-style:disc;}.post-body ol{list-style:decimal;}
+    .post-body li{margin:.3em 0;}
+    .post-body strong{font-weight:600;}.post-body em{font-style:italic;}
+    .post-body blockquote{border-left:3px solid var(--soft-sage);padding-left:1.1em;font-style:italic;color:var(--green-primary);margin:1.4em 0;}
+    .blog-aside-title{font-size:13px;text-transform:uppercase;letter-spacing:.2em;font-weight:600;color:var(--green-primary);}
+    .blog-aside ul{list-style:none;margin:0;padding:0;}.blog-aside li{margin:0;}
+    .blog-aside a{display:block;padding:.3em 0;font-size:15px;color:var(--text-dark);text-decoration:none;}
+    .blog-aside a:hover{color:var(--green-primary);}
+    .blog-pagination .page-numbers{display:inline-block;padding:.4em .8em;margin-right:.4em;border:1px solid rgba(11,65,49,.2);color:var(--green-primary);text-decoration:none;}
+    .blog-pagination .current{background:var(--green-primary);color:#fff;}
+    .commentlist{list-style:none;padding:0;}.comment-form input,.comment-form textarea{border:1px solid rgba(11,65,49,.25);padding:.6em;width:100%;max-width:520px;}</style>
   <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/tailwind.css?v=<?php echo filemtime(get_template_directory() . '/assets/tailwind.css'); ?>">
 <?php wp_head(); ?>
 </head>
